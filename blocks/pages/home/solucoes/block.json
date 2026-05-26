@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "theme/home-solucoes",
+  "title": "Nossas Soluções",
+  "category": "theme",
+  "description": "Seção de cards com as soluções da empresa.",
+  "keywords": ["solucoes", "cards", "servicos"],
+  "supports": {
+    "html": false,
+    "align": ["full", "wide"]
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "editorScript": "file:../../../build/index.js",
+  "editorStyle": "file:../../../build/index.css",
+  "style": "file:../../../build/index.css"
+}

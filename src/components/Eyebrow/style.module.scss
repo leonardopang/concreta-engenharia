@@ -1,0 +1,42 @@
+@use '../../styles/tokens' as *;
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  max-width: max-content;
+  padding: 0 $space-4;
+
+  span {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-snug;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+}
+
+// ── Green variant (default) ───────────────────────────────────────────────────
+
+.eyebrow--green {
+  border-left: 1px solid $color-primary;
+  border-right: 1px solid $color-primary;
+
+  span {
+    background: linear-gradient(239deg, $color-primary 9.5%, $color-brand-300 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+// ── White variant (for dark backgrounds) ─────────────────────────────────────
+
+.eyebrow--white {
+  border-left: 1px solid $color-white;
+  border-right: 1px solid $color-white;
+
+  span {
+    color: $color-white;
+  }
+}

@@ -1,0 +1,38 @@
+@use '../../styles/tokens' as *;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-4 $space-8;
+  font-family: $font-base;
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  line-height: 1.5;
+  text-decoration: none;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: opacity 150ms ease, background-color 150ms ease, color 150ms ease;
+  white-space: nowrap;
+  border-radius: 10px;
+
+  &--primary {
+    background-color: $color-accent;
+    border-color: $color-accent;
+    color: $color-neutral-800;
+
+    &:hover {
+      opacity: 0.88;
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    border-color: $color-white;
+    color: $color-white;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@use '../../../../styles/tokens' as *;
+
+.faixa {
+  width: 100%;
+  background-color: $color-white;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  overflow: hidden;
+}
+
+.faixa__slide {
+  display: flex;
+  align-items: center;
+  gap: $space-6;
+  padding: $space-4 0;
+  white-space: nowrap;
+
+  @include respond-to($bp-lg) {
+    padding: $space-6 0;
+  }
+}
+
+.faixa__text {
+  font-family: $font-base;
+  font-size: 12px;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-tight;
+  color: $color-neutral-600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  white-space: nowrap;
+
+  @include respond-to($bp-lg) {
+    font-size: $font-size-md;
+    letter-spacing: 1.6px;
+  }
+}
+
+.faixa__icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}

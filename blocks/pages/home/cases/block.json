@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "theme/home-cases",
+  "title": "Home Cases",
+  "category": "theme",
+  "description": "Slider de cases da home.",
+  "keywords": ["cases", "slider", "portfolio"],
+  "supports": { "html": false },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "editorScript": "file:../../../build/index.js",
+  "editorStyle": "file:../../../build/index.css",
+  "style": "file:../../../build/index.css"
+}

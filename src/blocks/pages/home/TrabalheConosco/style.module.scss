@@ -1,0 +1,185 @@
+@use '../../../../styles/tokens' as *;
+
+.tc {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: $color-white;
+  padding: $space-16 0 160px;
+
+  @include respond-to($bp-lg) {
+    padding: $space-24 0;
+  }
+}
+
+.tc__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.tc__bgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.tc__inner {
+  @include container;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: $space-10;
+
+  @include respond-to($bp-lg) {
+    flex-direction: row;
+    align-items: center;
+    gap: $space-16;
+  }
+}
+
+// ── Content ───────────────────────────────────────────────────────────────────
+
+.tc__content {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+  flex: 1;
+}
+
+.tc__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 $space-4;
+  border-left: 1px solid $color-primary;
+  border-right: 1px solid $color-primary;
+
+  span {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    background: linear-gradient(205deg, $color-primary 9.5%, $color-brand-300 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+.tc__title {
+  font-size: clamp(1.75rem, 4vw, $font-size-5xl);
+  font-weight: $font-weight-medium;
+  line-height: $line-height-snug;
+  background: linear-gradient(200deg, $color-primary 9.5%, $color-brand-300 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+
+.tc__description {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-relaxed;
+  color: $color-neutral-600;
+
+  p { margin: 0 0 $space-3; }
+  p:last-child { margin-bottom: 0; }
+}
+
+.tc__btn {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  padding: $space-3 $space-8;
+  background-color: $color-accent;
+  color: $color-neutral-800;
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 16px 10px rgba(204, 204, 204, 0.05);
+  transition: opacity 150ms ease;
+
+  &:hover { opacity: 0.85; }
+}
+
+// ── Image ─────────────────────────────────────────────────────────────────────
+
+.tc__imageWrap {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  overflow: visible;
+
+  @include respond-to($bp-lg) {
+    flex: 0 0 auto;
+    width: 48%;
+  }
+}
+
+.tc__image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+
+  @include respond-to($bp-lg) {
+    height: 560px;
+  }
+}
+
+// ── Floating card ─────────────────────────────────────────────────────────────
+
+.tc__card {
+  position: absolute;
+  bottom: -$space-20;
+  left: $space-6;
+  display: flex;
+  align-items: flex-start;
+  gap: $space-4;
+  padding: $space-5;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid $color-neutral-200;
+  border-radius: 16px;
+  box-shadow: 0 20px 36px rgba(0, 0, 0, 0.05);
+  max-width: 272px;
+  flex-direction: column;
+
+  @include respond-to($bp-lg) {
+    bottom: auto;
+    top: $space-8;
+    left: -$space-8;
+    max-width: 272px;
+  }
+}
+
+.tc__cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: $color-brand-300;
+  overflow: hidden;
+}
+
+.tc__cardIconImg {
+  object-fit: contain;
+}
+
+.tc__cardDesc {
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-normal;
+  color: $color-neutral-600;
+  margin: 0;
+}

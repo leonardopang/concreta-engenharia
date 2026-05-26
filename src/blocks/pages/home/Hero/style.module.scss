@@ -1,0 +1,113 @@
+@use '../../../../styles/tokens' as *;
+
+.hero {
+  position: relative;
+  background-color: #0c144a;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-height: 480px;
+
+  @include respond-to($bp-lg) {
+    min-height: 700px;
+  }
+}
+
+// ─── Inner ────────────────────────────────────────────────────────────────────
+.hero__inner {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  gap: $space-10;
+  // Mobile: header pill tem 60px + 16px offset + 16px gap = 92px
+  padding-top: calc(60px + 16px + 24px);
+  padding-bottom: $space-16;
+  max-width: 1385px;
+
+  @include respond-to($bp-lg) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    padding-top: rem(138);
+    padding-bottom: rem(74);
+  }
+}
+
+// ─── Content ──────────────────────────────────────────────────────────────────
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+
+  @include respond-to($bp-lg) {
+    max-width: 641px;
+  }
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6; // 24px entre heading e descrição
+}
+
+.hero__title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem); // 40px mobile → 56px desktop
+  font-weight: $font-weight-medium;
+  line-height: 1.1;
+  color: $color-white;
+  margin: 0;
+}
+
+.hero__description {
+  font-size: $font-size-md; // 16px mobile
+  font-weight: $font-weight-regular;
+  line-height: 1.5;
+  color: $color-white;
+  margin: 0;
+
+  @include respond-to($bp-lg) {
+    font-size: $font-size-lg; // 18px desktop
+    max-width: 532px;
+  }
+}
+
+.hero__actions {
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+
+  // Botões full-width no mobile
+  >a,
+  >button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  @include respond-to($bp-lg) {
+    flex-direction: row;
+    max-width: 640px;
+
+    >a,
+    >button {
+      width: auto;
+    }
+  }
+}
+
+// ─── Image ────────────────────────────────────────────────────────────────────
+.hero__image {
+  flex-shrink: 0;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+
+    @include respond-to($bp-lg) {
+      max-width: 640px;
+    }
+  }
+}

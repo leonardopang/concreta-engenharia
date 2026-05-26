@@ -1,0 +1,195 @@
+@use '../../../../styles/tokens' as *;
+
+// ── Outer wrapper ─────────────────────────────────────────────────────────────
+
+.solucoes {
+  width: 100%;
+  background-color: $color-neutral-100;
+  padding: $space-4;
+
+  @include respond-to($bp-lg) {
+    padding: $space-12;
+  }
+}
+
+// ── Inner dark card ───────────────────────────────────────────────────────────
+
+.solucoes__card {
+  position: relative;
+  background-color: $color-brand-500;
+  border-radius: 32px;
+  overflow: hidden;
+  padding: $space-20 $space-4;
+  display: flex;
+  flex-direction: column;
+  gap: $space-12;
+  align-items: center;
+
+  @include respond-to($bp-lg) {
+    padding: 96px $space-20;
+    gap: $space-16;
+    max-width: 1672px;
+    margin: 0 auto;
+  }
+}
+
+// ── Background overlay ────────────────────────────────────────────────────────
+
+.solucoes__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.solucoes__bgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: overlay;
+  opacity: 0.4;
+}
+
+// ── Header ────────────────────────────────────────────────────────────────────
+
+.solucoes__header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $space-4;
+  text-align: center;
+  max-width: 640px;
+}
+
+.solucoes__title {
+  font-size: clamp(1.75rem, 4vw, $font-size-5xl);
+  font-weight: $font-weight-medium;
+  line-height: $line-height-snug;
+  color: $color-white;
+  margin: 0;
+}
+
+.solucoes__description {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-normal;
+  color: $color-white;
+  margin: 0;
+  opacity: 0.85;
+}
+
+// ── Cards grid ────────────────────────────────────────────────────────────────
+
+.solucoes__grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-4;
+  width: 100%;
+  max-width: 1280px;
+
+  @include respond-to($bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-to($bp-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// ── Card item ─────────────────────────────────────────────────────────────────
+
+.solucoes__item {
+  display: flex;
+  flex-direction: column;
+  gap: $space-12;
+  padding: $space-6;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  min-height: 360px;
+
+  @include respond-to($bp-lg) {
+    min-height: 408px;
+  }
+}
+
+// ── Icon ─────────────────────────────────────────────────────────────────────
+
+.solucoes__iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.solucoes__icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+// ── Card body ─────────────────────────────────────────────────────────────────
+
+.solucoes__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: $space-6;
+}
+
+.solucoes__itemText {
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+}
+
+.solucoes__itemTitle {
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-snug;
+  color: $color-white;
+  margin: 0;
+}
+
+.solucoes__itemDesc {
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-normal;
+  color: $color-white;
+  margin: 0;
+  opacity: 0.85;
+}
+
+// ── Card button ───────────────────────────────────────────────────────────────
+
+.solucoes__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  padding: $space-4 $space-8;
+  background-color: $color-accent;
+  border: 1px solid $color-accent;
+  border-radius: 10px;
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-normal;
+  color: #000;
+  text-decoration: none;
+  transition: opacity 150ms ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}

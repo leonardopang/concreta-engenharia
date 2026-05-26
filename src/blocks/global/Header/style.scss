@@ -1,0 +1,236 @@
+@use '../../../styles/tokens' as *;
+
+// ─── Variáveis locais ────────────────────────────────────────────────────────
+$header-h-mobile:   60px;
+$header-h-desktop:  80px;
+$header-max-width:  1672px;
+$drawer-transition: 280ms ease;
+
+// ─── Wrapper sticky (full-width, sem visual) ─────────────────────────────────
+.header-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+// ─── Bloco — o "pill" visual ─────────────────────────────────────────────────
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $header-h-mobile;
+  background-color: $color-white;
+
+  // Mobile: full-width, 1rem em cada lado
+  padding: 0 1rem;
+  border-bottom: 1px solid $color-border;
+
+  @include respond-to($bp-xl) {
+    // Desktop: pill centralizado, 2rem em cada lado
+    max-width: $header-max-width;
+    margin: 0 auto;
+    height: $header-h-desktop;
+    padding: 0 2rem;
+    border-radius: 100px;
+    border: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+  }
+}
+
+// ─── Logo ────────────────────────────────────────────────────────────────────
+.header__logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+
+  img {
+    display: block;
+    height: 36px;
+    width: auto;
+
+    @include respond-to($bp-xl) {
+      height: 44px;
+    }
+  }
+
+  span {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    color: $color-text;
+  }
+}
+
+// ─── Nav desktop ─────────────────────────────────────────────────────────────
+.header__nav {
+  display: none;
+
+  @include respond-to($bp-xl) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: $space-1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav-list li a,
+.header__nav-list .menu-item a {
+  display: block;
+  padding: $space-2 $space-3;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  color: $color-neutral-600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: color 150ms ease, background-color 150ms ease;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-text;
+    background-color: $color-neutral-100;
+  }
+}
+
+.header__nav-list li.current-menu-item > a,
+.header__nav-list .current-menu-item > a {
+  color: $color-primary;
+  font-weight: $font-weight-semibold;
+}
+
+// ─── CTA button ──────────────────────────────────────────────────────────────
+.header__cta {
+  display: none;
+  align-items: center;
+  padding: $space-3 $space-6;
+  background-color: $color-accent;
+  color: $color-white;
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  text-decoration: none;
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: opacity 150ms ease;
+
+  &:hover {
+    opacity: 0.88;
+  }
+
+  @include respond-to($bp-xl) {
+    display: inline-flex;
+  }
+}
+
+// ─── Hamburger toggle ────────────────────────────────────────────────────────
+.header__toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 150ms ease;
+
+  &:hover {
+    background-color: $color-neutral-100;
+  }
+
+  @include respond-to($bp-xl) {
+    display: none;
+  }
+}
+
+.header__toggle-bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: $color-text;
+  border-radius: 2px;
+  transition: transform $drawer-transition, opacity $drawer-transition;
+  transform-origin: center;
+}
+
+.header--open .header__toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.header--open .header__toggle-bar:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.header--open .header__toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+// ─── Drawer mobile ───────────────────────────────────────────────────────────
+.header__drawer {
+  position: fixed;
+  top: $header-h-mobile;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-white;
+  overflow-y: auto;
+  padding: $space-6 1rem;
+  transform: translateX(100%);
+  transition: transform $drawer-transition;
+  z-index: 99;
+
+  @include respond-to($bp-xl) {
+    display: none;
+  }
+}
+
+.header--open .header__drawer {
+  transform: translateX(0);
+}
+
+.header__drawer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__drawer-list li a,
+.header__drawer-list .menu-item a {
+  display: block;
+  padding: $space-4 0;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-medium;
+  color: $color-text;
+  text-decoration: none;
+  border-bottom: 1px solid $color-border;
+  transition: color 150ms ease;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.header__drawer-list li.current-menu-item > a {
+  color: $color-primary;
+  font-weight: $font-weight-semibold;
+}
+
+.header__cta--drawer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: $space-6;
+  width: 100%;
+  padding: $space-4;
+  font-size: $font-size-lg;
+  border-radius: 100px;
+}

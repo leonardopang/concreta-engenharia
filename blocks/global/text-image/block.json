@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "theme/text-image",
+  "title": "Text Image",
+  "category": "theme",
+  "description": "Seção com imagem à esquerda e conteúdo de texto à direita.",
+  "keywords": ["text", "image", "sobre", "solucoes"],
+  "supports": {
+    "html": false,
+    "align": ["full", "wide"]
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "editorScript": "file:../../build/index.js",
+  "editorStyle": "file:../../build/index.css",
+  "style": "file:../../build/index.css"
+}

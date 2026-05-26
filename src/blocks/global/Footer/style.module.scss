@@ -1,0 +1,209 @@
+@use '../../../styles/tokens' as *;
+
+// ─── Footer ───────────────────────────────────────────────────────────────────
+.footer {
+  background-color: $color-white;
+  color: $color-text;
+}
+
+// ─── Main area ────────────────────────────────────────────────────────────────
+.footer__inner {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  gap: $space-12;
+  padding-top: $space-20;
+  padding-bottom: $space-10;
+
+  @include respond-to($bp-lg) {
+    flex-direction: row;
+    gap: $space-12;
+    padding: 6.563rem 0 $space-20;
+  }
+}
+
+// ─── Brand col ────────────────────────────────────────────────────────────────
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+
+  @include respond-to($bp-lg) {
+    flex: 0 0 260px;
+  }
+}
+
+.footer__logo {
+  display: inline-block;
+
+  img {
+    display: block;
+    height: 78px;
+    width: auto;
+
+    @include respond-to($bp-lg) {
+      height: 44px;
+    }
+  }
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: $space-3;
+  margin-top: auto;
+}
+
+.footer__social_label {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semibold;
+  color: $color-neutral-800; // #1A1A1A
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.footer__social_icons {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 150ms ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+// ─── Nav / Contact cols ───────────────────────────────────────────────────────
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+
+  @include respond-to($bp-lg) {
+    flex: 1;
+  }
+}
+
+.footer__heading {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $color-neutral-800;
+  margin: 0;
+}
+
+// ─── Nav list ─────────────────────────────────────────────────────────────────
+.footer__nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+}
+
+.footer__nav_link {
+  color: $color-neutral-600; // #4D4D4D
+  text-decoration: none;
+  font-size: $font-size-md;
+  transition: color 150ms ease;
+
+  &:hover {
+    color: $color-brand-300; // #293377
+  }
+}
+
+// ─── Contact list ─────────────────────────────────────────────────────────────
+.footer__contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+}
+
+.footer__contact_item {
+  display: flex;
+  align-items: flex-start;
+  gap: $space-3;
+  font-size: $font-size-md;
+  color: $color-neutral-600; // #4D4D4D
+  line-height: $line-height-snug;
+
+  svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+}
+
+.footer__contact_link {
+  color: $color-neutral-600;
+  text-decoration: none;
+  transition: color 150ms ease;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+// ─── Bottom bar ───────────────────────────────────────────────────────────────
+.footer__bottom_inner {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: $space-6;
+  padding-top: $space-8;
+  padding-bottom: $space-8;
+  font-size: $font-size-sm;
+  color: $color-neutral-500;
+  border-top: 1px solid $color-border;
+
+  @include respond-to($bp-md) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: $space-3;
+    padding-top: $space-6;
+    padding-bottom: $space-6;
+  }
+}
+
+.footer__copy {
+  color: $color-neutral-500;
+}
+
+.footer__privacy {
+  color: $color-neutral-500;
+  text-decoration: underline;
+  transition: color 150ms ease;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.footer__upsites {
+  color: $color-neutral-500;
+}
+
+.footer__upsites_link {
+  color: $color-neutral-500;
+  text-decoration: none;
+  transition: color 150ms ease;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
