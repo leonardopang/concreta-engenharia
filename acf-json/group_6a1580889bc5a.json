@@ -69,6 +69,27 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_6a1b00000001f",
+            "label": "Resumo",
+            "name": "resumo",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Breve descrição exibida no card (máx. 2 linhas visíveis).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "rows": 3,
+            "new_lines": "br"
         }
     ],
     "location": [

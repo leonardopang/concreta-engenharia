@@ -20,7 +20,7 @@ export default function Diferenciais({
       </div>
 
       <div className={styles.dif__inner}>
-        <div className={styles.dif__header}>
+        <div className={styles.dif__header} data-animate="fade-up">
           {eyebrow && <Eyebrow text={eyebrow} />}
 
           <div className={styles.dif__headerText}>
@@ -31,7 +31,7 @@ export default function Diferenciais({
 
         <div className={styles.dif__body}>
           {imgProps(imagem) && (
-            <div className={styles.dif__imageWrap}>
+            <div className={styles.dif__imageWrap} data-animate="fade-right">
               <img {...imgProps(imagem)!} className={styles.dif__image} />
             </div>
           )}
@@ -39,7 +39,7 @@ export default function Diferenciais({
           {hasItems(list) && (
             <ul className={styles.dif__list}>
               {list.map((item, i) => (
-                <li key={i} className={styles.dif__item}>
+                <li key={i} className={styles.dif__item} data-animate="fade-left" data-animate-delay={String(i * 0.08)}>
                   {imgProps(item.icone) && (
                     <div className={styles.dif__iconWrap}>
                       <img

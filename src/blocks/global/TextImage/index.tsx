@@ -11,11 +11,11 @@ export default function TextImage({ background, imagem, title, text, button }: T
       <SmartImage image={background} alt="" loading="eager" className={styles.textImage__bg} />
 
       <div className={styles.textImage__inner}>
-        <div className={styles.textImage__media}>
+        <div className={styles.textImage__media} data-animate="fade-right">
           <SmartImage image={imagem} className={styles.textImage__image} />
         </div>
 
-        <div className={styles.textImage__content}>
+        <div className={styles.textImage__content} data-animate="fade-left" data-animate-delay="0.15">
           {title && <h2 className={styles.textImage__title}>{title}</h2>}
 
           {text && (

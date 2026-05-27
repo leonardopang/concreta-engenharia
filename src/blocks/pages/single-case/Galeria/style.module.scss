@@ -1,0 +1,74 @@
+@use '../../../../styles/tokens' as *;
+
+.galeria {
+  background-color: $color-white;
+  border-top: 1px solid $color-neutral-200;
+  padding: $space-16 $space-4;
+  overflow: hidden;
+
+  @include respond-to($bp-lg) {
+    padding: $space-20 $space-8;
+  }
+}
+
+.galeria__inner {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+
+  @include respond-to($bp-lg) {
+    flex-direction: row;
+    align-items: stretch;
+    gap: $space-4;
+  }
+}
+
+// ── Foto principal ──────────────────────────────────────────────────────────
+
+.galeria__main {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: $color-neutral-200;
+
+  @include respond-to($bp-lg) {
+    flex: 1;
+  }
+}
+
+.galeria__mainImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 1 / 1;
+}
+
+// ── Grade 2x2 ───────────────────────────────────────────────────────────────
+
+.galeria__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-4;
+
+  @include respond-to($bp-lg) {
+    flex: 1;
+  }
+}
+
+.galeria__gridItem {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: $color-neutral-200;
+}
+
+.galeria__gridImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 1 / 1;
+}

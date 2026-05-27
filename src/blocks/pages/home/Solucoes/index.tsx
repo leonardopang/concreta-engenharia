@@ -15,7 +15,7 @@ export default function Solucoes({ background, title, description, cards = [] }:
           <div className={styles.solucoes__bg} aria-hidden="true" />
         )}
 
-        <div className={styles.solucoes__header}>
+        <div className={styles.solucoes__header} data-animate="fade-up">
           {title && <h2 className={styles.solucoes__title}>{title}</h2>}
           {description && <p className={styles.solucoes__description}>{description}</p>}
         </div>
@@ -25,7 +25,7 @@ export default function Solucoes({ background, title, description, cards = [] }:
             {cards.map((card, i) => {
               const btnProps = linkProps(card.button);
               return (
-                <article key={i} className={styles.solucoes__item}>
+                <article key={i} className={styles.solucoes__item} data-animate="fade-up" data-animate-delay={String(i * 0.1)}>
                   <div className={styles.solucoes__iconWrap}>
                     <SmartImage
                       image={card.icone}

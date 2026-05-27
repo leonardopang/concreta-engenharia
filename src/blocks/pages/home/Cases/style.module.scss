@@ -158,22 +158,23 @@
   border-radius: 16px;
   overflow: hidden;
   width: 100%;
+  gap: .5rem;
 
   @include respond-to($bp-lg) {
     flex-direction: row;
+    gap: 1rem;
   }
 }
 
 .cases__slideImg {
   width: 100%;
-  height: 232px;
   overflow: hidden;
   flex-shrink: 0;
   background-color: $color-neutral-200;
+  border-radius: 16px;
 
   @include respond-to($bp-lg) {
     width: 50%;
-    height: 538px;
   }
 }
 
@@ -193,6 +194,7 @@
   justify-content: space-between;
   gap: $space-8;
   overflow: hidden;
+  border-radius: 16px;
 
   @include respond-to($bp-lg) {
     padding: $space-16;
@@ -279,7 +281,9 @@
   transition: opacity 150ms ease;
   align-self: flex-start;
 
-  &:hover { opacity: 0.85; }
+  &:hover {
+    opacity: 0.85;
+  }
 }
 
 // ── Navigation ────────────────────────────────────────────────────────────────
@@ -288,6 +292,11 @@
   display: flex;
   gap: $space-8;
   justify-content: center;
+  margin-top: $space-8;
+
+  @include respond-to($bp-lg) {
+    margin-top: $space-16;
+  }
 }
 
 .cases__navBtn {

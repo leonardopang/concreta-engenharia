@@ -1,0 +1,180 @@
+@use '../../../../styles/tokens' as *;
+
+.aplicacoes {
+  background-color: $color-white;
+  border-top: 1px solid $color-neutral-200;
+  padding: $space-20 $space-4;
+  overflow: hidden;
+
+  @include respond-to($bp-lg) {
+    padding: $space-20 $space-8;
+  }
+}
+
+.aplicacoes__inner {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  gap: $space-10;
+}
+
+// ── Corpo: foto + conteúdo ─────────────────────────────────────────────────
+
+.aplicacoes__body {
+  display: flex;
+  flex-direction: column;
+  gap: $space-8;
+
+  @include respond-to($bp-lg) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: $space-12 + $space-6;
+  }
+}
+
+.aplicacoes__photoWrap {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: $color-neutral-500;
+
+  @include respond-to($bp-lg) {
+    width: 672px;
+    flex-shrink: 0;
+    align-self: stretch;
+  }
+}
+
+.aplicacoes__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 360px;
+
+  @include respond-to($bp-lg) {
+    min-height: 734px;
+  }
+}
+
+.aplicacoes__content {
+  display: flex;
+  flex-direction: column;
+  gap: $space-8;
+
+  @include respond-to($bp-lg) {
+    flex: 1;
+  }
+}
+
+.aplicacoes__header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+}
+
+.aplicacoes__title {
+  font-size: clamp(1.75rem, 3vw, 40px);
+  font-weight: $font-weight-medium;
+  line-height: 1.3;
+  background: linear-gradient(224deg, #048837 9.45%, #293377 100.44%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aplicacoes__description {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-relaxed;
+  color: $color-text-muted;
+  margin: 0;
+}
+
+// ── Grid de cards ──────────────────────────────────────────────────────────
+
+.aplicacoes__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-4;
+}
+
+.aplicacoes__card {
+  background-color: $color-white;
+  border: 1px solid $color-neutral-200;
+  border-radius: 10px;
+  padding: $space-6 $space-6 $space-8;
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+  width: calc(50% - $space-2);
+  flex-shrink: 0;
+
+  @include respond-to($bp-lg) {
+    width: 260px;
+    min-height: 120px;
+  }
+}
+
+.aplicacoes__cardIcon {
+  flex-shrink: 0;
+  display: flex;
+}
+
+.aplicacoes__cardText {
+  font-size: $font-size-md;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-relaxed;
+  color: $color-neutral-800;
+  margin: 0;
+}
+
+// ── Banner inferior ────────────────────────────────────────────────────────
+
+.aplicacoes__banner {
+  background-color: $color-dark;
+  border-radius: 10px;
+  padding: $space-6 $space-8;
+  display: flex;
+  flex-direction: column;
+  gap: $space-5;
+  align-items: flex-start;
+
+  @include respond-to($bp-lg) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 120px;
+  }
+}
+
+.aplicacoes__bannerText {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-relaxed;
+  color: $color-white;
+  margin: 0;
+  max-width: 613px;
+}
+
+.aplicacoes__bannerBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: $space-4 $space-8;
+  background-color: $color-accent;
+  border: 1px solid $color-accent;
+  color: $color-neutral-800;
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-normal;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 16px 10px rgba(204, 204, 204, 0.05);
+  transition: opacity 150ms ease;
+
+  &:hover { opacity: 0.88; }
+}

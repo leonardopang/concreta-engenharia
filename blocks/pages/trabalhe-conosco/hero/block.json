@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "theme/trabalhe-hero",
+    "title": "Trabalhe Conosco — Hero",
+    "category": "theme",
+    "description": "Hero da página Trabalhe Conosco com fundo escuro e foto de equipe.",
+    "keywords": ["hero", "trabalhe conosco", "banner"],
+    "supports": { "html": false },
+    "acf": { "mode": "preview", "renderTemplate": "render.php" },
+    "editorScript": "file:../../../build/index.js",
+    "editorStyle": "file:../../../build/index.css",
+    "style": "file:../../../build/index.css"
+}

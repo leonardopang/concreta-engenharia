@@ -19,7 +19,7 @@ export default function FaleConosco({
         </div>
       )}
 
-      <div className={styles.fc__inner}>
+      <div className={styles.fc__inner} data-animate="fade-up">
         {eyebrow && <Eyebrow text={eyebrow} variant="white" />}
         {title && <h2 className={styles.fc__title}>{title}</h2>}
         {description && <p className={styles.fc__description}>{description}</p>}

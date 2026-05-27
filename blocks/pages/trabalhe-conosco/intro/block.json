@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "theme/trabalhe-intro",
+    "title": "Trabalhe Conosco — Intro",
+    "category": "theme",
+    "description": "Seção introdutória com título e descrição em duas colunas.",
+    "keywords": ["intro", "trabalhe conosco"],
+    "supports": { "html": false },
+    "acf": { "mode": "preview", "renderTemplate": "render.php" },
+    "editorScript": "file:../../../build/index.js",
+    "editorStyle": "file:../../../build/index.css",
+    "style": "file:../../../build/index.css"
+}

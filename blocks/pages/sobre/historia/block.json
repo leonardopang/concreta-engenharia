@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "theme/sobre-historia",
+  "title": "Sobre — Nossa História",
+  "category": "theme",
+  "description": "Seção de história da empresa com logos do grupo.",
+  "keywords": ["sobre", "história", "grupo"],
+  "supports": { "html": false },
+  "acf": { "mode": "preview", "renderTemplate": "render.php" },
+  "editorScript": "file:../../../build/index.js",
+  "editorStyle":  "file:../../../build/index.css",
+  "style":        "file:../../../build/index.css"
+}

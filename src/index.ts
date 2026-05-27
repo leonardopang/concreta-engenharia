@@ -1,8 +1,8 @@
 import { createRoot } from 'react-dom/client';
 import { createElement } from 'react';
 
-// Importação global de estilos
 import './styles/global.scss';
+import { initAnimations } from './animations';
 
 /**
  * Contrato de um bloco registrável.
@@ -34,6 +34,40 @@ const blockRegistry: Record<string, () => Promise<BlockModule>> = {
   'home-cases':             () => import(/* webpackChunkName: "blocks/home/Cases" */             './blocks/pages/home/Cases'),
   'home-trabalhe-conosco':  () => import(/* webpackChunkName: "blocks/home/TrabalheConosco" */  './blocks/pages/home/TrabalheConosco'),
   'home-fale-conosco':      () => import(/* webpackChunkName: "blocks/home/FaleConosco" */      './blocks/pages/home/FaleConosco'),
+  // Trabalhe Conosco page blocks
+  'trabalhe-hero':      () => import(/* webpackChunkName: "blocks/trabalhe-conosco/Hero" */      './blocks/pages/trabalhe-conosco/Hero'),
+  'trabalhe-intro':     () => import(/* webpackChunkName: "blocks/trabalhe-conosco/Intro" */     './blocks/pages/trabalhe-conosco/Intro'),
+  'trabalhe-carreira':  () => import(/* webpackChunkName: "blocks/trabalhe-conosco/Carreira" */  './blocks/pages/trabalhe-conosco/Carreira'),
+  'trabalhe-areas':     () => import(/* webpackChunkName: "blocks/trabalhe-conosco/Areas" */     './blocks/pages/trabalhe-conosco/Areas'),
+  'trabalhe-vagas':     () => import(/* webpackChunkName: "blocks/trabalhe-conosco/Vagas" */     './blocks/pages/trabalhe-conosco/Vagas'),
+  'trabalhe-curriculo': () => import(/* webpackChunkName: "blocks/trabalhe-conosco/Curriculo" */ './blocks/pages/trabalhe-conosco/Curriculo'),
+  // Cases page blocks
+  'cases-hero':  () => import(/* webpackChunkName: "blocks/cases/Hero" */  './blocks/pages/cases/Hero'),
+  'cases-lista': () => import(/* webpackChunkName: "blocks/cases/Lista" */ './blocks/pages/cases/Lista'),
+  // Soluções page blocks
+  'solucoes-hero':       () => import(/* webpackChunkName: "blocks/case/Hero" */       './blocks/pages/case/Hero'),
+  'solucoes-intro':      () => import(/* webpackChunkName: "blocks/case/Intro" */      './blocks/pages/case/Intro'),
+  'solucoes-servicos':   () => import(/* webpackChunkName: "blocks/case/Servicos" */   './blocks/pages/case/Servicos'),
+  'solucoes-capacidade': () => import(/* webpackChunkName: "blocks/case/Capacidade" */ './blocks/pages/case/Capacidade'),
+  'solucoes-aplicacoes': () => import(/* webpackChunkName: "blocks/case/Aplicacoes" */ './blocks/pages/case/Aplicacoes'),
+  // Contato page blocks
+  'contato-hero': () => import(/* webpackChunkName: "blocks/contato/Hero" */ './blocks/pages/contato/Hero'),
+  'contato-form': () => import(/* webpackChunkName: "blocks/contato/Form" */ './blocks/pages/contato/Form'),
+  'contato-cta':  () => import(/* webpackChunkName: "blocks/contato/Cta" */  './blocks/pages/contato/Cta'),
+  // Single Case blocks
+  'single-case-hero':       () => import(/* webpackChunkName: "blocks/single-case/Hero" */       './blocks/pages/single-case/Hero'),
+  'single-case-conteudo':   () => import(/* webpackChunkName: "blocks/single-case/Conteudo" */   './blocks/pages/single-case/Conteudo'),
+  'single-case-solucao':    () => import(/* webpackChunkName: "blocks/single-case/Solucao" */    './blocks/pages/single-case/Solucao'),
+  'single-case-resultados': () => import(/* webpackChunkName: "blocks/single-case/Resultados" */ './blocks/pages/single-case/Resultados'),
+  'single-case-galeria':    () => import(/* webpackChunkName: "blocks/single-case/Galeria" */    './blocks/pages/single-case/Galeria'),
+  // Sobre page blocks
+  'sobre-hero':         () => import(/* webpackChunkName: "blocks/sobre/Hero" */         './blocks/pages/sobre/Hero'),
+  'sobre-quem-somos':   () => import(/* webpackChunkName: "blocks/sobre/QuemSomos" */    './blocks/pages/sobre/QuemSomos'),
+  'sobre-historia':     () => import(/* webpackChunkName: "blocks/sobre/Historia" */     './blocks/pages/sobre/Historia'),
+  'sobre-capacidade':   () => import(/* webpackChunkName: "blocks/sobre/Capacidade" */   './blocks/pages/sobre/Capacidade'),
+  'sobre-atuacao':      () => import(/* webpackChunkName: "blocks/sobre/Atuacao" */      './blocks/pages/sobre/Atuacao'),
+  'sobre-compromisso':  () => import(/* webpackChunkName: "blocks/sobre/Compromisso" */  './blocks/pages/sobre/Compromisso'),
+  'sobre-fale-conosco': () => import(/* webpackChunkName: "blocks/sobre/FaleConosco" */  './blocks/pages/sobre/FaleConosco'),
 };
 
 // Rastreia elementos já montados para não montar duas vezes
@@ -106,12 +140,15 @@ const observer = new MutationObserver( ( mutations ) => {
   }
 } );
 
-if ( document.readyState === 'loading' ) {
-  document.addEventListener( 'DOMContentLoaded', () => {
-    mountBlocks();
-    observer.observe( document.body, { childList: true, subtree: true } );
-  } );
-} else {
-  mountBlocks();
+async function boot(): Promise<void> {
+  await mountBlocks();
   observer.observe( document.body, { childList: true, subtree: true } );
+  // Aguarda todas as imagens carregarem para o layout estabilizar antes do GSAP medir posições
+  window.addEventListener('load', initAnimations, { once: true });
+}
+
+if ( document.readyState === 'loading' ) {
+  document.addEventListener( 'DOMContentLoaded', boot );
+} else {
+  boot();
 }

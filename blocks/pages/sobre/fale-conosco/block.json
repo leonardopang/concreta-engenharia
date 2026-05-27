@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "theme/sobre-fale-conosco",
+  "title": "Sobre — Fale Conosco",
+  "category": "theme",
+  "description": "CTA final da página Sobre com dois botões.",
+  "keywords": ["sobre", "fale conosco", "cta", "contato"],
+  "supports": { "html": false },
+  "acf": { "mode": "preview", "renderTemplate": "render.php" },
+  "editorScript": "file:../../../build/index.js",
+  "editorStyle":  "file:../../../build/index.css",
+  "style":        "file:../../../build/index.css"
+}

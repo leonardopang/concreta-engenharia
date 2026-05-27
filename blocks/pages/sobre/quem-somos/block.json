@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "theme/sobre-quem-somos",
+  "title": "Sobre — Quem Somos",
+  "category": "theme",
+  "description": "Seção de apresentação da empresa com imagens e texto.",
+  "keywords": ["sobre", "quem somos", "empresa"],
+  "supports": { "html": false },
+  "acf": { "mode": "preview", "renderTemplate": "render.php" },
+  "editorScript": "file:../../../build/index.js",
+  "editorStyle":  "file:../../../build/index.css",
+  "style":        "file:../../../build/index.css"
+}

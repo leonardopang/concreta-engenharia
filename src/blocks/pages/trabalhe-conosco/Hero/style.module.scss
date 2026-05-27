@@ -1,0 +1,43 @@
+@use '../../../../styles/tokens' as *;
+
+.hero {
+  position: relative;
+  height: 540px;
+  overflow: hidden;
+  background-color: $color-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.hero__bgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(252deg, rgba(0, 0, 0, 0.49) 6%, rgba(0, 0, 0, 0.56) 93%);
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 104px;
+}
+
+.hero__title {
+  font-size: clamp(2rem, 5vw, $font-size-5xl);
+  font-weight: $font-weight-medium;
+  color: $color-white;
+  line-height: 1.1;
+}

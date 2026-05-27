@@ -1,0 +1,111 @@
+@use '../../../../styles/tokens' as *;
+
+.fc {
+  position: relative;
+  overflow: hidden;
+  background-color: $color-dark;
+  padding: $space-20 $space-4;
+
+  @include respond-to($bp-md) {
+    padding: $space-24 $space-8;
+  }
+}
+
+.fc__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.fc__bgImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.fc__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba($color-dark, 0.4);
+}
+
+.fc__inner {
+  @include container;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: $space-12;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.fc__header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+  align-items: center;
+}
+
+.fc__title {
+  font-size: clamp(1.5rem, 3vw, $font-size-4xl);
+  font-weight: $font-weight-medium;
+  line-height: $line-height-snug;
+  color: $color-white;
+}
+
+.fc__desc {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-relaxed;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.fc__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-4;
+  justify-content: center;
+}
+
+.fc__btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-4 $space-8;
+  background: $color-accent;
+  border-radius: 10px;
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-normal;
+  color: #000;
+  text-decoration: none;
+  transition: opacity 150ms ease;
+
+  &:hover { opacity: 0.85; }
+}
+
+.fc__btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-4 $space-8;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-normal;
+  color: $color-white;
+  text-decoration: none;
+  transition: border-color 150ms ease, background 150ms ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+}

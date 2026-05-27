@@ -1,0 +1,99 @@
+@use '../../../../styles/tokens' as *;
+
+.atuacao {
+  padding: $space-4;
+  background-color: $color-bg;
+
+  @include respond-to($bp-md) {
+    padding: $space-6 $space-8;
+  }
+}
+
+.atuacao__card {
+  position: relative;
+  background-color: $color-dark;
+  border-radius: 32px;
+  overflow: hidden;
+  min-height: 360px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+
+  @include respond-to($bp-lg) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    min-height: 469px;
+  }
+}
+
+.atuacao__content {
+  padding: $space-12 $space-8 $space-6;
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+
+  @include respond-to($bp-lg) {
+    padding: $space-12 $space-8 $space-8 $space-16;
+  }
+}
+
+.atuacao__title {
+  font-size: clamp(1.5rem, 2.5vw, $font-size-4xl);
+  font-weight: $font-weight-medium;
+  line-height: $line-height-snug;
+  color: $color-white;
+}
+
+.atuacao__text {
+  padding: $space-6 $space-8 $space-12;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-relaxed;
+  color: $color-white;
+
+  p + p { margin-top: $space-4; }
+
+  @include respond-to($bp-lg) {
+    padding: $space-12 $space-16 $space-8 $space-8;
+    grid-row: 1;
+    grid-column: 2;
+  }
+}
+
+.atuacao__faixa {
+  grid-column: 1 / -1;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: $space-8 0;
+}
+
+.atuacao__faixaTrack {
+  display: flex;
+  gap: $space-12;
+  align-items: center;
+  white-space: nowrap;
+  animation: tickerScroll 20s linear infinite;
+  width: max-content;
+}
+
+.atuacao__faixaItem {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-12;
+  font-size: $font-size-md;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-tight;
+  color: $color-white;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.atuacao__faixaSep {
+  color: $color-white;
+  opacity: 0.5;
+}
+
+@keyframes tickerScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}

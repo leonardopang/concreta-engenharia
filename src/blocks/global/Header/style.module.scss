@@ -1,10 +1,10 @@
 @use '../../../styles/tokens' as *;
 
-$header-h-mobile:    60px;
-$header-h-desktop:   80px;
-$header-max-width:   1672px;
-$header-top-mobile:  16px;
-$drawer-transition:  260ms ease;
+$header-h-mobile: 60px;
+$header-h-desktop: 80px;
+$header-max-width: 1672px;
+$header-top-mobile: 16px;
+$drawer-transition: 260ms ease;
 
 // ─── Wrapper ──────────────────────────────────────────────────────────────────
 
@@ -63,7 +63,9 @@ $drawer-transition:  260ms ease;
     height: 32px;
     width: auto;
 
-    @include respond-to($bp-xl) { height: 44px; }
+    @include respond-to($bp-xl) {
+      height: 44px;
+    }
   }
 
   span {
@@ -80,10 +82,15 @@ $drawer-transition:  260ms ease;
   align-items: center;
   gap: 2rem;
 
-  @include respond-to($bp-xl) { display: flex; }
+  @include respond-to($bp-xl) {
+    display: flex;
+  }
 }
 
-.header__nav { display: flex; align-items: center; }
+.header__nav {
+  display: flex;
+  align-items: center;
+}
 
 .header__nav-list {
   display: flex;
@@ -103,8 +110,12 @@ $drawer-transition:  260ms ease;
   text-decoration: none;
   border-radius: 4px;
   transition: color 150ms ease, background-color 150ms ease;
+  text-transform: uppercase;
 
-  &:hover { color: $color-text; background-color: $color-neutral-100; }
+  &:hover {
+    color: $color-text;
+    background-color: $color-neutral-100;
+  }
 }
 
 .header__nav-item--current .header__nav-link {
@@ -125,7 +136,9 @@ $drawer-transition:  260ms ease;
   white-space: nowrap;
   transition: opacity 150ms ease;
 
-  &:hover { opacity: 0.88; }
+  &:hover {
+    opacity: 0.88;
+  }
 }
 
 // ─── Hamburger ────────────────────────────────────────────────────────────────
@@ -143,7 +156,9 @@ $drawer-transition:  260ms ease;
   padding: 0;
   flex-shrink: 0;
 
-  @include respond-to($bp-xl) { display: none; }
+  @include respond-to($bp-xl) {
+    display: none;
+  }
 }
 
 .header__toggle-bar {
@@ -156,9 +171,18 @@ $drawer-transition:  260ms ease;
   transform-origin: center;
 }
 
-.header--open .header__toggle-bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.header--open .header__toggle-bar:nth-child(2) { opacity: 0; transform: scaleX(0); }
-.header--open .header__toggle-bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.header--open .header__toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.header--open .header__toggle-bar:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.header--open .header__toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
 
 // ─── Backdrop ─────────────────────────────────────────────────────────────────
 
@@ -170,7 +194,9 @@ $drawer-transition:  260ms ease;
   -webkit-backdrop-filter: blur(4px);
   z-index: 99;
 
-  @include respond-to($bp-xl) { display: none; }
+  @include respond-to($bp-xl) {
+    display: none;
+  }
 }
 
 // ─── Dropdown drawer ─────────────────────────────────────────────────────────
@@ -194,7 +220,9 @@ $drawer-transition:  260ms ease;
   transition: opacity $drawer-transition, transform $drawer-transition;
   z-index: 101;
 
-  @include respond-to($bp-xl) { display: none; }
+  @include respond-to($bp-xl) {
+    display: none;
+  }
 }
 
 .header__drawer--open {
@@ -224,7 +252,9 @@ $drawer-transition:  260ms ease;
   text-transform: uppercase;
   transition: color 150ms ease;
 
-  &:hover { color: $color-primary; }
+  &:hover {
+    color: $color-primary;
+  }
 }
 
 .header__drawer-link--current {
@@ -249,5 +279,7 @@ $drawer-transition:  260ms ease;
   border-radius: 100px;
   transition: opacity 150ms ease;
 
-  &:hover { opacity: 0.88; }
+  &:hover {
+    opacity: 0.88;
+  }
 }

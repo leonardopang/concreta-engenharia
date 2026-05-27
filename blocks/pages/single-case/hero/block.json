@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "theme/single-case-hero",
+  "title": "Single Case — Hero",
+  "category": "theme",
+  "description": "Hero do single de case com imagem de fundo e cards de informação.",
+  "keywords": ["case", "hero", "single"],
+  "supports": { "html": false },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "editorScript": "file:../../../build/index.js",
+  "editorStyle": "file:../../../build/index.css",
+  "style": "file:../../../build/index.css"
+}

@@ -44,6 +44,42 @@ export const IconCaretDoubleRight = () => (
   </svg>
 );
 
+export const IconCheck = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M20.25 6.75L9.75 17.25L4.5 12" stroke="#048837" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+export const IconChevronDown = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+export const IconChevronRight = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+export const IconAddressBook = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M15.75 6.75H18.75M15.75 9.75H18.75M15.75 12.75H18.75M4.5 19.5H19.5C20.3284 19.5 21 18.8284 21 18V6C21 5.17157 20.3284 4.5 19.5 4.5H4.5C3.67157 4.5 3 5.17157 3 6V18C3 18.8284 3.67157 19.5 4.5 19.5ZM9.75 12C10.9926 12 12 10.9926 12 9.75C12 8.50736 10.9926 7.5 9.75 7.5C8.50736 7.5 7.5 8.50736 7.5 9.75C7.5 10.9926 8.50736 12 9.75 12ZM6.75 16.5C6.75 14.8431 8.09315 13.5 9.75 13.5C11.4069 13.5 12.75 14.8431 12.75 16.5" stroke="#4d4d4d" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+export const IconWhatsapp = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+    <path d="M17.0711 2.92893C15.1957 1.05357 12.6902 0 10.0711 0C4.60214 0 0.142856 4.45929 0.142856 9.92857C0.142856 11.6786 0.607143 13.3929 1.46429 14.9107L0.0714285 20L5.28571 18.6429C6.74998 19.4286 8.39286 19.8571 10.0711 19.8571C15.5401 19.8571 20 15.3978 20 9.92857C20 7.30893 18.9465 4.80357 17.0711 2.92893ZM10.0711 18.1786C8.57143 18.1786 7.10714 17.7857 5.82143 17.0357L5.5 16.8571L2.39286 17.6786L3.21429 14.6429L3.01786 14.3214C2.19643 12.9929 1.78571 11.4643 1.78571 9.92857C1.78571 5.375 5.51786 1.64286 10.0711 1.64286C12.2857 1.64286 14.3571 2.5 15.8929 4.05357C17.4286 5.60714 18.3571 7.67857 18.3571 9.92857C18.3571 14.4821 14.6071 18.1786 10.0711 18.1786ZM14.5893 11.9643C14.3393 11.8393 13.1071 11.2321 12.875 11.1429C12.6429 11.0536 12.4821 11.0 12.3214 11.25C12.1607 11.5 11.6786 12.0714 11.5357 12.2321C11.3929 12.3929 11.25 12.4107 11 12.2857C9.5 11.5357 8.5 10.9464 7.49107 9.25C7.22321 8.80357 7.74107 8.83036 8.22321 7.85714C8.3125 7.69643 8.26786 7.55357 8.20536 7.42857C8.14286 7.30357 7.63393 6.07143 7.42321 5.57143C7.21786 5.08929 7.00714 5.15179 6.85714 5.14286C6.71429 5.13393 6.55357 5.13393 6.39286 5.13393C6.23214 5.13393 5.96429 5.19643 5.73214 5.44643C5.5 5.69643 4.84821 6.30357 4.84821 7.53571C4.84821 8.76786 5.75 9.95536 5.86607 10.1161C5.98214 10.2768 7.625 12.8036 10.1429 13.8929C11.7679 14.5893 12.4107 14.6518 13.2321 14.5268C13.7321 14.45 14.7679 13.9196 15 13.3304C15.2321 12.7411 15.2321 12.2411 15.1696 12.125C15.1071 12.0089 14.8393 11.9464 14.5893 11.9643Z" fill="currentColor" />
+  </svg>
+);
+
+export const IconBookmark = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M19.5 3H4.5C4.10218 3 3.72064 3.15804 3.43934 3.43934C3.15804 3.72064 3 4.10218 3 4.5V21L12 17.25L21 21V4.5C21 4.10218 20.842 3.72064 20.5607 3.43934C20.2794 3.15804 19.8978 3 19.5 3Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
 export const IconClock = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
     <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#F29506" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

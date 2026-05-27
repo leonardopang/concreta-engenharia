@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "theme/trabalhe-vagas",
+    "title": "Trabalhe Conosco — Vagas",
+    "category": "theme",
+    "description": "Lista de vagas com filtro por categoria.",
+    "keywords": ["vagas", "trabalhe conosco", "oportunidades"],
+    "supports": { "html": false },
+    "acf": { "mode": "preview", "renderTemplate": "render.php" },
+    "editorScript": "file:../../../build/index.js",
+    "editorStyle": "file:../../../build/index.css",
+    "style": "file:../../../build/index.css"
+}

@@ -25,7 +25,7 @@ export default function Cases({
       )}
 
       <div className={styles.cases__inner}>
-        <div className={styles.cases__header}>
+        <div className={styles.cases__header} data-animate="fade-up">
           <div className={styles.cases__headerText}>
             {eyebrow && <Eyebrow text={eyebrow} />}
 
@@ -44,6 +44,7 @@ export default function Cases({
 
         {hasItems(cases) && (
           <>
+            <div data-animate="fade-up" data-animate-delay="0.15">
             <Splide
               ref={splideRef}
               hasTrack={false}
@@ -127,6 +128,7 @@ export default function Cases({
                 {button!.label}
               </a>
             )}
+            </div>
           </>
         )}
       </div>

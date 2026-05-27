@@ -19,7 +19,7 @@ export default function Hero({
     >
       <div className={styles.hero__inner}>
 
-        <div className={styles.hero__content}>
+        <div className={styles.hero__content} data-animate="fade-right">
           <div className={styles.hero__text}>
             {title && <h1 className={styles.hero__title} {...htmlTitle(title)} />}
             {description && <p className={styles.hero__description}>{description}</p>}
@@ -37,7 +37,9 @@ export default function Hero({
           )}
         </div>
 
-        <SmartImage image={image} className={styles.hero__image} />
+        <div data-animate="fade-left" data-animate-delay="0.2">
+          <SmartImage image={image} className={styles.hero__image} />
+        </div>
 
       </div>
     </section>

@@ -1,0 +1,143 @@
+@use '../../../../styles/tokens' as *;
+
+.cap {
+  position: relative;
+  overflow: hidden;
+  background-color: $color-bg;
+  padding: $space-16 $space-4;
+
+  @include respond-to($bp-md) {
+    padding: $space-20 $space-8;
+  }
+}
+
+.cap__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.cap__bgImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cap__inner {
+  @include container;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: $space-12;
+  align-items: center;
+}
+
+.cap__header {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+  align-items: center;
+  text-align: center;
+  max-width: 714px;
+}
+
+.cap__title {
+  font-size: clamp(1.5rem, 3vw, $font-size-4xl);
+  font-weight: $font-weight-medium;
+  line-height: $line-height-snug;
+  background: linear-gradient(200deg, $color-primary 9%, $color-brand-300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cap__desc {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-relaxed;
+  color: $color-text-muted;
+}
+
+.cap__body {
+  display: flex;
+  flex-direction: column;
+  gap: $space-10;
+  align-items: center;
+  width: 100%;
+
+  @include respond-to($bp-lg) {
+    flex-direction: row;
+    gap: $space-16;
+    align-items: center;
+  }
+}
+
+.cap__imgWrap {
+  flex-shrink: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  height: 320px;
+
+  @include respond-to($bp-md) {
+    height: 420px;
+  }
+
+  @include respond-to($bp-lg) {
+    width: 580px;
+    height: 560px;
+  }
+}
+
+.cap__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cap__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $space-5;
+  flex: 1;
+  width: 100%;
+}
+
+.cap__item {
+  display: flex;
+  gap: $space-4;
+  align-items: center;
+  background: $color-white;
+  border-radius: 10px;
+  padding: $space-4;
+}
+
+.cap__iconBox {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: $color-brand-300;
+  border-radius: 6px;
+}
+
+.cap__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.cap__itemTitle {
+  flex: 1;
+  font-size: $font-size-md;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-normal;
+  color: $color-text;
+}

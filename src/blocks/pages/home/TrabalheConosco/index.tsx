@@ -22,7 +22,7 @@ export default function TrabalheConosco({
       )}
 
       <div className={styles.tc__inner}>
-        <div className={styles.tc__content}>
+        <div className={styles.tc__content} data-animate="fade-right">
           {eyebrow && <Eyebrow text={eyebrow} />}
           {title && <h2 className={styles.tc__title}>{title}</h2>}
           {description && (
@@ -35,7 +35,7 @@ export default function TrabalheConosco({
           )}
         </div>
 
-        <div className={styles.tc__imageWrap}>
+        <div className={styles.tc__imageWrap} data-animate="fade-left" data-animate-delay="0.15">
           {imgProps(imagem) && (
             <img {...imgProps(imagem)!} className={styles.tc__image} />
           )}

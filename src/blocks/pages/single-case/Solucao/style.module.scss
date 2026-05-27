@@ -1,0 +1,84 @@
+@use '../../../../styles/tokens' as *;
+
+.solucao {
+  background-color: $color-neutral-100;
+  border-top: 1px solid $color-neutral-200;
+  padding: $space-16 $space-4;
+  overflow: hidden;
+
+  @include respond-to($bp-lg) {
+    padding: $space-20 $space-8;
+  }
+}
+
+.solucao__inner {
+  @include container;
+}
+
+.solucao__box {
+  background-color: $color-dark;
+  border-radius: 32px;
+  padding: $space-10 $space-6;
+  display: flex;
+  flex-direction: column;
+  gap: $space-8;
+
+  @include respond-to($bp-lg) {
+    padding: $space-20 $space-16;
+    gap: $space-12;
+  }
+}
+
+.solucao__title {
+  font-size: clamp(1.75rem, 3vw, 40px);
+  font-weight: $font-weight-medium;
+  line-height: 1.3;
+  color: $color-white;
+  margin: 0;
+  text-align: center;
+}
+
+.solucao__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-4;
+  justify-content: center;
+}
+
+.solucao__card {
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: $space-6;
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+  width: calc(50% - $space-2);
+  flex-shrink: 0;
+
+  @include respond-to($bp-md) {
+    width: calc(33.333% - $space-3);
+  }
+
+  @include respond-to($bp-lg) {
+    width: 260px;
+    min-height: 120px;
+  }
+}
+
+.solucao__cardIcon {
+  flex-shrink: 0;
+  display: flex;
+  color: $color-accent;
+}
+
+.solucao__cardText {
+  font-size: $font-size-md;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-relaxed;
+  color: $color-white;
+  margin: 0;
+}
