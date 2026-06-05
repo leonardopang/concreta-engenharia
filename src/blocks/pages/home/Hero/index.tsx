@@ -38,7 +38,7 @@ export default function Hero({
         </div>
 
         <div data-animate="fade-left" data-animate-delay="0.2">
-          <SmartImage image={image} className={styles.hero__image} />
+          <SmartImage image={image} className={styles.hero__image} loading="eager" fetchpriority="high" />
         </div>
 
       </div>

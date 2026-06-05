@@ -1,6 +1,34 @@
 <?php
 defined('ABSPATH') || exit;
 
+// ─── Preconnect para Google Fonts ─────────────────────────────────────────────
+add_filter('wp_resource_hints', function (array $hints, string $relation_type): array {
+    if ($relation_type === 'preconnect') {
+        $hints[] = ['href' => 'https://fonts.googleapis.com'];
+        $hints[] = ['href' => 'https://fonts.gstatic.com', 'crossorigin' => 'anonymous'];
+    }
+    return $hints;
+}, 10, 2);
+
+// ─── Plus Jakarta Sans — non-blocking (preload + onload trick) ────────────────
+add_action('wp_head', function (): void {
+    $font_url = 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap';
+    ?>
+<link rel="preload" href="<?php echo esc_url($font_url); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="<?php echo esc_url($font_url); ?>"></noscript>
+    <?php
+}, 2);
+
+// ─── Preload da imagem de fundo do hero (somente front page — LCP) ────────────
+add_action('wp_head', function (): void {
+    if (! is_front_page()) return;
+    $hero = get_field('hero') ?: [];
+    $bg   = $hero['background'] ?? null;
+    if (! empty($bg['url'])) {
+        echo '<link rel="preload" as="image" href="' . esc_url($bg['url']) . '">' . "\n";
+    }
+}, 3);
+
 /**
  * Enfileira os assets gerados pelo @wordpress/scripts na pasta /build.
  *
@@ -8,13 +36,6 @@ defined('ABSPATH') || exit;
  * o hash de versão e as dependências exatas do bundle (ex: wp-element).
  */
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style(
-        'theme-fonts',
-        'https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap',
-        [],
-        null
-    );
-
     $asset_file = THEME_DIR . '/build/index.asset.php';
 
     if (! file_exists($asset_file)) {

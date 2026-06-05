@@ -8,7 +8,7 @@ export default function SolucoesHero({ title, subtitle, bgImage, description, bu
     <section className={styles.hero}>
       {bgImage && (
         <div className={styles.hero__bg} aria-hidden="true">
-          <SmartImage image={bgImage} className={styles.hero__bgImg} loading="eager" alt="" />
+          <SmartImage image={bgImage} className={styles.hero__bgImg} loading="eager" fetchpriority="high" alt="" />
         </div>
       )}
       <div className={styles.hero__inner}>

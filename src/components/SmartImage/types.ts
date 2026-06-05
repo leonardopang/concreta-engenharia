@@ -11,4 +11,5 @@ export interface SmartImageProps {
   height?: number;
   loading?: 'lazy' | 'eager';
   decoding?: 'async' | 'sync' | 'auto';
+  fetchpriority?: 'high' | 'low' | 'auto';
 }

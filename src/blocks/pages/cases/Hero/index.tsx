@@ -7,7 +7,7 @@ export default function CasesHero({ title, subtitle, bgImage }: CasesHeroProps) 
     <section className={styles.hero}>
       {bgImage && imgProps(bgImage) && (
         <div className={styles.hero__bg} aria-hidden="true">
-          <img {...imgProps(bgImage)!} className={styles.hero__bgImg} loading="eager" />
+          <img {...imgProps(bgImage)!} className={styles.hero__bgImg} loading="eager" fetchpriority="high" />
         </div>
       )}
       <div className={styles.hero__overlay} aria-hidden="true" />

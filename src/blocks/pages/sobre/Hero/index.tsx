@@ -7,7 +7,7 @@ export default function HeroSobre({ background, title }: HeroSobreProps) {
     <section className={styles.hero}>
       {background?.url && (
         <div className={styles.hero__bg} aria-hidden="true">
-          <SmartImage image={background} alt="" loading="eager" className={styles.hero__bgImg} />
+          <SmartImage image={background} alt="" loading="eager" fetchpriority="high" className={styles.hero__bgImg} />
           <div className={styles.hero__overlay} />
         </div>
       )}

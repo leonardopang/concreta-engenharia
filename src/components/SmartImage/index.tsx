@@ -18,6 +18,7 @@ export default function SmartImage({
   height,
   loading = 'lazy',
   decoding = 'async',
+  fetchpriority,
 }: SmartImageProps) {
   if (!image?.url) return null;
 
@@ -41,9 +42,10 @@ export default function SmartImage({
   }
 
   const props = imgProps(image, {
-    ...(alt     !== undefined && { alt }),
-    ...(width   !== undefined && { width }),
-    ...(height  !== undefined && { height }),
+    ...(alt           !== undefined && { alt }),
+    ...(width         !== undefined && { width }),
+    ...(height        !== undefined && { height }),
+    ...(fetchpriority !== undefined && { fetchpriority }),
     loading,
     decoding,
   });
