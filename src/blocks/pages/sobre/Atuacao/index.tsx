@@ -1,6 +1,7 @@
 import styles from './style.module.scss';
 import { AtuacaoProps } from './types';
 import Eyebrow from '../../../../components/Eyebrow';
+import { IconCaretDoubleRight } from '../../../../icons';
 import { hasItems, htmlContent } from '../../../../utils';
 
 export default function Atuacao({ eyebrow, title, text, faixa = [] }: AtuacaoProps) {
@@ -24,7 +25,7 @@ export default function Atuacao({ eyebrow, title, text, faixa = [] }: AtuacaoPro
               {[...ticker, ...ticker].map((f, i) => (
                 <span key={i} className={styles.atuacao__faixaItem}>
                   {f.item}
-                  <span className={styles.atuacao__faixaSep} aria-hidden="true">››</span>
+                  <IconCaretDoubleRight />
                 </span>
               ))}
             </div>

@@ -1,0 +1,148 @@
+@use '../../../../styles/tokens' as *;
+
+.capacidade {
+  background-color: $color-white;
+  border-top: 1px solid $color-neutral-200;
+  padding: $space-20 $space-4;
+  overflow: hidden;
+
+  @include respond-to($bp-lg) {
+    padding: $space-20 $space-8;
+  }
+}
+
+.capacidade__inner {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  gap: $space-12;
+
+  @include respond-to($bp-lg) {
+    position: relative;
+    height: 520px;
+    gap: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// ── Linha superior: texto esquerda + imagem direita ─────────────────────────
+
+.capacidade__top {
+  display: flex;
+  flex-direction: column;
+  gap: $space-10;
+
+  @include respond-to($bp-lg) {
+    flex: 1 0 0;
+    min-height: 0;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: $space-16;
+  }
+}
+
+.capacidade__content {
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+
+  @include respond-to($bp-lg) {
+    flex: 0 0 488px;
+    padding-top: $space-6;
+  }
+}
+
+.capacidade__title {
+  font-size: clamp(1.75rem, 3vw, 40px);
+  font-weight: $font-weight-medium;
+  line-height: $line-height-snug;
+  margin: 0;
+  background: linear-gradient(226deg, $color-brand-200 9%, $color-brand-300 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.capacidade__description {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-normal;
+  color: $color-neutral-600;
+
+  p { margin: 0 0 $space-4; &:last-child { margin-bottom: 0; } }
+}
+
+.capacidade__imageWrap {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  flex: 1;
+  min-height: 340px;
+
+  @include respond-to($bp-lg) {
+    flex: 0 0 672px;
+    height: 100%;
+    min-height: 0;
+  }
+}
+
+.capacidade__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.capacidade__imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(6, 13, 60, 0.5) 0%, transparent 60%);
+}
+
+// ── Cards de itens: absolutos sobrepondo o rodapé da seção ─────────────────
+
+.capacidade__cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-3;
+
+  @include respond-to($bp-lg) {
+    position: absolute;
+    top: 296px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    gap: $space-4;
+  }
+}
+
+.capacidade__card {
+  background-color: $color-white;
+  border: 1px solid $color-neutral-200;
+  border-radius: 10px;
+  padding: $space-6 $space-6 $space-8;
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+  font-size: $font-size-md;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-normal;
+  color: $color-text;
+
+  @include respond-to($bp-lg) {
+    flex: 1;
+    border: none;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    color: $color-primary;
+    flex-shrink: 0;
+  }
+}

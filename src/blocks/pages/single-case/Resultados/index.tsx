@@ -21,7 +21,7 @@ export default function SingleCaseResultados({ title, description, fichaTitle, f
               {fichaItems!.map((item, i) => (
                 <li key={i} className={styles.resultados__fichaItem}>
                   <span className={styles.resultados__fichaLabel}>{item.label}</span>
-                  <span className={styles.resultados__fichaValue}>{item.value}</span>
+                  <span className={styles.resultados__fichaValue} dangerouslySetInnerHTML={{ __html: item.value }} />
                 </li>
               ))}
             </ul>

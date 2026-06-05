@@ -1,0 +1,156 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - link "Concreta Engenharia" [ref=e4] [cursor=pointer]:
+      - /url: http://concreta-engenharia.local/
+      - img "Concreta Engenharia" [ref=e5]
+    - generic [ref=e6]:
+      - navigation "Menu principal" [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/
+          - listitem [ref=e11]:
+            - link "Sobre nós" [ref=e12] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/sobre-nos/
+          - listitem [ref=e13]:
+            - link "Soluções" [ref=e14] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/solucoes/
+          - listitem [ref=e15]:
+            - link "Cases" [ref=e16] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/cases/
+          - listitem [ref=e17]:
+            - link "Trabalhe conosco" [ref=e18] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/trabalhe-conosco/
+          - listitem [ref=e19]:
+            - link "Contato" [ref=e20] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/contato/
+      - link "Solicitar orçamento" [ref=e21] [cursor=pointer]:
+        - /url: https://wa.me/5511998553482
+  - generic [ref=e22]:
+    - generic [ref=e27]:
+      - heading "Projetos e obras executadas" [level=1] [ref=e28]
+      - paragraph [ref=e29]: Conheça alguns dos projetos executados pela Concreta Engenharia em obras de infraestrutura, pavimentação e construção civil. Cada projeto demonstra nossa capacidade técnica, estrutura operacional e compromisso com qualidade.
+    - list [ref=e33]:
+      - listitem [ref=e34]:
+        - article [ref=e35]:
+          - generic [ref=e37]:
+            - generic [ref=e38]:
+              - generic [ref=e39]:
+                - heading "Pavimentação Asfáltica" [level=2] [ref=e40]
+                - paragraph [ref=e41]: A Concreta Engenharia participou da execução de serviços de recapeamento asfáltico no Aero
+              - list [ref=e42]:
+                - listitem [ref=e43]:
+                  - img [ref=e44]
+                  - generic [ref=e48]: Marabá – PA
+                - listitem [ref=e49]:
+                  - img [ref=e50]
+                  - generic [ref=e53]: Recapeamento Asfáltico
+            - link "Ver projeto" [ref=e54] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/case/pavimentacao-asfaltica-3/
+      - listitem [ref=e55]:
+        - article [ref=e56]:
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - heading "Pavimentação Asfáltica" [level=2] [ref=e61]
+              - list [ref=e62]:
+                - listitem [ref=e63]:
+                  - img [ref=e64]
+                  - generic [ref=e68]: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                - listitem [ref=e69]:
+                  - img [ref=e70]
+                  - generic [ref=e73]: Lorem ipsum dolor sit amet, consectetur adipiscing eli
+            - link "Ver projeto" [ref=e74] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/case/pavimentacao-asfaltica-2/
+      - listitem [ref=e75]:
+        - article [ref=e76]:
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - heading "Pavimentação Asfáltica" [level=2] [ref=e81]
+              - list [ref=e82]:
+                - listitem [ref=e83]:
+                  - img [ref=e84]
+                  - generic [ref=e88]: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                - listitem [ref=e89]:
+                  - img [ref=e90]
+                  - generic [ref=e93]: Lorem ipsum dolor sit amet, consectetur adipiscing eli
+            - link "Ver projeto" [ref=e94] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/case/pavimentacao-asfaltica/
+    - generic [ref=e97]:
+      - generic [ref=e98]:
+        - generic [ref=e100]: Fale conosco
+        - heading "Precisa de uma empresa com experiência em obras de infraestrutura?" [level=2] [ref=e101]
+        - paragraph [ref=e102]: Conte com a experiência da Concreta Engenharia para executar seu projeto com eficiência, segurança e qualidade.
+      - generic [ref=e103]:
+        - link "Solicitar orçamento" [ref=e104] [cursor=pointer]:
+          - /url: "#"
+        - link "Fala com nossa equipe" [ref=e105] [cursor=pointer]:
+          - /url: "#"
+  - contentinfo [ref=e107]:
+    - generic [ref=e108]:
+      - generic [ref=e109]:
+        - link "Concreta Engenharia" [ref=e110] [cursor=pointer]:
+          - /url: /
+          - img "Concreta Engenharia" [ref=e111]
+        - generic [ref=e112]:
+          - generic [ref=e113]: Siga-nos
+          - generic [ref=e114]:
+            - link "facebook" [ref=e115] [cursor=pointer]:
+              - /url: https://teste.com
+              - img [ref=e116]
+            - link "instagram" [ref=e118] [cursor=pointer]:
+              - /url: https://teste.com
+              - img [ref=e119]
+      - generic [ref=e121]:
+        - paragraph [ref=e122]: Institucional
+        - list [ref=e123]:
+          - listitem [ref=e124]:
+            - link "Home" [ref=e125] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/
+          - listitem [ref=e126]:
+            - link "Sobre nós" [ref=e127] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/sobre-nos/
+          - listitem [ref=e128]:
+            - link "Cases" [ref=e129] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/cases/
+          - listitem [ref=e130]:
+            - link "Trabalhe conosco" [ref=e131] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/trabalhe-conosco/
+          - listitem [ref=e132]:
+            - link "Contato" [ref=e133] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/contato/
+      - generic [ref=e134]:
+        - paragraph [ref=e135]: Soluções
+        - list [ref=e136]:
+          - listitem [ref=e137]:
+            - link "Pavimentação e Concreto" [ref=e138] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e139]:
+            - link "Concreta Transportes" [ref=e140] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e141]:
+            - link "Concreta Rental" [ref=e142] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e143]:
+        - paragraph [ref=e144]: Fale conosco
+        - list [ref=e145]:
+          - listitem [ref=e146]:
+            - img [ref=e147]
+            - generic [ref=e149]: +55 00 1234 5678
+          - listitem [ref=e150]:
+            - img [ref=e151]
+            - link "contato@concreta.eng.br" [ref=e154] [cursor=pointer]:
+              - /url: mailto:contato@concreta.eng.br
+          - listitem [ref=e155]:
+            - img [ref=e156]
+            - generic [ref=e160]: Endereço
+          - listitem [ref=e161]:
+            - img [ref=e162]
+            - generic [ref=e165]: Segunda a Sexta (Horário comercial)
+    - generic [ref=e166]:
+      - generic [ref=e167]: ©2026 Concreta Engenharia
+      - link "Política de privacidade" [ref=e168] [cursor=pointer]:
+        - /url: http://concreta-engenharia.local/politica-de-privacidade/
+      - generic [ref=e169]:
+        - text: Criação de Site por
+        - link "UpSItes" [ref=e170] [cursor=pointer]:
+          - /url: https://upsites.digital/?origin=concreta-engenharia

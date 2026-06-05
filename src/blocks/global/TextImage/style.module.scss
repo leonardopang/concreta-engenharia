@@ -40,6 +40,12 @@
     align-items: center;
     gap: $space-16;
   }
+
+  &--reversed {
+    @include respond-to($bp-lg) {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
 // ── Media col ────────────────────────────────────────────────────────────────

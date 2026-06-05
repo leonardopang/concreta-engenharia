@@ -1,1 +1,103 @@
-.n3oxMD75ksOm00a_OuVQ{background-color:#f5f5f5;padding:1rem}@media(min-width:768px){.n3oxMD75ksOm00a_OuVQ{padding:1.5rem 2rem}}.kz0N0cX9zoUau5ksvNhV{background-color:#060d3c;border-radius:32px;display:grid;grid-template-columns:1fr;grid-template-rows:auto auto auto;min-height:360px;overflow:hidden;position:relative}@media(min-width:1024px){.kz0N0cX9zoUau5ksvNhV{grid-template-columns:1fr 1fr;grid-template-rows:1fr auto;min-height:469px}}.Cd_U1l7DSYrR1v3ym2Fv{display:flex;flex-direction:column;gap:.75rem;padding:3rem 2rem 1.5rem}@media(min-width:1024px){.Cd_U1l7DSYrR1v3ym2Fv{padding:3rem 4rem 2rem 2rem}}.rARGCMf36p6kF9Tl0vUS{color:#fff;font-size:clamp(1.5rem,2.5vw,2.25rem);font-weight:500;line-height:1.4}.D7wPNcGxhcC2NqrgN49s{color:#fff;font-size:1.125rem;font-weight:400;line-height:1.6;padding:1.5rem 2rem 3rem}.D7wPNcGxhcC2NqrgN49s p+p{margin-top:1rem}@media(min-width:1024px){.D7wPNcGxhcC2NqrgN49s{grid-column:2;grid-row:1;padding:3rem 2rem 2rem 4rem}}.mwI4jQNKrnInGHc7rt9n{border-top:1px solid hsla(0,0%,100%,.08);grid-column:1/-1;overflow:hidden;padding:2rem 0}.ssOwyxXl02DjopVPWQ1m{align-items:center;animation:EAZue31IQQEBd99ZmSi1 20s linear infinite;display:flex;gap:3rem;white-space:nowrap;width:-moz-max-content;width:max-content}.zKp2ENefUJJKzKMihOnM{align-items:center;color:#fff;display:inline-flex;font-size:1rem;font-weight:500;gap:3rem;letter-spacing:.1em;line-height:1.2;text-transform:uppercase}.gpQFvOv8Ccg5gPqEi5DZ{color:#fff;opacity:.5}@keyframes EAZue31IQQEBd99ZmSi1{0%{transform:translateX(0)}to{transform:translateX(50%)}}
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/pages/sobre/Atuacao/style.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.n3oxMD75ksOm00a_OuVQ {
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+@media (min-width: 768px) {
+  .n3oxMD75ksOm00a_OuVQ {
+    padding: 1.5rem 2rem;
+  }
+}
+.kz0N0cX9zoUau5ksvNhV {
+  position: relative;
+  background-color: #060d3c;
+  border-radius: 32px;
+  overflow: hidden;
+  min-height: 360px;
+  max-width: 1672px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+}
+@media (min-width: 1024px) {
+  .kz0N0cX9zoUau5ksvNhV {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    min-height: 469px;
+  }
+}
+.Cd_U1l7DSYrR1v3ym2Fv {
+  padding: 3rem 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+@media (min-width: 1024px) {
+  .Cd_U1l7DSYrR1v3ym2Fv {
+    padding: 6rem 6rem 3rem 2rem;
+  }
+}
+.rARGCMf36p6kF9Tl0vUS {
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.4;
+  color: #ffffff;
+}
+.D7wPNcGxhcC2NqrgN49s {
+  padding: 1.5rem 2rem 3rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ffffff;
+}
+.D7wPNcGxhcC2NqrgN49s p + p {
+  margin-top: 1rem;
+}
+@media (min-width: 1024px) {
+  .D7wPNcGxhcC2NqrgN49s {
+    padding: 6rem 2rem 3rem 6rem;
+    grid-row: 1;
+    grid-column: 2;
+  }
+}
+.mwI4jQNKrnInGHc7rt9n {
+  grid-column: 1/-1;
+  overflow: hidden;
+  background: linear-gradient(-90deg, rgba(255, 249, 240, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+  padding: 2rem 0;
+}
+.ssOwyxXl02DjopVPWQ1m {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  white-space: nowrap;
+  animation: EAZue31IQQEBd99ZmSi1 20s linear infinite;
+  width: -moz-max-content;
+  width: max-content;
+}
+.zKp2ENefUJJKzKMihOnM {
+  display: inline-flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.gpQFvOv8Ccg5gPqEi5DZ {
+  color: #ffffff;
+  opacity: 0.5;
+}
+@keyframes EAZue31IQQEBd99ZmSi1 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}

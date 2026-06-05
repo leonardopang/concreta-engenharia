@@ -1,0 +1,140 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/pages/solucoes/Hero/style.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.quusrOTnWIn1jY5tcyB9 {
+  position: relative;
+  background-color: #060d3c;
+  overflow: hidden;
+  padding: 5rem 1rem;
+}
+@media (min-width: 1024px) {
+  .quusrOTnWIn1jY5tcyB9 {
+    padding: 6rem 2rem;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+  }
+}
+.wQGdpALbpmDeVSsQKT1G {
+  position: absolute;
+  inset: 0;
+}
+.N7I2N7hAWITCXKHfX1dC {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  opacity: 0.3;
+}
+.NpjwYYCqBVg3tmOawZ5r {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+@media (min-width: 1024px) {
+  .NpjwYYCqBVg3tmOawZ5r {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+}
+.HeCsYzXGAwrpjuD42ugZ {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 1024px) {
+  .HeCsYzXGAwrpjuD42ugZ {
+    width: 517px;
+    flex-shrink: 0;
+  }
+}
+.znejahUKh6SvTyhGdWQY {
+  font-size: clamp(2rem, 4vw, 56px);
+  font-weight: 500;
+  line-height: 1.1;
+  color: #ffffff;
+}
+.Iub3gMzGOUl03MbPZIHk {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+.lYCYLvnWq7LV1J36FXCQ {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+@media (min-width: 1024px) {
+  .lYCYLvnWq7LV1J36FXCQ {
+    width: 636px;
+    flex-shrink: 0;
+    padding-top: 0.5rem;
+  }
+}
+.jbB0lQTny2Q0G96Tg11j {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ffffff;
+}
+.jbB0lQTny2Q0G96Tg11j p {
+  margin: 0;
+}
+.jbB0lQTny2Q0G96Tg11j p + p {
+  margin-top: 1rem;
+}
+.aVNJtYhPQX8kmSa6HrOw {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.ZxARo92AAxKjhugTQIPw {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: #f29506;
+  border: 1px solid #f29506;
+  color: #1a1a1a;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: opacity 150ms ease;
+}
+.ZxARo92AAxKjhugTQIPw:hover {
+  opacity: 0.88;
+}
+.wvkSOpCvEFier9UMvpMt {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: border-color 150ms ease;
+}
+.wvkSOpCvEFier9UMvpMt:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/*# sourceMappingURL=style-Hero.css.map*/

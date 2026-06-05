@@ -6,4 +6,5 @@ export interface TextImageProps {
   title?: string;
   text?: string;
   button?: AcfLink | null;
+  reversed?: boolean;
 }

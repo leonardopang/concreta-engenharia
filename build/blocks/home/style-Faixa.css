@@ -1,1 +1,50 @@
-.KWOO4UlFx9XN8zAfxVYQ{background-color:#fff;border-bottom:1px solid #ccc;border-top:1px solid #ccc;overflow:hidden;width:100%}.ywMlji2_WU5DgxF1wDDr{align-items:center;display:flex;gap:1.5rem;padding:1rem 0;white-space:nowrap}@media(min-width:1024px){.ywMlji2_WU5DgxF1wDDr{padding:1.5rem 0}}.S9cJBVlDMdXYWlxthtmE{color:#4d4d4d;font-family:Plus Jakarta Sans,sans-serif;font-size:12px;font-weight:500;letter-spacing:1.2px;line-height:1.2;text-transform:uppercase;white-space:nowrap}@media(min-width:1024px){.S9cJBVlDMdXYWlxthtmE{font-size:1rem;letter-spacing:1.6px}}.roXzujzCiqTTgZDaS6ja{align-items:center;display:flex;flex-shrink:0}
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/pages/home/Faixa/style.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+.KWOO4UlFx9XN8zAfxVYQ {
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  overflow: hidden;
+}
+
+.ywMlji2_WU5DgxF1wDDr {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  .ywMlji2_WU5DgxF1wDDr {
+    padding: 1.5rem 0;
+  }
+}
+
+.S9cJBVlDMdXYWlxthtmE {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  .S9cJBVlDMdXYWlxthtmE {
+    font-size: 1rem;
+    letter-spacing: 1.6px;
+  }
+}
+
+.roXzujzCiqTTgZDaS6ja {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/*# sourceMappingURL=style-Faixa.css.map*/

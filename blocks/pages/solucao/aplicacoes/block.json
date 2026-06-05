@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "theme/solucao-aplicacoes",
+  "title": "Solução Aplicações",
+  "category": "theme",
+  "description": "Seção de aplicações e áreas de atuação.",
+  "keywords": ["aplicacoes", "atuacao", "solucao"],
+  "supports": { "html": false },
+  "acf": { "mode": "preview", "renderTemplate": "render.php" },
+  "editorScript": "file:../../../build/index.js",
+  "editorStyle":  "file:../../../build/index.css",
+  "style":        "file:../../../build/index.css"
+}

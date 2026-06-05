@@ -95,6 +95,7 @@
 
 .carreira__btn {
   display: inline-flex;
+  width: max-content;
   align-items: center;
   gap: $space-2;
   background-color: $color-accent;

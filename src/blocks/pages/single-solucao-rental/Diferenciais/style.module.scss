@@ -1,0 +1,173 @@
+@use '../../../../styles/tokens' as *;
+
+.diferenciais {
+  background-color: $color-neutral-100;
+  padding: $space-16 $space-4;
+  overflow: hidden;
+
+  @include respond-to($bp-lg) {
+    padding: $space-20 $space-8;
+  }
+}
+
+.diferenciais__inner {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  gap: $space-16;
+}
+
+.diferenciais__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.diferenciais__title {
+  font-size: clamp(1.75rem, 3vw, 40px);
+  font-weight: $font-weight-medium;
+  line-height: 1.3;
+  margin: 0;
+  background: linear-gradient(216deg, $color-brand-200 9%, $color-brand-300 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.diferenciais__description {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-relaxed;
+  color: $color-neutral-600;
+  margin: 0;
+  text-align: center;
+}
+
+.diferenciais__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-4;
+
+  @include respond-to($bp-lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// ── Card escuro (bg image + gradiente) ─────────────────────────────────────
+
+.diferenciais__cardDark {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: $color-neutral-600;
+}
+
+.diferenciais__cardBg {
+  position: absolute;
+  inset: 0;
+}
+
+.diferenciais__cardBgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.diferenciais__cardOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+.diferenciais__cardContent {
+  position: relative;
+  z-index: 1;
+  padding: $space-12 $space-12;
+  display: flex;
+  flex-direction: column;
+  gap: $space-10;
+}
+
+.diferenciais__cardQuote {
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-snug;
+  color: $color-white;
+  margin: 0;
+}
+
+.diferenciais__cardBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-4 $space-8;
+  background-color: $color-accent;
+  color: $color-neutral-800;
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  text-decoration: none;
+  border-radius: 10px;
+  align-self: flex-start;
+  transition: opacity 150ms ease;
+
+  &:hover { opacity: 0.88; }
+}
+
+// ── Card claro (título + checklist) ────────────────────────────────────────
+
+.diferenciais__cardLight {
+  background-color: $color-white;
+  border-radius: 16px;
+  padding: $space-8 $space-8;
+  display: flex;
+  flex-direction: column;
+  gap: $space-12;
+
+  @include respond-to($bp-lg) {
+    padding: $space-12 $space-8;
+  }
+}
+
+.diferenciais__cardTitle {
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-semibold;
+  line-height: 1.3;
+  color: $color-neutral-800;
+  margin: 0;
+}
+
+.diferenciais__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.diferenciais__listItem {
+  display: flex;
+  align-items: center;
+  gap: $space-4;
+  padding: $space-4;
+  background-color: $color-neutral-100;
+  border-radius: 10px;
+  font-size: $font-size-md;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-normal;
+  color: $color-neutral-800;
+
+  svg {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: $color-primary;
+  }
+}

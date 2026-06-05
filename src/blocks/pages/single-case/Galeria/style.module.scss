@@ -2,17 +2,10 @@
 
 .galeria {
   background-color: $color-white;
-  border-top: 1px solid $color-neutral-200;
-  padding: $space-16 $space-4;
-  overflow: hidden;
-
-  @include respond-to($bp-lg) {
-    padding: $space-20 $space-8;
-  }
+  padding: $space-10; // 2.5rem = 40px
 }
 
 .galeria__inner {
-  @include container;
   display: flex;
   flex-direction: column;
   gap: $space-4;
@@ -20,16 +13,18 @@
   @include respond-to($bp-lg) {
     flex-direction: row;
     align-items: stretch;
-    gap: $space-4;
+    gap: $space-8; // 32px
   }
 }
 
 // ── Foto principal ──────────────────────────────────────────────────────────
 
 .galeria__main {
+  display: block;
   border-radius: 16px;
   overflow: hidden;
   background-color: $color-neutral-200;
+  cursor: zoom-in;
 
   @include respond-to($bp-lg) {
     flex: 1;
@@ -42,6 +37,11 @@
   object-fit: cover;
   display: block;
   aspect-ratio: 1 / 1;
+  transition: transform 300ms ease;
+
+  .galeria__main:hover & {
+    transform: scale(1.03);
+  }
 }
 
 // ── Grade 2x2 ───────────────────────────────────────────────────────────────
@@ -56,6 +56,7 @@
 
   @include respond-to($bp-lg) {
     flex: 1;
+    gap: $space-8; // 32px
   }
 }
 
@@ -63,6 +64,11 @@
   border-radius: 16px;
   overflow: hidden;
   background-color: $color-neutral-200;
+
+  a {
+    display: block;
+    cursor: zoom-in;
+  }
 }
 
 .galeria__gridImg {
@@ -71,4 +77,9 @@
   object-fit: cover;
   display: block;
   aspect-ratio: 1 / 1;
+  transition: transform 300ms ease;
+
+  .galeria__gridItem a:hover & {
+    transform: scale(1.03);
+  }
 }

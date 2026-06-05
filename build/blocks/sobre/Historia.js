@@ -1,1 +1,373 @@
-"use strict";(globalThis.webpackChunktheme_concreta_engenharia=globalThis.webpackChunktheme_concreta_engenharia||[]).push([[2815],{757(e,a,r){r.r(a),r.d(a,{default:()=>l});var n=r(326),i=r(596),t=r(388),s=r(790);function l({background:e,eyebrow:a,title:r,description:l,logos:c=[],cardText:o,cardButton:d}){const h=(0,t.xe)(d);return(0,s.jsxs)("section",{className:"McTy0KKtCELbE73UxgCK",children:[e?.url&&(0,s.jsx)("div",{className:"kf9nh4aqttVteNdGR9pw","aria-hidden":"true",children:(0,s.jsx)(n.A,{image:e,alt:"",loading:"eager",className:"DYaS8WA5MeN70Ikb2cnx"})}),(0,s.jsxs)("div",{className:"BWYiNodF20jc5YaSFdrw",children:[(0,s.jsxs)("div",{className:"K8LpOC0N7oUuScooudhC","data-animate":"fade-up",children:[a&&(0,s.jsx)(i.A,{text:a,variant:"white"}),r&&(0,s.jsx)("h2",{className:"e3x7ksf4Uk8hheeGpntF",children:r}),l&&(0,s.jsx)("p",{className:"WKNuG5n6prfjhZhd719o",children:l})]}),(0,s.jsxs)("div",{className:"lR0u4Vrm_sCDBKnEaM6I","data-animate":"fade-up","data-animate-delay":"0.15",children:[(0,t.Pb)(c)&&(0,s.jsxs)("div",{className:"rbBWKOaUxrX8GixyiEmQ",children:[(0,s.jsx)("p",{className:"FRjRNa_Z5FH0gE1Yb2Yx",children:"O Grupo Concreta é composto pelas empresas:"}),(0,s.jsx)("div",{className:"serFeK19c1PLaiGrUy7J",children:c.map((e,a)=>(0,s.jsx)("div",{className:"q8MR2Pq3WOdCOab0gbi6",children:(0,s.jsx)(n.A,{image:e.logo,className:"wW2IcfMpj0L4j9TYPrIA"})},a))})]}),(o||h)&&(0,s.jsxs)("div",{className:"mTxP507xG6pfo7TWvIAU",children:[o&&(0,s.jsx)("p",{className:"OVvbVuOl8WiiNzDrge_J",children:o}),h&&(0,s.jsx)("a",{...h,className:"JHplToiGEwaGS51hCZ0_",children:d.label})]})]})]})]})}},596(e,a,r){r.d(a,{A:()=>s});var n=r(164);const i={eyebrow:"y35JNoUiPPTjrv1PN9r3","eyebrow--green":"kojS0TZ2_enAXNLJQZjL","eyebrow--white":"JHpC1onif8fWKT5L_QS8"};var t=r(790);function s({text:e,variant:a="green",className:r}){return(0,t.jsx)("div",{className:(0,n.A)(i.eyebrow,i[`eyebrow--${a}`],r),children:(0,t.jsx)("span",{children:e})})}},326(e,a,r){r.d(a,{A:()=>t});var n=r(388),i=r(790);function t({image:e,className:a,alt:r,width:t,height:s,loading:l="lazy",decoding:c="async"}){if(!e?.url)return null;const o=void 0!==r?r:e.alt;if(e.svgContent)return(0,i.jsx)("span",{role:"img","aria-label":o||void 0,"aria-hidden":""===o||void 0,className:a,style:t||s?{display:"inline-flex",width:t??void 0,height:s??void 0}:void 0,dangerouslySetInnerHTML:{__html:e.svgContent}});const d=(0,n.cI)(e,{...void 0!==r&&{alt:r},...void 0!==t&&{width:t},...void 0!==s&&{height:s},loading:l,decoding:c});return d?(0,i.jsx)("img",{...d,className:a}):null}},388(e,a,r){function n(e,a={}){return e?.url?{src:e.url,alt:e.alt,...e.width>0&&{width:e.width},...e.height>0&&{height:e.height},...a}:null}function i(e,a={}){if(!e?.url)return null;const r="_blank"===e.target;return{href:e.url,target:e.target||void 0,...r&&{rel:"noopener noreferrer"},label:e.label,...a}}function t(e){return Array.isArray(e)&&e.length>0}function s(e){return{dangerouslySetInnerHTML:{__html:e??""}}}function l(e){return{dangerouslySetInnerHTML:{__html:e??""}}}r.d(a,{Pb:()=>t,RU:()=>s,cI:()=>n,ih:()=>l,xe:()=>i})},164(e,a,r){function n(e){var a,r,i="";if("string"==typeof e||"number"==typeof e)i+=e;else if("object"==typeof e)if(Array.isArray(e)){var t=e.length;for(a=0;a<t;a++)e[a]&&(r=n(e[a]))&&(i&&(i+=" "),i+=r)}else for(r in e)e[r]&&(i&&(i+=" "),i+=r);return i}r.d(a,{A:()=>i});const i=function(){for(var e,a,r=0,i="",t=arguments.length;r<t;r++)(e=arguments[r])&&(a=n(e))&&(i&&(i+=" "),i+=a);return i}}}]);
+"use strict";
+(globalThis["webpackChunktheme_concreta_engenharia"] = globalThis["webpackChunktheme_concreta_engenharia"] || []).push([["blocks/sobre/Historia"],{
+
+/***/ "./src/blocks/pages/sobre/Historia/index.tsx"
+/*!***************************************************!*\
+  !*** ./src/blocks/pages/sobre/Historia/index.tsx ***!
+  \***************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Historia)
+/* harmony export */ });
+/* harmony import */ var _style_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.module.scss */ "./src/blocks/pages/sobre/Historia/style.module.scss");
+/* harmony import */ var _components_SmartImage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../components/SmartImage */ "./src/components/SmartImage/index.tsx");
+/* harmony import */ var _components_Eyebrow__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../components/Eyebrow */ "./src/components/Eyebrow/index.tsx");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../utils */ "./src/utils/index.ts");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+function Historia({
+  background,
+  eyebrow,
+  title,
+  description,
+  logos = [],
+  cardText,
+  cardButton
+}) {
+  const btnProps = (0,_utils__WEBPACK_IMPORTED_MODULE_3__.linkProps)(cardButton);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("section", {
+    className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist,
+    children: [background?.url && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist__bg,
+      "aria-hidden": "true",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_SmartImage__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        image: background,
+        alt: "",
+        loading: "eager",
+        className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist__bgImg
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist__inner,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist__header,
+        "data-animate": "fade-up",
+        children: [eyebrow && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_Eyebrow__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          text: eyebrow,
+          variant: "white"
+        }), title && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
+          className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist__title,
+          children: title
+        }), description && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+          className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist__desc,
+          children: description
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist__body,
+        "data-animate": "fade-up",
+        "data-animate-delay": "0.15",
+        children: [(0,_utils__WEBPACK_IMPORTED_MODULE_3__.hasItems)(logos) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist__logos,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+            className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist__logosLabel,
+            children: "O Grupo Concreta \xE9 composto pelas empresas:"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist__logosGrid,
+            children: logos.map((item, i) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist__logoCard,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_SmartImage__WEBPACK_IMPORTED_MODULE_1__["default"], {
+                image: item.logo,
+                className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist__logoImg
+              })
+            }, i))
+          })]
+        }), (cardText || btnProps) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist__card,
+          children: [cardText && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+            className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist__cardText,
+            children: cardText
+          }), btnProps && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+            ...btnProps,
+            className: _style_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hist__cardBtn,
+            children: cardButton.label
+          })]
+        })]
+      })]
+    })]
+  });
+}
+
+/***/ },
+
+/***/ "./src/components/Eyebrow/index.tsx"
+/*!******************************************!*\
+  !*** ./src/components/Eyebrow/index.tsx ***!
+  \******************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Eyebrow)
+/* harmony export */ });
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
+/* harmony import */ var _style_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.module.scss */ "./src/components/Eyebrow/style.module.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+function Eyebrow({
+  text,
+  variant = 'green',
+  className
+}) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_0__["default"])(_style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].eyebrow, _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"][`eyebrow--${variant}`], className),
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+      children: text
+    })
+  });
+}
+
+/***/ },
+
+/***/ "./src/components/SmartImage/index.tsx"
+/*!*********************************************!*\
+  !*** ./src/components/SmartImage/index.tsx ***!
+  \*********************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SmartImage)
+/* harmony export */ });
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils */ "./src/utils/index.ts");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+
+
+/**
+ * Renderiza uma imagem ACF de forma inteligente:
+ * - SVG  → inline via dangerouslySetInnerHTML, com role="img" e aria-label para acessibilidade
+ * - Resto → <img> normal via imgProps(), com loading="lazy" e decoding="async" por padrão
+ *
+ * Uso:
+ *   <SmartImage image={icon} className={styles.card__icon} />
+ *   <SmartImage image={bg} alt="" loading="eager" />
+ */
+
+function SmartImage({
+  image,
+  className,
+  alt,
+  width,
+  height,
+  loading = 'lazy',
+  decoding = 'async'
+}) {
+  if (!image?.url) return null;
+  const resolvedAlt = alt !== undefined ? alt : image.alt;
+  if (image.svgContent) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+      role: "img",
+      "aria-label": resolvedAlt || undefined,
+      "aria-hidden": resolvedAlt === '' ? true : undefined,
+      className: className,
+      style: width || height ? {
+        display: 'inline-flex',
+        width: width ?? undefined,
+        height: height ?? undefined
+      } : undefined,
+      dangerouslySetInnerHTML: {
+        __html: image.svgContent
+      }
+    });
+  }
+  const props = (0,_utils__WEBPACK_IMPORTED_MODULE_0__.imgProps)(image, {
+    ...(alt !== undefined && {
+      alt
+    }),
+    ...(width !== undefined && {
+      width
+    }),
+    ...(height !== undefined && {
+      height
+    }),
+    loading,
+    decoding
+  });
+  if (!props) return null;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+    ...props,
+    className: className
+  });
+}
+
+/***/ },
+
+/***/ "./src/utils/index.ts"
+/*!****************************!*\
+  !*** ./src/utils/index.ts ***!
+  \****************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   firstDefined: () => (/* binding */ firstDefined),
+/* harmony export */   hasItems: () => (/* binding */ hasItems),
+/* harmony export */   htmlContent: () => (/* binding */ htmlContent),
+/* harmony export */   htmlTitle: () => (/* binding */ htmlTitle),
+/* harmony export */   imgProps: () => (/* binding */ imgProps),
+/* harmony export */   isAcfImage: () => (/* binding */ isAcfImage),
+/* harmony export */   isAcfLink: () => (/* binding */ isAcfLink),
+/* harmony export */   linkProps: () => (/* binding */ linkProps)
+/* harmony export */ });
+// ─── Shapes ACF normalizados (espelham BlockImporter no PHP) ──────────────────
+
+// ─── Guards de tipo ────────────────────────────────────────────────────────────
+
+function isAcfImage(value) {
+  return typeof value === 'object' && value !== null && typeof value.url === 'string' && value.url.length > 0;
+}
+function isAcfLink(value) {
+  return typeof value === 'object' && value !== null && typeof value.url === 'string' && value.url.length > 0;
+}
+
+// ─── Helpers de imagem ─────────────────────────────────────────────────────────
+
+/**
+ * Retorna os atributos prontos para usar em um <img>.
+ * Omite width/height se forem 0 (campos sem dimensão definida no ACF).
+ */
+function imgProps(image, overrides = {}) {
+  if (!image?.url) return null;
+  return {
+    src: image.url,
+    alt: image.alt,
+    ...(image.width > 0 && {
+      width: image.width
+    }),
+    ...(image.height > 0 && {
+      height: image.height
+    }),
+    ...overrides
+  };
+}
+
+// ─── Helpers de link ───────────────────────────────────────────────────────────
+
+/**
+ * Retorna os atributos prontos para usar em um <a>.
+ * Adiciona rel="noopener noreferrer" quando target="_blank".
+ */
+function linkProps(link, overrides = {}) {
+  if (!link?.url) return null;
+  const isBlank = link.target === '_blank';
+  return {
+    href: link.url,
+    target: link.target || undefined,
+    ...(isBlank && {
+      rel: 'noopener noreferrer'
+    }),
+    label: link.label,
+    ...overrides
+  };
+}
+
+// ─── Helpers de array ──────────────────────────────────────────────────────────
+
+/**
+ * Garante que o valor é um array não-vazio antes de renderizar.
+ * Útil para repeaters: `hasItems(cards) && cards.map(...)`.
+ */
+function hasItems(list) {
+  return Array.isArray(list) && list.length > 0;
+}
+
+// ─── Helpers de texto ──────────────────────────────────────────────────────────
+
+/**
+ * Retorna o primeiro valor não-vazio dentre os fornecidos.
+ * Útil para fallback de campos opcionais: `firstDefined(heading, 'Título padrão')`.
+ */
+function firstDefined(...values) {
+  for (const v of values) {
+    if (v != null && v.trim() !== '') return v;
+  }
+  return '';
+}
+
+// ─── Payload HTML seguro ──────────────────────────────────────────────────────
+
+/**
+ * Props para renderizar HTML de campo WYSIWYG via dangerouslySetInnerHTML.
+ * Use em elementos de bloco como <div> e <p>.
+ */
+function htmlContent(raw) {
+  return {
+    dangerouslySetInnerHTML: {
+      __html: raw ?? ''
+    }
+  };
+}
+
+/**
+ * Props para renderizar HTML inline em títulos e headings (strong, em, span, br, a).
+ * Use em <h1>, <h2>, <h3>, <p> quando o campo ACF foi processado com acf_html().
+ *
+ * Exemplo no render.php:  'title' => acf_html($group['title'])
+ * Exemplo no componente:  <h2 {...htmlTitle(title)} className={styles.card__title} />
+ */
+function htmlTitle(raw) {
+  return {
+    dangerouslySetInnerHTML: {
+      __html: raw ?? ''
+    }
+  };
+}
+
+/***/ },
+
+/***/ "./src/blocks/pages/sobre/Historia/style.module.scss"
+/*!***********************************************************!*\
+  !*** ./src/blocks/pages/sobre/Historia/style.module.scss ***!
+  \***********************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"hist":"McTy0KKtCELbE73UxgCK","hist__bg":"kf9nh4aqttVteNdGR9pw","hist__bgImg":"DYaS8WA5MeN70Ikb2cnx","hist__inner":"BWYiNodF20jc5YaSFdrw","hist__header":"K8LpOC0N7oUuScooudhC","hist__title":"e3x7ksf4Uk8hheeGpntF","hist__desc":"WKNuG5n6prfjhZhd719o","hist__body":"lR0u4Vrm_sCDBKnEaM6I","hist__logos":"rbBWKOaUxrX8GixyiEmQ","hist__logosLabel":"FRjRNa_Z5FH0gE1Yb2Yx","hist__logosGrid":"serFeK19c1PLaiGrUy7J","hist__logoCard":"q8MR2Pq3WOdCOab0gbi6","hist__logoImg":"wW2IcfMpj0L4j9TYPrIA","hist__card":"mTxP507xG6pfo7TWvIAU","hist__cardText":"OVvbVuOl8WiiNzDrge_J","hist__cardBtn":"JHplToiGEwaGS51hCZ0_"});
+
+/***/ },
+
+/***/ "./src/components/Eyebrow/style.module.scss"
+/*!**************************************************!*\
+  !*** ./src/components/Eyebrow/style.module.scss ***!
+  \**************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// extracted by mini-css-extract-plugin
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"eyebrow":"y35JNoUiPPTjrv1PN9r3","eyebrow--green":"kojS0TZ2_enAXNLJQZjL","eyebrow--white":"JHpC1onif8fWKT5L_QS8"});
+
+/***/ },
+
+/***/ "./node_modules/clsx/dist/clsx.mjs"
+/*!*****************************************!*\
+  !*** ./node_modules/clsx/dist/clsx.mjs ***!
+  \*****************************************/
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   clsx: () => (/* binding */ clsx),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function r(e){var t,f,n="";if("string"==typeof e||"number"==typeof e)n+=e;else if("object"==typeof e)if(Array.isArray(e)){var o=e.length;for(t=0;t<o;t++)e[t]&&(f=r(e[t]))&&(n&&(n+=" "),n+=f)}else for(f in e)e[f]&&(n&&(n+=" "),n+=f);return n}function clsx(){for(var e,t,f=0,n="",o=arguments.length;f<o;f++)(e=arguments[f])&&(t=r(e))&&(n&&(n+=" "),n+=t);return n}/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (clsx);
+
+/***/ }
+
+}]);
+//# sourceMappingURL=Historia.js.map?ver=cdb356ea86438b5817cb

@@ -1,1 +1,41 @@
-.NHXLuEv0no_AsW4smHqR{align-items:center;background-color:#060d3c;display:flex;padding:5rem 1rem;text-align:center}@media(min-width:1024px){.NHXLuEv0no_AsW4smHqR{min-height:540px;padding:6rem 2rem}}.zeQAjcH3Hp1prWLi1jRs{align-items:center;display:flex;flex-direction:column;gap:1.25rem;margin-right:auto;margin-left:auto;max-width:1280px;padding-right:1rem;padding-left:1rem;width:100%}.HSPE4gX5HVeubZU7xjDT{color:#fff;font-size:clamp(2rem,5vw,3rem);font-weight:700;line-height:1.2}.FhjiYjEptiZ0AWrcCGtM{color:hsla(0,0%,100%,.75);font-size:clamp(1rem,2vw,1.25rem);font-weight:400;line-height:1.6;max-width:665px}
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/pages/contato/Hero/style.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.NHXLuEv0no_AsW4smHqR {
+  background-color: #060d3c;
+  padding: 5rem 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .NHXLuEv0no_AsW4smHqR {
+    padding: 6rem 2rem;
+    min-height: 540px;
+  }
+}
+.zeQAjcH3Hp1prWLi1jRs {
+  width: 100%;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+.HSPE4gX5HVeubZU7xjDT {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.FhjiYjEptiZ0AWrcCGtM {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 665px;
+}

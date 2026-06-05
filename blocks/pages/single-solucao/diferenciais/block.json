@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "theme/single-solucao-capacidade",
+  "title": "Single Solução — Capacidade",
+  "category": "theme",
+  "description": "Estrutura e capacidade operacional: título/desc à esquerda, foto à direita, cards de destaque abaixo.",
+  "keywords": ["capacidade", "estrutura", "solucao"],
+  "supports": { "html": false },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "editorScript": "file:../../../build/index.js",
+  "editorStyle": "file:../../../build/index.css",
+  "style": "file:../../../build/index.css"
+}

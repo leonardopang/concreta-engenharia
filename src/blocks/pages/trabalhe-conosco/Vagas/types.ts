@@ -1,8 +1,14 @@
 import type { AcfLink } from '../../../../utils';
 
+export interface Categoria {
+  slug: string;
+  nome: string;
+}
+
 export interface Vaga {
   titulo: string;
-  categoria: string;
+  categoriaSlug: string;
+  categoriaNome: string;
   descricao: string;
   localizacao: string;
   contratacao: string;
@@ -11,5 +17,6 @@ export interface Vaga {
 
 export interface TrabalheVagasProps {
   title: string;
+  categorias: Categoria[];
   vagas: Vaga[];
 }

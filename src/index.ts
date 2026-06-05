@@ -45,11 +45,11 @@ const blockRegistry: Record<string, () => Promise<BlockModule>> = {
   'cases-hero':  () => import(/* webpackChunkName: "blocks/cases/Hero" */  './blocks/pages/cases/Hero'),
   'cases-lista': () => import(/* webpackChunkName: "blocks/cases/Lista" */ './blocks/pages/cases/Lista'),
   // Soluções page blocks
-  'solucoes-hero':       () => import(/* webpackChunkName: "blocks/case/Hero" */       './blocks/pages/case/Hero'),
-  'solucoes-intro':      () => import(/* webpackChunkName: "blocks/case/Intro" */      './blocks/pages/case/Intro'),
-  'solucoes-servicos':   () => import(/* webpackChunkName: "blocks/case/Servicos" */   './blocks/pages/case/Servicos'),
-  'solucoes-capacidade': () => import(/* webpackChunkName: "blocks/case/Capacidade" */ './blocks/pages/case/Capacidade'),
-  'solucoes-aplicacoes': () => import(/* webpackChunkName: "blocks/case/Aplicacoes" */ './blocks/pages/case/Aplicacoes'),
+  'solucoes-hero':       () => import(/* webpackChunkName: "blocks/solucoes/Hero" */       './blocks/pages/solucoes/Hero'),
+  'solucoes-intro':      () => import(/* webpackChunkName: "blocks/solucoes/Intro" */      './blocks/pages/solucoes/Intro'),
+  'solucoes-servicos':   () => import(/* webpackChunkName: "blocks/solucoes/Servicos" */   './blocks/pages/solucoes/Servicos'),
+  'solucoes-capacidade': () => import(/* webpackChunkName: "blocks/solucoes/Capacidade" */ './blocks/pages/solucoes/Capacidade'),
+  'solucoes-aplicacoes': () => import(/* webpackChunkName: "blocks/solucoes/Aplicacoes" */ './blocks/pages/solucoes/Aplicacoes'),
   // Contato page blocks
   'contato-hero': () => import(/* webpackChunkName: "blocks/contato/Hero" */ './blocks/pages/contato/Hero'),
   'contato-form': () => import(/* webpackChunkName: "blocks/contato/Form" */ './blocks/pages/contato/Form'),
@@ -60,6 +60,20 @@ const blockRegistry: Record<string, () => Promise<BlockModule>> = {
   'single-case-solucao':    () => import(/* webpackChunkName: "blocks/single-case/Solucao" */    './blocks/pages/single-case/Solucao'),
   'single-case-resultados': () => import(/* webpackChunkName: "blocks/single-case/Resultados" */ './blocks/pages/single-case/Resultados'),
   'single-case-galeria':    () => import(/* webpackChunkName: "blocks/single-case/Galeria" */    './blocks/pages/single-case/Galeria'),
+  // Single Solução — Rental blocks
+  'single-solucao-rental-equipamentos':  () => import(/* webpackChunkName: "blocks/single-solucao-rental/Equipamentos" */  './blocks/pages/single-solucao-rental/Equipamentos'),
+  'single-solucao-rental-diferenciais':  () => import(/* webpackChunkName: "blocks/single-solucao-rental/Diferenciais" */  './blocks/pages/single-solucao-rental/Diferenciais'),
+  // Single Vaga blocks
+  'single-vaga-detalhe':    () => import(/* webpackChunkName: "blocks/single-vaga/Detalhe" */    './blocks/pages/single-vaga/Detalhe'),
+  // Single Solução blocks
+  'single-solucao-hero':        () => import(/* webpackChunkName: "blocks/single-solucao/Hero" */        './blocks/pages/single-solucao/Hero'),
+  'single-solucao-intro':       () => import(/* webpackChunkName: "blocks/single-solucao/Intro" */       './blocks/pages/single-solucao/Intro'),
+  'single-solucao-servicos':    () => import(/* webpackChunkName: "blocks/single-solucao/Servicos" */    './blocks/pages/single-solucao/Servicos'),
+  'single-solucao-diferenciais': () => import(/* webpackChunkName: "blocks/single-solucao/Diferenciais" */ './blocks/pages/single-solucao/Diferenciais'),
+  'single-solucao-atuacao':     () => import(/* webpackChunkName: "blocks/single-solucao/Atuacao" */     './blocks/pages/single-solucao/Atuacao'),
+  // Página Solução (Pavimentação e Concreto) blocks
+  'solucao-capacidade': () => import(/* webpackChunkName: "blocks/solucao/Capacidade" */ './blocks/pages/solucao/Capacidade'),
+  'solucao-aplicacoes': () => import(/* webpackChunkName: "blocks/solucao/Aplicacoes" */ './blocks/pages/solucao/Aplicacoes'),
   // Sobre page blocks
   'sobre-hero':         () => import(/* webpackChunkName: "blocks/sobre/Hero" */         './blocks/pages/sobre/Hero'),
   'sobre-quem-somos':   () => import(/* webpackChunkName: "blocks/sobre/QuemSomos" */    './blocks/pages/sobre/QuemSomos'),

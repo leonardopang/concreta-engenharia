@@ -1,0 +1,188 @@
+@use '../../../../styles/tokens' as *;
+
+.aplicacoes {
+  background-color: $color-white;
+  border-top: 1px solid $color-neutral-200;
+  padding: $space-20 $space-4;
+  overflow: hidden;
+
+  @include respond-to($bp-lg) {
+    padding: $space-20 $space-8;
+  }
+}
+
+.aplicacoes__inner {
+  @include container;
+
+  @include respond-to($bp-lg) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// ── Grid: imagem esquerda + conteúdo direita ────────────────────────────────
+
+.aplicacoes__grid {
+  display: flex;
+  flex-direction: column;
+  gap: $space-10;
+
+  @include respond-to($bp-lg) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 72px;
+    position: relative;
+    min-height: 734px;
+  }
+}
+
+.aplicacoes__imageWrap {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 320px;
+
+  @include respond-to($bp-lg) {
+    flex: 0 0 672px;
+    height: 734px;
+    min-height: 0;
+  }
+}
+
+.aplicacoes__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.aplicacoes__imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0) 50%);
+}
+
+.aplicacoes__content {
+  display: flex;
+  flex-direction: column;
+  gap: $space-8;
+
+  @include respond-to($bp-lg) {
+    flex: 1;
+    justify-content: flex-start;
+  }
+}
+
+.aplicacoes__title {
+  font-size: clamp(1.75rem, 3vw, 40px);
+  font-weight: $font-weight-medium;
+  line-height: $line-height-snug;
+  margin: 0;
+  background: linear-gradient(223deg, $color-brand-200 9%, $color-brand-300 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aplicacoes__description {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-normal;
+  color: $color-neutral-600;
+  margin: 0;
+
+  p { margin: 0 0 $space-4; &:last-child { margin-bottom: 0; } }
+}
+
+// ── Grid de cards de aplicação ──────────────────────────────────────────────
+
+.aplicacoes__cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-4;
+}
+
+.aplicacoes__card {
+  background-color: $color-white;
+  border: 1px solid $color-neutral-200;
+  border-radius: 10px;
+  padding: $space-6 $space-6 $space-8;
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+  width: calc(50% - #{$space-2});
+  font-size: $font-size-md;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-normal;
+  color: $color-text;
+
+  @include respond-to($bp-lg) {
+    width: 260px;
+    height: 120px;
+    justify-content: center;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    color: $color-primary;
+    flex-shrink: 0;
+  }
+}
+
+// ── Banner inferior: absoluto sobrepondo o rodapé da imagem ────────────────
+
+.aplicacoes__banner {
+  background-color: $color-dark;
+  border-radius: 10px;
+  padding: $space-6 $space-8;
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+  align-items: flex-start;
+
+  @include respond-to($bp-lg) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 1004px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-8;
+    padding: $space-6 $space-8;
+  }
+}
+
+.aplicacoes__bannerText {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-normal;
+  color: $color-white;
+  margin: 0;
+
+  @include respond-to($bp-lg) {
+    max-width: 620px;
+  }
+}
+
+.aplicacoes__bannerBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-4 $space-8;
+  background-color: $color-accent;
+  color: $color-neutral-800;
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  text-decoration: none;
+  border-radius: 10px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: opacity 150ms ease;
+
+  &:hover { opacity: 0.88; }
+}

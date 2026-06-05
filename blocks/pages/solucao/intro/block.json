@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "theme/solucao-intro",
+  "title": "Solução Intro",
+  "category": "theme",
+  "description": "Seção intro da página de solução.",
+  "keywords": ["intro", "solucao"],
+  "supports": { "html": false },
+  "acf": { "mode": "preview", "renderTemplate": "render.php" },
+  "editorScript": "file:../../../build/index.js",
+  "editorStyle":  "file:../../../build/index.css",
+  "style":        "file:../../../build/index.css"
+}

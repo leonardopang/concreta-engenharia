@@ -9,8 +9,7 @@ block_render('single-case-conteudo', [
         'eyebrow'     => $item['eyebrow']     ?? '',
         'title'       => $item['title']       ?? '',
         'description' => acf_wysiwyg($item['description'] ?? ''),
-        'image1'      => acf_image($item['image1'] ?? null),
-        'image2'      => acf_image($item['image2'] ?? null),
+        'image'       => acf_image($item['imagem'] ?? null),
         'layout'      => $item['layout']      ?? 'text_right',
     ]),
 ]);

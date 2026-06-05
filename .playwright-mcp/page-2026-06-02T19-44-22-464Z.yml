@@ -1,0 +1,197 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - link "Concreta Engenharia" [ref=e4] [cursor=pointer]:
+      - /url: http://concreta-engenharia.local/
+      - img "Concreta Engenharia" [ref=e5]
+    - generic [ref=e6]:
+      - navigation "Menu principal" [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/
+          - listitem [ref=e11]:
+            - link "Sobre nós" [ref=e12] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/sobre-nos/
+          - listitem [ref=e13]:
+            - link "Soluções" [ref=e14] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/solucoes/
+          - listitem [ref=e15]:
+            - link "Cases" [ref=e16] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/cases/
+          - listitem [ref=e17]:
+            - link "Trabalhe conosco" [ref=e18] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/trabalhe-conosco/
+          - listitem [ref=e19]:
+            - link "Contato" [ref=e20] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/contato/
+      - link "Solicitar orçamento" [ref=e21] [cursor=pointer]:
+        - /url: https://wa.me/5511998553482
+  - generic [ref=e22]:
+    - generic [ref=e27]:
+      - heading "Pavimentação Asfáltica" [level=1] [ref=e28]
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - generic [ref=e31]: Empresa Executora
+          - generic [ref=e32]: Concreta Engenharia
+        - listitem [ref=e33]:
+          - generic [ref=e34]: Ano
+          - generic [ref=e35]: "2026"
+        - listitem [ref=e36]:
+          - generic [ref=e37]: Serviço
+          - generic [ref=e38]: Recapeamento Asfáltico
+        - listitem [ref=e39]:
+          - generic [ref=e40]: Local
+          - generic [ref=e41]: Marabá – PA
+    - generic [ref=e42]:
+      - generic [ref=e47]:
+        - generic [ref=e49]: Contexto Técnico
+        - heading "A importância da regularização do pavimento" [level=2] [ref=e50]
+        - generic [ref=e51]:
+          - paragraph [ref=e52]: As pistas de aeroportos precisam suportar cargas elevadas e garantir condições ideais de segurança para pousos e decolagens.
+          - paragraph [ref=e53]: Com o tempo, o pavimento sofre desgaste natural, sendo necessário realizar intervenções para restaurar suas condições estruturais.
+          - paragraph [ref=e54]: Serviços como o recapeamento asfáltico permitem recuperar a qualidade da superfície, melhorar a uniformidade do pavimento e aumentar sua durabilidade.
+      - generic [ref=e59]:
+        - heading "Desafios do projeto" [level=2] [ref=e60]
+        - generic [ref=e61]:
+          - paragraph [ref=e62]: Obras em áreas aeroportuárias exigem planejamento técnico rigoroso, organização logística e controle de execução.
+          - paragraph [ref=e63]: Durante o projeto, a equipe da Concreta atuou com planejamento e coordenação das atividades em campo, garantindo que todas as etapas fossem executadas com eficiência e dentro das condições necessárias para a operação do aeroporto.
+    - generic [ref=e67]:
+      - heading "Solução aplicada" [level=2] [ref=e68]
+      - list [ref=e69]:
+        - listitem [ref=e70]:
+          - img [ref=e72]
+          - paragraph [ref=e74]: Avaliação das condições do pavimento
+        - listitem [ref=e75]:
+          - img [ref=e77]
+          - paragraph [ref=e79]: Preparação da superfície
+        - listitem [ref=e80]:
+          - img [ref=e82]
+          - paragraph [ref=e84]: Execução do recapeamento asfáltico
+        - listitem [ref=e85]:
+          - img [ref=e87]
+          - paragraph [ref=e89]: Compactação e acabamento
+        - listitem [ref=e90]:
+          - img [ref=e92]
+          - paragraph [ref=e94]: Controle de qualidade durante toda a execução
+    - generic [ref=e97]:
+      - generic [ref=e98]:
+        - heading "Resultados do projeto" [level=2] [ref=e99]
+        - generic [ref=e100]:
+          - paragraph [ref=e101]: Com a conclusão dos serviços, a pista passou a apresentar melhores condições estruturais e operacionais, contribuindo para a segurança e eficiência das operações aeroportuárias.
+          - paragraph [ref=e102]: A obra reforça a capacidade da Concreta Engenharia em atuar em projetos de infraestrutura que exigem alto padrão técnico e organização operacional.
+      - generic [ref=e103]:
+        - heading "Ficha Técnica" [level=3] [ref=e104]
+        - list [ref=e105]:
+          - listitem [ref=e106]:
+            - generic [ref=e107]: Local da Obra
+            - generic [ref=e108]: Aeroporto de Marabá – PA
+          - listitem [ref=e109]:
+            - generic [ref=e110]: Tipo de obra
+            - generic [ref=e111]: Recapeamento Asfáltico
+          - listitem [ref=e112]:
+            - generic [ref=e113]: Área executada
+            - generic [ref=e114]: 7.000 m²
+          - listitem [ref=e115]:
+            - generic [ref=e116]: Prazo de execução
+            - generic [ref=e117]: 6 meses
+          - listitem [ref=e118]:
+            - generic [ref=e119]: Equipamentos utilizados
+            - generic [ref=e120]: vibroacabadora<br /> rolos compactadores<br /> caminhões basculantes
+          - listitem [ref=e121]:
+            - generic [ref=e122]: Equipe
+            - generic [ref=e123]: Profissionais especializados em pavimentação
+    - generic [ref=e126]:
+      - link "Abrir imagem" [ref=e127]:
+        - /url: http://concreta-engenharia.local/wp-content/uploads/2026/05/Placeholder-Image-1.webp
+      - list [ref=e128]:
+        - listitem [ref=e129]:
+          - link "Abrir imagem" [ref=e130]:
+            - /url: http://concreta-engenharia.local/wp-content/uploads/2026/05/Placeholder-Image-2.webp
+        - listitem [ref=e131]:
+          - link "Abrir imagem" [ref=e132]:
+            - /url: http://concreta-engenharia.local/wp-content/uploads/2026/05/Placeholder-Image-3.webp
+        - listitem [ref=e133]:
+          - link "Abrir imagem" [ref=e134]:
+            - /url: http://concreta-engenharia.local/wp-content/uploads/2026/05/Placeholder-Image-4.webp
+        - listitem [ref=e135]:
+          - link "Abrir imagem" [ref=e136]:
+            - /url: http://concreta-engenharia.local/wp-content/uploads/2026/05/Placeholder-Image-5.webp
+    - generic [ref=e139]:
+      - generic [ref=e140]:
+        - generic [ref=e142]: Fale conosco
+        - heading "Precisa executar uma obra com qualidade e segurança?" [level=2] [ref=e143]
+        - paragraph [ref=e144]: Conte com a experiência e estrutura da Concreta Engenharia para executar seu projeto.
+      - generic [ref=e145]:
+        - link "Solicitar orçamento" [ref=e146] [cursor=pointer]:
+          - /url: "#"
+        - link "Fala com nossa equipe" [ref=e147] [cursor=pointer]:
+          - /url: "#"
+  - contentinfo [ref=e149]:
+    - generic [ref=e150]:
+      - generic [ref=e151]:
+        - link "Concreta Engenharia" [ref=e152] [cursor=pointer]:
+          - /url: /
+          - img "Concreta Engenharia" [ref=e153]
+        - generic [ref=e154]:
+          - generic [ref=e155]: Siga-nos
+          - generic [ref=e156]:
+            - link "facebook" [ref=e157] [cursor=pointer]:
+              - /url: https://teste.com
+              - img [ref=e158]
+            - link "instagram" [ref=e160] [cursor=pointer]:
+              - /url: https://teste.com
+              - img [ref=e161]
+      - generic [ref=e163]:
+        - paragraph [ref=e164]: Institucional
+        - list [ref=e165]:
+          - listitem [ref=e166]:
+            - link "Home" [ref=e167] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/
+          - listitem [ref=e168]:
+            - link "Sobre nós" [ref=e169] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/sobre-nos/
+          - listitem [ref=e170]:
+            - link "Cases" [ref=e171] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/cases/
+          - listitem [ref=e172]:
+            - link "Trabalhe conosco" [ref=e173] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/trabalhe-conosco/
+          - listitem [ref=e174]:
+            - link "Contato" [ref=e175] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/contato/
+      - generic [ref=e176]:
+        - paragraph [ref=e177]: Soluções
+        - list [ref=e178]:
+          - listitem [ref=e179]:
+            - link "Pavimentação e Concreto" [ref=e180] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e181]:
+            - link "Concreta Transportes" [ref=e182] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e183]:
+            - link "Concreta Rental" [ref=e184] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e185]:
+        - paragraph [ref=e186]: Fale conosco
+        - list [ref=e187]:
+          - listitem [ref=e188]:
+            - img [ref=e189]
+            - generic [ref=e191]: +55 00 1234 5678
+          - listitem [ref=e192]:
+            - img [ref=e193]
+            - link "contato@concreta.eng.br" [ref=e196] [cursor=pointer]:
+              - /url: mailto:contato@concreta.eng.br
+          - listitem [ref=e197]:
+            - img [ref=e198]
+            - generic [ref=e202]: Endereço
+          - listitem [ref=e203]:
+            - img [ref=e204]
+            - generic [ref=e207]: Segunda a Sexta (Horário comercial)
+    - generic [ref=e208]:
+      - generic [ref=e209]: ©2026 Concreta Engenharia
+      - link "Política de privacidade" [ref=e210] [cursor=pointer]:
+        - /url: http://concreta-engenharia.local/politica-de-privacidade/
+      - generic [ref=e211]:
+        - text: Criação de Site por
+        - link "UpSItes" [ref=e212] [cursor=pointer]:
+          - /url: https://upsites.digital/?origin=concreta-engenharia

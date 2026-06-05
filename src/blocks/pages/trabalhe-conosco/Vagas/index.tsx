@@ -4,48 +4,36 @@ import { hasItems, linkProps } from '../../../../utils';
 import { IconMapPin, IconAddressBook, IconChevronRight } from '../../../../icons';
 import type { TrabalheVagasProps, Vaga } from './types';
 
-export default function TrabalheVagas({ title, vagas }: TrabalheVagasProps) {
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
-
-  const categories = useMemo(() => {
-    if (!hasItems(vagas)) return [];
-    const seen = new Set<string>();
-    return vagas.reduce<string[]>((acc, v) => {
-      if (v.categoria && !seen.has(v.categoria)) {
-        seen.add(v.categoria);
-        acc.push(v.categoria);
-      }
-      return acc;
-    }, []);
-  }, [vagas]);
+export default function TrabalheVagas({ title, categorias, vagas }: TrabalheVagasProps) {
+  const [activeSlug, setActiveSlug] = useState<string | null>(null);
 
   const filtered = useMemo<Vaga[]>(() => {
     if (!hasItems(vagas)) return [];
-    if (!activeCategory) return vagas;
-    return vagas.filter((v) => v.categoria === activeCategory);
-  }, [vagas, activeCategory]);
+    if (!activeSlug) return vagas;
+    return vagas.filter((v) => v.categoriaSlug === activeSlug);
+  }, [vagas, activeSlug]);
 
   return (
     <section className={styles.vagas}>
       <div className={styles.vagas__inner}>
-        <h2 className={styles.vagas__title} data-animate="fade-up">{title}</h2>
+        {title && <h2 className={styles.vagas__title} data-animate="fade-up">{title}</h2>}
 
         <div className={styles.vagas__content}>
-          {hasItems(categories) && (
+          {hasItems(categorias) && (
             <div className={styles.vagas__categories} data-animate="fade-up">
               <button
-                className={!activeCategory ? styles['vagas__catBtn--active'] : styles.vagas__catBtn}
-                onClick={() => setActiveCategory(null)}
+                className={!activeSlug ? styles['vagas__catBtn--active'] : styles.vagas__catBtn}
+                onClick={() => setActiveSlug(null)}
               >
                 Ver todas
               </button>
-              {categories.map((cat) => (
+              {categorias.map((cat) => (
                 <button
-                  key={cat}
-                  className={activeCategory === cat ? styles['vagas__catBtn--active'] : styles.vagas__catBtn}
-                  onClick={() => setActiveCategory(cat)}
+                  key={cat.slug}
+                  className={activeSlug === cat.slug ? styles['vagas__catBtn--active'] : styles.vagas__catBtn}
+                  onClick={() => setActiveSlug(cat.slug)}
                 >
-                  {cat}
+                  {cat.nome}
                 </button>
               ))}
             </div>
@@ -63,8 +51,8 @@ export default function TrabalheVagas({ title, vagas }: TrabalheVagasProps) {
                   <div className={styles.vagas__jobHeader}>
                     <div className={styles.vagas__jobTitle}>
                       <h3 className={styles.vagas__jobName}>{vaga.titulo}</h3>
-                      {vaga.categoria && (
-                        <span className={styles.vagas__tag}>{vaga.categoria}</span>
+                      {vaga.categoriaNome && (
+                        <span className={styles.vagas__tag}>{vaga.categoriaNome}</span>
                       )}
                     </div>
                     {vaga.link && (

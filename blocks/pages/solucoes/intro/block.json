@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "theme/solucoes-intro",
+  "title": "Soluções — Intro",
+  "category": "theme",
+  "description": "Seção intro com duas imagens e texto em duas colunas.",
+  "keywords": ["intro", "solucoes", "imagens"],
+  "supports": { "html": false, "align": ["full", "wide"] },
+  "acf": { "mode": "preview", "renderTemplate": "render.php" },
+  "editorScript": "file:../../../build/index.js",
+  "editorStyle": "file:../../../build/index.css",
+  "style": "file:../../../build/index.css"
+}

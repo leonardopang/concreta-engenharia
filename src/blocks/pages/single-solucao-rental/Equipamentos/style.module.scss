@@ -1,0 +1,144 @@
+@use '../../../../styles/tokens' as *;
+
+.equipamentos {
+  background-color: $color-neutral-100;
+  padding: $space-16 $space-4;
+  overflow: hidden;
+
+  @include respond-to($bp-lg) {
+    padding: $space-20 $space-8;
+  }
+}
+
+.equipamentos__inner {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  gap: $space-16;
+}
+
+.equipamentos__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.equipamentos__title {
+  font-size: clamp(1.75rem, 3vw, 40px);
+  font-weight: $font-weight-medium;
+  line-height: 1.3;
+  margin: 0;
+  background: linear-gradient(199deg, $color-brand-200 9%, $color-brand-300 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.equipamentos__description {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-relaxed;
+  color: $color-neutral-600;
+  margin: 0;
+  text-align: center;
+}
+
+.equipamentos__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-4;
+
+  @include respond-to($bp-lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// ── Card claro (checklist) ──────────────────────────────────────────────────
+
+.equipamentos__cardLight {
+  background-color: $color-white;
+  border-radius: 16px;
+  padding: $space-10 $space-10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.equipamentos__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.equipamentos__listItem {
+  display: flex;
+  align-items: center;
+  gap: $space-4;
+  padding: $space-4;
+  background-color: $color-neutral-100;
+  border-radius: 10px;
+  font-size: $font-size-md;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-normal;
+  color: $color-neutral-800;
+
+  svg {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: $color-primary;
+  }
+}
+
+// ── Card escuro (navy, sem bg image) ───────────────────────────────────────
+
+.equipamentos__cardDark {
+  background-color: $color-dark;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 280px;
+
+  @include respond-to($bp-lg) {
+    min-height: 0;
+  }
+}
+
+.equipamentos__cardContent {
+  padding: $space-12 $space-12;
+  display: flex;
+  flex-direction: column;
+  gap: $space-10;
+}
+
+.equipamentos__cardQuote {
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-snug;
+  color: $color-white;
+  margin: 0;
+}
+
+.equipamentos__cardBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-4 $space-8;
+  background-color: $color-accent;
+  color: $color-neutral-800;
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  text-decoration: none;
+  border-radius: 10px;
+  align-self: flex-start;
+  transition: opacity 150ms ease;
+
+  &:hover { opacity: 0.88; }
+}

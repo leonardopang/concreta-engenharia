@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "theme/single-vaga-candidatura",
+  "title": "Single Vaga – Como se Candidatar",
+  "category": "theme",
+  "description": "Seção de candidatura com título, descrição, botão de currículo e formulário CF7.",
+  "keywords": ["vaga", "candidatura", "currículo", "formulário"],
+  "supports": {
+    "html": false,
+    "align": ["full", "wide"]
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "editorScript": "file:../../../build/index.js",
+  "editorStyle": "file:../../../build/index.css",
+  "style": "file:../../../build/index.css"
+}

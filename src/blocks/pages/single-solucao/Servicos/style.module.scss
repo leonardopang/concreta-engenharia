@@ -1,0 +1,179 @@
+@use '../../../../styles/tokens' as *;
+
+.servicos {
+  padding: $space-16 $space-4;
+  overflow: hidden;
+
+  @include respond-to($bp-lg) {
+    padding: $space-20 $space-8;
+  }
+}
+
+.servicos__inner {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  gap: $space-12;
+}
+
+.servicos__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.servicos__title {
+  font-size: clamp(1.75rem, 3vw, 40px);
+  font-weight: $font-weight-bold;
+  line-height: $line-height-snug;
+  margin: 0;
+  background: linear-gradient(135deg, $color-brand-300 0%, $color-brand-200 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.servicos__description {
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-relaxed;
+  color: $color-neutral-600;
+  margin: 0;
+}
+
+.servicos__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-6;
+
+  @include respond-to($bp-lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// ── Grid invertida ─────────────────────────────────────────────────────────
+
+.servicos__grid--reversed {
+  @include respond-to($bp-lg) {
+    .servicos__cardLight {
+      order: 2;
+    }
+
+    .servicos__cardDark {
+      order: 1;
+    }
+  }
+}
+
+// ── Card claro (checklist) ──────────────────────────────────────────────────
+
+.servicos__cardListTitle {
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-snug;
+  color: $color-text;
+  margin: 0 0 $space-8;
+}
+
+.servicos__cardLight {
+  background-color: $color-white;
+  border-radius: 16px;
+  padding: $space-8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.servicos__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.servicos__listItem {
+  display: flex;
+  align-items: flex-start;
+  gap: $space-3;
+  padding: $space-4;
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-normal;
+  color: $color-neutral-800;
+  border-radius: 10px;
+  background: var(--neutral-100, #F5F5F5);
+
+  svg {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: $color-primary;
+    margin-top: 2px;
+  }
+}
+
+// ── Card escuro (imagem + quote) ────────────────────────────────────────────
+
+.servicos__cardDark {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: $color-dark;
+}
+
+.servicos__cardBg {
+  position: absolute;
+  inset: 0;
+}
+
+.servicos__cardBgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.servicos__cardContent {
+  position: relative;
+  z-index: 1;
+  padding: $space-8;
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.servicos__cardQuote {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-snug;
+  color: $color-white;
+  margin: 0;
+}
+
+.servicos__cardBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-4 $space-8;
+  background-color: $color-accent;
+  color: $color-neutral-800;
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  text-decoration: none;
+  border-radius: 10px;
+  align-self: flex-start;
+  transition: opacity 150ms ease;
+
+  &:hover {
+    opacity: 0.88;
+  }
+}

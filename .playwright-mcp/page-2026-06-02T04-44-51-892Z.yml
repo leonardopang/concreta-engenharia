@@ -1,0 +1,234 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - link "Concreta Engenharia" [ref=e4] [cursor=pointer]:
+      - /url: http://concreta-engenharia.local/
+      - img "Concreta Engenharia" [ref=e5]
+    - generic [ref=e6]:
+      - navigation "Menu principal" [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/
+          - listitem [ref=e11]:
+            - link "Sobre nós" [ref=e12] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/sobre-nos/
+          - listitem [ref=e13]:
+            - link "Soluções" [ref=e14] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/solucoes/
+          - listitem [ref=e15]:
+            - link "Cases" [ref=e16] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/cases/
+          - listitem [ref=e17]:
+            - link "Trabalhe conosco" [ref=e18] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/trabalhe-conosco/
+          - listitem [ref=e19]:
+            - link "Contato" [ref=e20] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/contato/
+      - link "Solicitar orçamento" [ref=e21] [cursor=pointer]:
+        - /url: https://wa.me/5511998553482
+  - generic [ref=e22]:
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - heading "Pavimentação e Concreto" [level=1] [ref=e28]
+        - paragraph [ref=e29]: Soluções completas em pavimentação e concreto para obras de infraestrutura e construção civil.
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - paragraph [ref=e32]: A Concreta Engenharia oferece soluções completas em pavimentação asfáltica e concreto para obras de infraestrutura e construção civil.
+          - paragraph [ref=e33]: Com estrutura própria, equipe especializada e equipamentos adequados, atuamos desde a preparação do terreno até a execução final da obra, garantindo qualidade, resistência e durabilidade.
+        - generic [ref=e34]:
+          - link "Solicitar orçamento" [ref=e35] [cursor=pointer]:
+            - /url: "#"
+          - link "Falar com nossa equipe" [ref=e36] [cursor=pointer]:
+            - /url: "#"
+    - generic [ref=e37]:
+      - generic [ref=e43]:
+        - heading "Soluções completas para pavimentação e concreto" [level=2] [ref=e44]
+        - generic [ref=e45]:
+          - paragraph [ref=e46]: A Concreta Engenharia atua na execução de obras de pavimentação asfáltica e serviços em concreto, atendendo projetos de infraestrutura, construção civil e áreas industriais.
+          - paragraph [ref=e47]: Nossa experiência permite atender diferentes tipos de obra, desde pavimentação de vias até concretagem de lajes, estruturas e áreas industriais, sempre com foco em qualidade, resistência e durabilidade.
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - heading "Pavimentação Asfáltica" [level=2] [ref=e52]
+          - paragraph [ref=e53]: A Concreta executa obras de pavimentação asfáltica com alto padrão técnico, garantindo segurança, resistência e durabilidade para vias e áreas de circulação.
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - paragraph [ref=e56]: "Entre as etapas da execução estão:"
+            - list [ref=e57]:
+              - listitem [ref=e58]:
+                - img [ref=e59]
+                - generic [ref=e61]: Preparação e regularização do terreno
+              - listitem [ref=e62]:
+                - img [ref=e63]
+                - generic [ref=e65]: Execução da base e sub-base do pavimento
+              - listitem [ref=e66]:
+                - img [ref=e67]
+                - generic [ref=e69]: Aplicação do revestimento asfáltico
+              - listitem [ref=e70]:
+                - img [ref=e71]
+                - generic [ref=e73]: Compactação e acabamento
+              - listitem [ref=e74]:
+                - img [ref=e75]
+                - generic [ref=e77]: Controle de qualidade durante toda a execução
+          - generic [ref=e80]:
+            - paragraph [ref=e81]: Esse processo garante pavimentos adequados para diferentes tipos de tráfego e condições de uso.
+            - link "Fale com nossa equipe" [ref=e82] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - heading "Estruturas e pavimentação em concreto" [level=2] [ref=e87]
+          - paragraph [ref=e88]: Além da pavimentação asfáltica, a Concreta também atua na execução de pavimentos e estruturas em concreto, oferecendo soluções resistentes e duráveis para diferentes aplicações.
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - paragraph [ref=e91]: "Entre as etapas da execução estão:"
+            - list [ref=e92]:
+              - listitem [ref=e93]:
+                - img [ref=e94]
+                - generic [ref=e96]: Pavimentação em concreto
+              - listitem [ref=e97]:
+                - img [ref=e98]
+                - generic [ref=e100]: Concretagem de lajes
+              - listitem [ref=e101]:
+                - img [ref=e102]
+                - generic [ref=e104]: Execução de estruturas em concreto
+              - listitem [ref=e105]:
+                - img [ref=e106]
+                - generic [ref=e108]: Pisos industriais
+              - listitem [ref=e109]:
+                - img [ref=e110]
+                - generic [ref=e112]: Áreas de carga e descarga
+              - listitem [ref=e113]:
+                - img [ref=e114]
+                - generic [ref=e116]: Estacionamentos e pátios logísticos
+          - generic [ref=e119]:
+            - paragraph [ref=e120]: O concreto é uma solução indicada para ambientes que exigem maior resistência estrutural e alta durabilidade.
+            - link "Fale com nossa equipe" [ref=e121] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e124]:
+        - generic [ref=e126]:
+          - heading "Estrutura e capacidade operacional" [level=2] [ref=e127]
+          - paragraph [ref=e129]: A Concreta possui uma estrutura operacional robusta que garante eficiência, controle de qualidade e agilidade na execução das obras.
+        - list [ref=e132]:
+          - listitem [ref=e133]:
+            - img [ref=e134]
+            - generic [ref=e136]: Usinas próprias de asfalto e concreto
+          - listitem [ref=e137]:
+            - img [ref=e138]
+            - generic [ref=e140]: Frota e equipamentos operacionais
+          - listitem [ref=e141]:
+            - img [ref=e142]
+            - generic [ref=e144]: Equipe técnica qualificada
+          - listitem [ref=e145]:
+            - img [ref=e146]
+            - generic [ref=e148]: Capacidade para obras de diferentes portes
+          - listitem [ref=e149]:
+            - img [ref=e150]
+            - generic [ref=e152]: Atuação em diferentes regiões do país
+      - generic [ref=e156]:
+        - generic [ref=e159]:
+          - heading "Aplicações das nossas soluções" [level=2] [ref=e160]
+          - paragraph [ref=e162]: "Executamos obras de pavimentação e concretagem para diferentes tipos de projetos, como:"
+          - list [ref=e163]:
+            - listitem [ref=e164]:
+              - img [ref=e165]
+              - generic [ref=e167]: Vias urbanas
+            - listitem [ref=e168]:
+              - img [ref=e169]
+              - generic [ref=e171]: Rodovias
+            - listitem [ref=e172]:
+              - img [ref=e173]
+              - generic [ref=e175]: Loteamentos
+            - listitem [ref=e176]:
+              - img [ref=e177]
+              - generic [ref=e179]: Pátios industriais
+            - listitem [ref=e180]:
+              - img [ref=e181]
+              - generic [ref=e183]: Estacionamentos
+            - listitem [ref=e184]:
+              - img [ref=e185]
+              - generic [ref=e187]: Áreas logísticas
+            - listitem [ref=e188]:
+              - img [ref=e189]
+              - generic [ref=e191]: Obras estruturais em concreto
+        - generic [ref=e192]:
+          - paragraph [ref=e193]: Atendemos clientes do setor público e privado, sempre com foco em qualidade, segurança e desempenho das obras.
+          - link "Fale com nossa equipe" [ref=e194] [cursor=pointer]:
+            - /url: "#"
+    - generic [ref=e197]:
+      - generic [ref=e198]:
+        - generic [ref=e200]: Fale conosco
+        - heading "Precisa de pavimentação ou serviços em concreto para sua obra?" [level=2] [ref=e201]
+        - paragraph [ref=e202]: Conte com a experiência, estrutura e capacidade operacional da Concreta Engenharia para executar seu projeto com qualidade e eficiência.
+      - generic [ref=e203]:
+        - link "Solicitar orçamento" [ref=e204] [cursor=pointer]:
+          - /url: "#"
+        - link "Fala com nossa equipe" [ref=e205] [cursor=pointer]:
+          - /url: "#"
+  - contentinfo [ref=e207]:
+    - generic [ref=e208]:
+      - generic [ref=e209]:
+        - link "Concreta Engenharia" [ref=e210] [cursor=pointer]:
+          - /url: /
+          - img "Concreta Engenharia" [ref=e211]
+        - generic [ref=e212]:
+          - generic [ref=e213]: Siga-nos
+          - generic [ref=e214]:
+            - link "facebook" [ref=e215] [cursor=pointer]:
+              - /url: https://teste.com
+              - img [ref=e216]
+            - link "instagram" [ref=e218] [cursor=pointer]:
+              - /url: https://teste.com
+              - img [ref=e219]
+      - generic [ref=e221]:
+        - paragraph [ref=e222]: Institucional
+        - list [ref=e223]:
+          - listitem [ref=e224]:
+            - link "Home" [ref=e225] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/
+          - listitem [ref=e226]:
+            - link "Sobre nós" [ref=e227] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/sobre-nos/
+          - listitem [ref=e228]:
+            - link "Cases" [ref=e229] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/cases/
+          - listitem [ref=e230]:
+            - link "Trabalhe conosco" [ref=e231] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/trabalhe-conosco/
+          - listitem [ref=e232]:
+            - link "Contato" [ref=e233] [cursor=pointer]:
+              - /url: http://concreta-engenharia.local/contato/
+      - generic [ref=e234]:
+        - paragraph [ref=e235]: Soluções
+        - list [ref=e236]:
+          - listitem [ref=e237]:
+            - link "Pavimentação e Concreto" [ref=e238] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e239]:
+            - link "Concreta Transportes" [ref=e240] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e241]:
+            - link "Concreta Rental" [ref=e242] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e243]:
+        - paragraph [ref=e244]: Fale conosco
+        - list [ref=e245]:
+          - listitem [ref=e246]:
+            - img [ref=e247]
+            - generic [ref=e249]: +55 00 1234 5678
+          - listitem [ref=e250]:
+            - img [ref=e251]
+            - link "contato@concreta.eng.br" [ref=e254] [cursor=pointer]:
+              - /url: mailto:contato@concreta.eng.br
+          - listitem [ref=e255]:
+            - img [ref=e256]
+            - generic [ref=e260]: Endereço
+          - listitem [ref=e261]:
+            - img [ref=e262]
+            - generic [ref=e265]: Segunda a Sexta (Horário comercial)
+    - generic [ref=e266]:
+      - generic [ref=e267]: ©2026 Concreta Engenharia
+      - link "Política de privacidade" [ref=e268] [cursor=pointer]:
+        - /url: http://concreta-engenharia.local/politica-de-privacidade/
+      - generic [ref=e269]:
+        - text: Criação de Site por
+        - link "UpSItes" [ref=e270] [cursor=pointer]:
+          - /url: https://upsites.digital/?origin=concreta-engenharia

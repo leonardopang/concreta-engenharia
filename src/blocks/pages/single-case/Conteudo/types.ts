@@ -4,8 +4,7 @@ export interface ConteudoSection {
   eyebrow?: string;
   title?: string;
   description?: string;
-  image1?: AcfImage | null;
-  image2?: AcfImage | null;
+  image?: AcfImage | null;
   layout?: 'text_right' | 'text_left';
 }
 

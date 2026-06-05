@@ -10,4 +10,5 @@ block_render('text-image', [
     'title'      => $group['title'] ?? '',
     'text'       => acf_wysiwyg($group['text'] ?? ''),
     'button'     => acf_link($group['button'] ?? null),
+    'reversed'   => (bool) ($data['reversed'] ?? false),
 ]);

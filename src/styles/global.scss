@@ -9,3 +9,231 @@ body {
   color: $color-text;
   background-color: $color-white;
 }
+
+// ─── Página de Conteúdo (Política, Termos, etc.) ─────────────────────────────
+.content-page__hero {
+  background-color: $color-dark;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-page__hero-inner {
+  @include container;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  min-height: 220px;
+  padding-top: $space-16;
+  padding-bottom: $space-10;
+
+  @include respond-to($bp-lg) {
+    min-height: 280px;
+    padding-bottom: $space-12;
+  }
+}
+
+.content-page__hero-bg {
+  position: absolute;
+  inset: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    opacity: 0.25;
+  }
+}
+
+.content-page__hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba($color-dark, 0.85) 0%, rgba($color-dark, 0.4) 100%);
+}
+
+.content-page__hero-title {
+  position: relative;
+  font-size: clamp($font-size-3xl, 5vw, $font-size-5xl);
+  font-weight: $font-weight-bold;
+  line-height: $line-height-tight;
+  color: $color-white;
+  margin: 0;
+}
+
+.content-page__body {
+  padding: $space-16 $space-4 $space-20;
+
+  @include respond-to($bp-lg) {
+    padding: $space-20 $space-8 $space-24;
+  }
+}
+
+.content-page__body-inner {
+  @include container;
+}
+
+.content-page__content {
+  max-width: 800px;
+  color: $color-neutral-600;
+  font-size: $font-size-md;
+  line-height: $line-height-relaxed;
+
+  @include respond-to($bp-lg) {
+    font-size: $font-size-lg;
+  }
+
+  h2, h3, h4, h5, h6 {
+    color: $color-text;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-snug;
+    margin: $space-10 0 $space-4;
+
+    &:first-child { margin-top: 0; }
+  }
+
+  h2 { font-size: clamp($font-size-2xl, 3vw, $font-size-3xl); }
+  h3 { font-size: clamp($font-size-xl, 2.5vw, $font-size-2xl); }
+  h4 { font-size: $font-size-xl; }
+
+  p {
+    margin: 0 0 $space-5;
+    &:last-child { margin-bottom: 0; }
+  }
+
+  ul, ol {
+    margin: 0 0 $space-5;
+    padding-left: $space-6;
+
+    li {
+      margin-bottom: $space-2;
+    }
+  }
+
+  ul li { list-style: disc; }
+  ol li { list-style: decimal; }
+
+  a {
+    color: $color-primary;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: opacity 150ms ease;
+
+    &:hover { opacity: 0.75; }
+  }
+
+  strong { font-weight: $font-weight-semibold; color: $color-text; }
+  em     { font-style: italic; }
+
+  blockquote {
+    border-left: 4px solid $color-primary;
+    margin: $space-8 0;
+    padding: $space-4 $space-6;
+    background-color: $color-neutral-100;
+    border-radius: 0 8px 8px 0;
+    color: $color-neutral-700;
+    font-style: italic;
+
+    p:last-child { margin-bottom: 0; }
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid $color-neutral-200;
+    margin: $space-10 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: $space-8 0;
+    font-size: $font-size-sm;
+
+    th, td {
+      text-align: left;
+      padding: $space-3 $space-4;
+      border-bottom: 1px solid $color-neutral-200;
+    }
+
+    th {
+      font-weight: $font-weight-semibold;
+      color: $color-text;
+      background-color: $color-neutral-100;
+    }
+
+    tr:last-child td { border-bottom: none; }
+  }
+}
+
+// ─── Página 404 ──────────────────────────────────────────────────────────────
+.not-found {
+  background-color: $color-white;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-20 $space-4;
+  overflow: hidden;
+  position: relative;
+}
+
+.not-found__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: $space-6;
+  max-width: 560px;
+  width: 100%;
+}
+
+.not-found__code {
+  display: block;
+  font-size: clamp(6rem, 20vw, 10rem);
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  background: linear-gradient(135deg, $color-brand-100 0%, $color-brand-200 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.04em;
+  user-select: none;
+}
+
+.not-found__title {
+  font-size: clamp($font-size-2xl, 5vw, $font-size-4xl);
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-tight;
+  color: $color-white;
+  margin: 0;
+}
+
+.not-found__description {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-relaxed;
+  color: $color-neutral-600;
+  margin: 0;
+}
+
+.not-found__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: $space-2;
+  padding: $space-4 $space-10;
+  background-color: $color-accent;
+  color: $color-neutral-800;
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: opacity 150ms ease, transform 150ms ease;
+
+  &:hover {
+    opacity: 0.88;
+    transform: translateY(-1px);
+  }
+}

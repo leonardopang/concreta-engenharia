@@ -1,0 +1,176 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/pages/solucoes/Aplicacoes/style.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.nCf2q1RaEJBVtFL9na48 {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e5e5;
+  padding: 5rem 1rem;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .nCf2q1RaEJBVtFL9na48 {
+    padding: 5rem 2rem;
+  }
+}
+.h0h4n1bNDbth62U04G2A {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.EbqMZtIOnifCqih8f2pl {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: 1024px) {
+  .EbqMZtIOnifCqih8f2pl {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4.5rem;
+  }
+}
+.uvXw8TgWzAiZCurgKRk5 {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #737373;
+}
+@media (min-width: 1024px) {
+  .uvXw8TgWzAiZCurgKRk5 {
+    width: 672px;
+    flex-shrink: 0;
+    align-self: stretch;
+  }
+}
+.lvUFDxaUCZC_2zoZQKS0 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  min-height: 360px;
+}
+@media (min-width: 1024px) {
+  .lvUFDxaUCZC_2zoZQKS0 {
+    min-height: 734px;
+  }
+}
+.ISOuTdZM7PnQr6IfqlCr {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: 1024px) {
+  .ISOuTdZM7PnQr6IfqlCr {
+    flex: 1;
+  }
+}
+.e3GvE5Wm7zTwrzME48qS {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.f1ZYFcapPFS4aW1LhkKU {
+  font-size: clamp(1.75rem, 3vw, 40px);
+  font-weight: 500;
+  line-height: 1.3;
+  background: linear-gradient(224deg, #048837 9.45%, #293377 100.44%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.IUhfRvUR790lpB6hIfh8 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #737373;
+  margin: 0;
+}
+.bYJGoryQFHxOq4VvDAZ6 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.SgL4FtVpSUl_D72MGKdu {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 1.5rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: calc(50% - 0.5rem);
+  flex-shrink: 0;
+}
+@media (min-width: 1024px) {
+  .SgL4FtVpSUl_D72MGKdu {
+    width: 260px;
+    min-height: 120px;
+  }
+}
+.YPpQAiA2Hy6qCl5IXBAw {
+  flex-shrink: 0;
+  display: flex;
+}
+.bhQptedKeTfIYCsKup9D {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #1a1a1a;
+  margin: 0;
+}
+.O6038Z3hV83JsB7KyxBL {
+  background-color: #060d3c;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+@media (min-width: 1024px) {
+  .O6038Z3hV83JsB7KyxBL {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 120px;
+  }
+}
+.K12QUWIp5QdTC3E6GJA4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 0;
+  max-width: 613px;
+}
+.vIyyHw7Z5cFvNj11qYAU {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 1rem 2rem;
+  background-color: #f29506;
+  border: 1px solid #f29506;
+  color: #1a1a1a;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 16px 10px rgba(204, 204, 204, 0.05);
+  transition: opacity 150ms ease;
+}
+.vIyyHw7Z5cFvNj11qYAU:hover {
+  opacity: 0.88;
+}
+
+/*# sourceMappingURL=style-Aplicacoes.css.map*/

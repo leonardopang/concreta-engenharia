@@ -1,1 +1,143 @@
-.CNnJzIW25zVFAykoRxSJ{background-color:#f5f5f5;overflow:hidden;padding:4rem 1rem;position:relative}@media(min-width:768px){.CNnJzIW25zVFAykoRxSJ{padding:5rem 2rem}}.DmJ4ufctoy2c13Crhgf6{opacity:.3;pointer-events:none}.DmJ4ufctoy2c13Crhgf6,.lOPABGuHSI_ZqECoiXo2{inset:0;position:absolute}.lOPABGuHSI_ZqECoiXo2{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}.H922hVytmMBG_iFoRJWX{gap:3rem;margin-left:auto;margin-right:auto;max-width:1280px;padding-left:1rem;padding-right:1rem;position:relative;width:100%}.oXkKfgOyT_RnftzmlpNC,.H922hVytmMBG_iFoRJWX{align-items:center;display:flex;flex-direction:column}.oXkKfgOyT_RnftzmlpNC{gap:1.5rem;max-width:714px;text-align:center}.LarYFmklrDUnP_pulKxh{background:linear-gradient(200deg,#048837 9%,#293377);-webkit-background-clip:text;font-size:clamp(1.5rem,3vw,2.25rem);font-weight:500;line-height:1.4;-webkit-text-fill-color:transparent;background-clip:text}.xD7j13MTuRMHFuMwcWFB{color:#737373;font-size:1.125rem;font-weight:400;line-height:1.6}.NDvqONEPZJBD3RRwcGLb{align-items:center;display:flex;flex-direction:column;gap:2.5rem;width:100%}@media(min-width:1024px){.NDvqONEPZJBD3RRwcGLb{align-items:center;flex-direction:row;gap:4rem}}.YvXY2CaRXDxFqX_K7kRe{border-radius:16px;flex-shrink:0;height:320px;overflow:hidden;width:100%}@media(min-width:768px){.YvXY2CaRXDxFqX_K7kRe{height:420px}}@media(min-width:1024px){.YvXY2CaRXDxFqX_K7kRe{height:560px;width:580px}}.N3lapJ7voXeVFVmXAl6L{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}.MebmWLj3wtr50Rjjk_hF{display:flex;flex:1;flex-direction:column;gap:1.25rem;list-style:none;margin:0;padding:0;width:100%}.fz_n6n8O6m59PRzvprYn{background:#fff;border-radius:10px;gap:1rem;padding:1rem}.flH7Z4_nIETRJqnbuL3Z,.fz_n6n8O6m59PRzvprYn{align-items:center;display:flex}.flH7Z4_nIETRJqnbuL3Z{background:#293377;border-radius:6px;flex-shrink:0;height:64px;justify-content:center;width:64px}.COuapDqkMpfWAYgvDdrv{height:32px;width:32px}.LJRBzTws92_flKJYTmYr{color:#1a1a1a;flex:1;font-size:1rem;font-weight:500;line-height:1.5}
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/pages/sobre/Capacidade/style.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.CNnJzIW25zVFAykoRxSJ {
+  position: relative;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  padding: 4rem 1rem;
+}
+@media (min-width: 768px) {
+  .CNnJzIW25zVFAykoRxSJ {
+    padding: 5rem 2rem;
+  }
+}
+.DmJ4ufctoy2c13Crhgf6 {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.3;
+}
+.lOPABGuHSI_ZqECoiXo2 {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.H922hVytmMBG_iFoRJWX {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+.oXkKfgOyT_RnftzmlpNC {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+  max-width: 714px;
+}
+.LarYFmklrDUnP_pulKxh {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.4;
+  background: linear-gradient(200deg, #048837 9%, #293377 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.xD7j13MTuRMHFuMwcWFB {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #737373;
+}
+.NDvqONEPZJBD3RRwcGLb {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .NDvqONEPZJBD3RRwcGLb {
+    flex-direction: row;
+    gap: 4rem;
+    align-items: center;
+  }
+}
+.YvXY2CaRXDxFqX_K7kRe {
+  flex-shrink: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  height: 320px;
+}
+@media (min-width: 768px) {
+  .YvXY2CaRXDxFqX_K7kRe {
+    height: 420px;
+  }
+}
+@media (min-width: 1024px) {
+  .YvXY2CaRXDxFqX_K7kRe {
+    width: 580px;
+    height: 560px;
+  }
+}
+.N3lapJ7voXeVFVmXAl6L {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.MebmWLj3wtr50Rjjk_hF {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex: 1;
+  width: 100%;
+}
+.fz_n6n8O6m59PRzvprYn {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.flH7Z4_nIETRJqnbuL3Z {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: #293377;
+  border-radius: 6px;
+}
+.COuapDqkMpfWAYgvDdrv {
+  width: 32px;
+  height: 32px;
+}
+.LJRBzTws92_flKJYTmYr {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #1a1a1a;
+}
+
+/*# sourceMappingURL=style-Capacidade.css.map*/

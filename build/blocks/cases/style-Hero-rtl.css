@@ -1,1 +1,60 @@
-.bFdk6gJjkUR4Ga4XN9gF{align-items:center;background-color:#737373;display:flex;height:540px;justify-content:center;overflow:hidden;position:relative}.lyh63fvfdJLqTY89BTmh{inset:0;position:absolute}.D7c3vyy24qW1Xw0QhE0v{display:block;height:100%;-o-object-fit:cover;object-fit:cover;width:100%}.iB_EIvsWupU0j2Gjh3yY{background-color:rgba(0,0,0,.5);inset:0;position:absolute}.rKVsmFWd6m7ylT7nRdpS{align-items:center;display:flex;flex-direction:column;gap:1rem;max-width:760px;padding:0 1rem;position:relative;text-align:center;width:100%;z-index:1}.ARHeVWBIcvAm5Ih9yORh{color:#fff;font-size:clamp(2rem,4vw,56px);font-weight:500;line-height:1.1;margin:0}.vIeKbiyUIcWSB7UxWF1g{color:#fff;font-size:1.125rem;font-weight:400;line-height:1.5;margin:0}
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/pages/cases/Hero/style.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+.bFdk6gJjkUR4Ga4XN9gF {
+  position: relative;
+  height: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #737373;
+}
+
+.lyh63fvfdJLqTY89BTmh {
+  position: absolute;
+  inset: 0;
+}
+
+.D7c3vyy24qW1Xw0QhE0v {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.iB_EIvsWupU0j2Gjh3yY {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.rKVsmFWd6m7ylT7nRdpS {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 0 1rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+.ARHeVWBIcvAm5Ih9yORh {
+  font-size: clamp(2rem, 4vw, 56px);
+  font-weight: 500;
+  line-height: 1.1;
+  color: #ffffff;
+  margin: 0;
+}
+
+.vIeKbiyUIcWSB7UxWF1g {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0;
+}
