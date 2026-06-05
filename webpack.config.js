@@ -9,6 +9,11 @@ module.exports = {
 		...defaultConfig.output,
 		clean: true,
 	},
+	optimization: {
+		...defaultConfig.optimization,
+		splitChunks: false,
+		runtimeChunk: false,
+	},
 	plugins: [
 		...( defaultConfig.plugins || [] ),
 		...( isWatch
