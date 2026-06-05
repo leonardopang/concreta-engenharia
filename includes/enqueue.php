@@ -25,7 +25,7 @@ add_action('wp_head', function (): void {
     $hero = get_field('hero') ?: [];
     $bg   = $hero['background'] ?? null;
     if (! empty($bg['url'])) {
-        echo '<link rel="preload" as="image" href="' . esc_url($bg['url']) . '">' . "\n";
+        echo '<link rel="preload" as="image" fetchpriority="high" href="' . esc_url($bg['url']) . '">' . "\n";
     }
 }, 3);
 

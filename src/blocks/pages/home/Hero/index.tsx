@@ -13,20 +13,44 @@ export default function Hero({
   cta2,
 }: HeroProps) {
   return (
-    <section
-      className={styles.hero}
-      style={bgImage?.url ? { backgroundImage: `url(${bgImage.url})` } : undefined}
-    >
+    <section className={styles.hero}>
+      {bgImage?.url && (
+        <img
+          src={bgImage.url}
+          alt=""
+          aria-hidden="true"
+          className={styles.hero__bg}
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+          {...(bgImage.width  > 0 && { width:  bgImage.width  })}
+          {...(bgImage.height > 0 && { height: bgImage.height })}
+        />
+      )}
       <div className={styles.hero__inner}>
 
-        <div className={styles.hero__content} data-animate="fade-right">
+        <div className={styles.hero__content}>
           <div className={styles.hero__text}>
-            {title && <h1 className={styles.hero__title} {...htmlTitle(title)} />}
-            {description && <p className={styles.hero__description}>{description}</p>}
+            {title && (
+              <h1
+                className={styles.hero__title}
+                data-split-reveal="hero"
+                {...htmlTitle(title)}
+              />
+            )}
+            {description && (
+              <p
+                className={styles.hero__description}
+                data-animate-load
+                data-animate-load-delay="0.55"
+              >
+                {description}
+              </p>
+            )}
           </div>
 
           {(cta || cta2) && (
-            <div className={styles.hero__actions}>
+            <div className={styles.hero__actions} data-animate-load data-animate-load-delay="0.75">
               {cta?.url && (
                 <Button label={cta.label} url={cta.url} target={cta.target} variant="primary" />
               )}
@@ -37,7 +61,7 @@ export default function Hero({
           )}
         </div>
 
-        <div data-animate="fade-left" data-animate-delay="0.2">
+        <div data-animate-load data-animate-load-delay="0.4">
           <SmartImage image={image} className={styles.hero__image} loading="eager" fetchpriority="high" />
         </div>
 

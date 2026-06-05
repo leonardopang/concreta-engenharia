@@ -12,19 +12,36 @@ export default function TextImage({ background, imagem, title, text, button, rev
       <SmartImage image={background} alt="" loading="eager" className={styles.textImage__bg} />
 
       <div className={clsx(styles.textImage__inner, reversed && styles['textImage__inner--reversed'])}>
-        <div className={styles.textImage__media} data-animate={reversed ? 'fade-left' : 'fade-right'}>
+        <div className={styles.textImage__media} data-animate="reveal-up">
           <SmartImage image={imagem} className={styles.textImage__image} />
         </div>
 
-        <div className={styles.textImage__content} data-animate={reversed ? 'fade-right' : 'fade-left'} data-animate-delay="0.15">
-          {title && <h2 className={styles.textImage__title}>{title}</h2>}
+        <div className={styles.textImage__content}>
+          {title && (
+            <h2
+              className={styles.textImage__title}
+              data-animate="fade-up"
+            >
+              {title}
+            </h2>
+          )}
 
           {text && (
-            <div className={styles.textImage__text} {...htmlContent(text)} />
+            <div
+              className={styles.textImage__text}
+              data-animate="fade-up"
+              data-animate-delay="0.2"
+              {...htmlContent(text)}
+            />
           )}
 
           {btnProps && (
-            <a {...btnProps} className={styles.textImage__button}>
+            <a
+              {...btnProps}
+              className={styles.textImage__button}
+              data-animate="fade-up"
+              data-animate-delay="0.35"
+            >
               {btnProps.label}
             </a>
           )}

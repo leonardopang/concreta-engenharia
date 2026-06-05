@@ -2,15 +2,26 @@
 
 .hero {
   position: relative;
+  z-index: 1;
   background-color: #0c144a;
-  background-size: cover;
-  background-position: center;
   overflow: hidden;
   min-height: 480px;
 
   @include respond-to($bp-lg) {
     min-height: 700px;
   }
+}
+
+// ─── Background image ─────────────────────────────────────────────────────────
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  z-index: -1;
 }
 
 // ─── Inner ────────────────────────────────────────────────────────────────────
