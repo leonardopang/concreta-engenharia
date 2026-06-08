@@ -5,6 +5,7 @@ export interface AplicacoesCard {
 }
 
 export interface SolucaoAplicacoesProps {
+  background?: AcfImage | null;
   title?: string;
   description?: string;
   image?: AcfImage | null;

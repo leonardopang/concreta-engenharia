@@ -44,12 +44,6 @@ const blockRegistry: Record<string, () => Promise<BlockModule>> = {
   // Cases page blocks
   'cases-hero':  () => import(/* webpackMode: "eager" */ './blocks/pages/cases/Hero'),
   'cases-lista': () => import(/* webpackMode: "eager" */ './blocks/pages/cases/Lista'),
-  // Soluções page blocks
-  'solucoes-hero':       () => import(/* webpackMode: "eager" */ './blocks/pages/solucoes/Hero'),
-  'solucoes-intro':      () => import(/* webpackMode: "eager" */ './blocks/pages/solucoes/Intro'),
-  'solucoes-servicos':   () => import(/* webpackMode: "eager" */ './blocks/pages/solucoes/Servicos'),
-  'solucoes-capacidade': () => import(/* webpackMode: "eager" */ './blocks/pages/solucoes/Capacidade'),
-  'solucoes-aplicacoes': () => import(/* webpackMode: "eager" */ './blocks/pages/solucoes/Aplicacoes'),
   // Contato page blocks
   'contato-hero': () => import(/* webpackMode: "eager" */ './blocks/pages/contato/Hero'),
   'contato-form': () => import(/* webpackMode: "eager" */ './blocks/pages/contato/Form'),

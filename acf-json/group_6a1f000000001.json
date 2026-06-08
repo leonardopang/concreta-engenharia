@@ -703,6 +703,32 @@
             "layout": "block",
             "sub_fields": [
                 {
+                    "key": "field_6a2720d4024ed",
+                    "label": "Background",
+                    "name": "background",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium"
+                },
+                {
                     "key": "field_6a1f000000025",
                     "label": "Título",
                     "name": "title",
@@ -849,6 +875,32 @@
             },
             "layout": "block",
             "sub_fields": [
+                {
+                    "key": "field_6a272112a1149",
+                    "label": "Background",
+                    "name": "background",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium"
+                },
                 {
                     "key": "field_6a1f00000002c",
                     "label": "Título",
@@ -1166,6 +1218,13 @@
                 "operator": "==",
                 "value": "page-solucoes.php"
             }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "single-solucao-pavimentacao.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -1183,5 +1242,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1780373802
+    "modified": 1780950135
 }

@@ -15,7 +15,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.2;
+  opacity: 0.8;
 }
 
 .comp__bgImg {
@@ -62,5 +62,7 @@
   line-height: $line-height-relaxed;
   color: $color-text-muted;
 
-  p + p { margin-top: $space-4; }
+  p+p {
+    margin-top: $space-4;
+  }
 }

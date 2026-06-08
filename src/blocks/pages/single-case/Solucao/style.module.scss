@@ -1,7 +1,6 @@
 @use '../../../../styles/tokens' as *;
 
 .solucao {
-  background-color: $color-white;
   padding: $space-8 $space-4;
 
   @include respond-to($bp-lg) {

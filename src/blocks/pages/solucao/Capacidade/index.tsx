@@ -5,6 +5,7 @@ import { IconCheck } from '../../../../icons';
 import type { SolucaoCapacidadeProps } from './types';
 
 export default function SolucaoCapacidade({
+  background,
   title,
   description,
   image,
@@ -12,6 +13,12 @@ export default function SolucaoCapacidade({
 }: SolucaoCapacidadeProps) {
   return (
     <section className={styles.capacidade}>
+      {background?.url && (
+        <div className={styles.capacidade__bg} aria-hidden="true">
+          <SmartImage image={background} alt="" loading="eager" className={styles.capacidade__bgImg} />
+        </div>
+      )}
+
       <div className={styles.capacidade__inner}>
         <div className={styles.capacidade__top}>
           <div className={styles.capacidade__content} data-animate="fade-right">

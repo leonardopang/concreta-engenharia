@@ -5,6 +5,7 @@ export interface CapacidadeItem {
 }
 
 export interface SolucaoCapacidadeProps {
+  background?: AcfImage | null;
   title?: string;
   description?: string;
   image?: AcfImage | null;

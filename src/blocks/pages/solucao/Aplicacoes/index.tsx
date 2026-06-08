@@ -5,6 +5,7 @@ import { IconCheck } from '../../../../icons';
 import type { SolucaoAplicacoesProps } from './types';
 
 export default function SolucaoAplicacoes({
+  background,
   title,
   description,
   image,
@@ -14,6 +15,12 @@ export default function SolucaoAplicacoes({
 }: SolucaoAplicacoesProps) {
   return (
     <section className={styles.aplicacoes}>
+      {background?.url && (
+        <div className={styles.aplicacoes__bg} aria-hidden="true">
+          <SmartImage image={background} alt="" loading="eager" className={styles.aplicacoes__bgImg} />
+        </div>
+      )}
+
       <div className={styles.aplicacoes__inner}>
         <div className={styles.aplicacoes__grid}>
           {image && (

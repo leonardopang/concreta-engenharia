@@ -17,7 +17,7 @@
 .hero__bg {
   position: absolute;
   inset: 0;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .hero__bgImg {
@@ -79,8 +79,13 @@
   line-height: $line-height-relaxed;
   color: $color-white;
 
-  p { margin: 0 0 $space-4; }
-  p:last-child { margin-bottom: 0; }
+  p {
+    margin: 0 0 $space-4;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .hero__actions {
@@ -103,7 +108,9 @@
   border-radius: 10px;
   transition: opacity 150ms ease;
 
-  &:hover { opacity: 0.88; }
+  &:hover {
+    opacity: 0.88;
+  }
 }
 
 .hero__btnGhost {

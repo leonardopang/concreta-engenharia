@@ -1,6 +1,8 @@
 <?php
+
 /**
- * Template Name: Pavimentação e Concreto
+ * Template Name: Pavimentação
+ * Template Post Type: solucao
  */
 defined('ABSPATH') || exit;
 get_header();
