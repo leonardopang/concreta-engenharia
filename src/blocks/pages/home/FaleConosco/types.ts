@@ -1,7 +1,7 @@
-import type { AcfImage, AcfLink } from '../../../../utils';
+import type { AcfLink } from '../../../../utils';
 
 export interface FaleConoscoProps {
-  background?: AcfImage | null;
+  patternUrl?: string;
   eyebrow?: string;
   title?: string;
   description?: string;

@@ -5,7 +5,7 @@ import { imgProps, linkProps, hasItems } from '../../../../utils';
 
 export default function Solucoes({ background, title, description, cards = [] }: SolucoesProps) {
   return (
-    <section className={styles.solucoes}>
+    <section id="solucoes" className={styles.solucoes}>
       <div className={styles.solucoes__card}>
         {imgProps(background) ? (
           <div className={styles.solucoes__bg} aria-hidden="true">

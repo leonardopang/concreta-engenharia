@@ -14,7 +14,7 @@ export default function TrabalheVagas({ title, categorias, vagas }: TrabalheVaga
   }, [vagas, activeSlug]);
 
   return (
-    <section className={styles.vagas}>
+    <section id="vagas" className={styles.vagas}>
       <div className={styles.vagas__inner}>
         {title && <h2 className={styles.vagas__title} data-animate="fade-up">{title}</h2>}
 

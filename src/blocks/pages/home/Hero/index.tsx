@@ -61,9 +61,7 @@ export default function Hero({
           )}
         </div>
 
-        <div data-animate-load data-animate-load-delay="0.4">
-          <SmartImage image={image} className={styles.hero__image} loading="eager" fetchpriority="high" />
-        </div>
+        <SmartImage image={image} className={styles.hero__image} loading="eager" />
 
       </div>
     </section>

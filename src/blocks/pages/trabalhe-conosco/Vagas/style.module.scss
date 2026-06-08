@@ -3,6 +3,11 @@
 .vagas {
   background-color: $color-bg;
   padding-bottom: $space-24;
+  scroll-margin-top: 80px;
+
+  @include respond-to($bp-lg) {
+    scroll-margin-top: 100px;
+  }
 }
 
 .vagas__inner {

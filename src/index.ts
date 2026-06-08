@@ -154,8 +154,25 @@ const observer = new MutationObserver( ( mutations ) => {
   }
 } );
 
+function scrollToHash(): void {
+  const id = window.location.hash.slice( 1 );
+  if ( ! id ) return;
+
+  let attempts = 0;
+  const tryScroll = () => {
+    const target = document.getElementById( id );
+    if ( target ) {
+      target.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+      return;
+    }
+    if ( ++attempts < 30 ) requestAnimationFrame( tryScroll );
+  };
+  requestAnimationFrame( tryScroll );
+}
+
 async function boot(): Promise<void> {
   await mountBlocks();
+  scrollToHash();
   observer.observe( document.body, { childList: true, subtree: true } );
   // Aguarda todas as imagens carregarem para o layout estabilizar antes do GSAP medir posições
   window.addEventListener('load', initAnimations, { once: true });

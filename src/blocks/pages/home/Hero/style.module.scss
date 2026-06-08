@@ -65,7 +65,7 @@
 .hero__title {
   font-size: clamp(2.5rem, 5vw, 3.5rem); // 40px mobile → 56px desktop
   font-weight: $font-weight-medium;
-  line-height: 1.1;
+  line-height: 128%; // 1.2 — evita cortar acentos/descendentes na máscara do SplitText
   color: $color-white;
   margin: 0;
 }

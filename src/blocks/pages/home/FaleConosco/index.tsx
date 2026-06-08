@@ -1,10 +1,10 @@
 import styles from './style.module.scss';
 import { FaleConoscoProps } from './types';
-import { imgProps, linkProps } from '../../../../utils';
+import { linkProps } from '../../../../utils';
 import Eyebrow from '../../../../components/Eyebrow';
 
 export default function FaleConosco({
-  background,
+  patternUrl,
   eyebrow,
   title,
   description,
@@ -13,9 +13,9 @@ export default function FaleConosco({
 }: FaleConoscoProps) {
   return (
     <section className={styles.fc}>
-      {imgProps(background) && (
+      {patternUrl && (
         <div className={styles.fc__bg} aria-hidden="true">
-          <img {...imgProps(background)!} className={styles.fc__bgImg} />
+          <img src={patternUrl} alt="" className={styles.fc__bgImg} />
         </div>
       )}
 

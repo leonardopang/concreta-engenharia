@@ -1,15 +1,15 @@
 import styles from './style.module.scss';
-import { linkProps, htmlContent, imgProps } from '../../../../utils';
+import { linkProps, htmlContent } from '../../../../utils';
 import { IconWhatsapp } from '../../../../icons';
 import Eyebrow from '../../../../components/Eyebrow';
 import type { ContatoCtaProps } from './types';
 
-export default function ContatoCta({ background, eyebrow, title, description, button }: ContatoCtaProps) {
+export default function ContatoCta({ patternUrl, eyebrow, title, description, button }: ContatoCtaProps) {
   return (
     <section className={styles.cta}>
-      {imgProps(background) && (
+      {patternUrl && (
         <div className={styles.cta__bg} aria-hidden="true">
-          <img {...imgProps(background)!} className={styles.cta__bgImg} />
+          <img src={patternUrl} alt="" className={styles.cta__bgImg} />
         </div>
       )}
 
