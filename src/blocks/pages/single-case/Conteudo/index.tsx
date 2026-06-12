@@ -28,7 +28,7 @@ export default function SingleCaseConteudo({ sections }: SingleCaseConteudoProps
                     <Eyebrow text={section.eyebrow} variant="green" />
                   )}
                   {section.title && (
-                    <h2 className={styles.secao__title}>{section.title}</h2>
+                    <h2 className={clsx(styles.secao__title, section.eyebrow && styles['secao__title--withEyebrow'])}>{section.title}</h2>
                   )}
                   {section.description && (
                     <div className={styles.secao__description} {...htmlContent(section.description)} />

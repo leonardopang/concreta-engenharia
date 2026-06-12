@@ -6,7 +6,7 @@ $group = BlockImporter::field('sobre_atuacao', $data) ?? get_field('sobre_atuaca
 
 block_render('sobre-atuacao', [
     'eyebrow' => $group['eyebrow'] ?? '',
-    'title'   => $group['title']   ?? '',
+    'title'   => acf_html($group['title'] ?? ''),
     'text'    => acf_wysiwyg($group['text'] ?? ''),
     'faixa'   => acf_repeater($group['faixa'] ?? [], fn($item) => [
         'item' => $item['item'] ?? '',

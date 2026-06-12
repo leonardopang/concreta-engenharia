@@ -3,26 +3,35 @@
 .eyebrow {
   display: inline-flex;
   align-items: center;
+  gap: $space-4;
   max-width: max-content;
-  padding: 0 $space-4;
+}
 
-  span {
-    font-size: $font-size-sm;
-    font-weight: $font-weight-medium;
-    line-height: $line-height-snug;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
+.eyebrow__bar {
+  display: block;
+  width: 1px;
+  align-self: stretch;
+  flex-shrink: 0;
+  transform-origin: center;
+}
+
+.eyebrow__text {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-snug;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 // ── Green variant (default) ───────────────────────────────────────────────────
 
 .eyebrow--green {
-  border-left: 1px solid $color-primary;
-  border-right: 1px solid $color-primary;
+  .eyebrow__bar {
+    background-color: $color-primary;
+  }
 
-  span {
+  .eyebrow__text {
     background: linear-gradient(239deg, $color-primary 9.5%, $color-brand-300 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -33,10 +42,11 @@
 // ── White variant (for dark backgrounds) ─────────────────────────────────────
 
 .eyebrow--white {
-  border-left: 1px solid $color-white;
-  border-right: 1px solid $color-white;
+  .eyebrow__bar {
+    background-color: $color-white;
+  }
 
-  span {
+  .eyebrow__text {
     color: $color-white;
   }
 }

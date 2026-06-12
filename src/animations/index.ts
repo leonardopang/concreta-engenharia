@@ -84,6 +84,36 @@ export function initAnimations(): void {
       }
     });
 
+    // ── data-eyebrow-animate: barras crescem e se afastam para as bordas da section
+    document.querySelectorAll<HTMLElement>('[data-eyebrow-animate]').forEach((el) => {
+      const bars = el.querySelectorAll<HTMLElement>('[data-eyebrow-bar]');
+      if (bars.length < 2) return;
+
+      const [leftBar, rightBar] = Array.from(bars);
+      const section = (el.closest('section') ?? el.parentElement) as HTMLElement;
+
+      // 1. scaleY: barras crescem quando o eyebrow entra na viewport
+      gsap.from(bars, {
+        scaleY: 0,
+        duration: 0.5,
+        ease: 'power2.out',
+        stagger: 0.08,
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 82%',
+          once: true,
+          invalidateOnRefresh: true,
+        },
+      });
+
+      // 2. translateX scrub: barras se afastam para as bordas da section conforme o scroll
+      const getTravelLeft  = () => -(leftBar.getBoundingClientRect().left  - section.getBoundingClientRect().left);
+      const getTravelRight = () =>   section.getBoundingClientRect().right - rightBar.getBoundingClientRect().right;
+
+      gsap.to(leftBar,  { x: getTravelLeft,  ease: 'power1.inOut', scrollTrigger: { trigger: section, start: 'top center', end: 'bottom top', scrub: 2, invalidateOnRefresh: true } });
+      gsap.to(rightBar, { x: getTravelRight, ease: 'power1.inOut', scrollTrigger: { trigger: section, start: 'top center', end: 'bottom top', scrub: 2, invalidateOnRefresh: true } });
+    });
+
     // ── data-split-reveal="hero": SplitText reveal on page load ───────────────
     const heroSplitEls = document.querySelectorAll<HTMLElement>('[data-split-reveal="hero"]');
     if (heroSplitEls.length) {

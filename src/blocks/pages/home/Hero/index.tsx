@@ -23,7 +23,7 @@ export default function Hero({
           loading="eager"
           fetchpriority="high"
           decoding="async"
-          {...(bgImage.width  > 0 && { width:  bgImage.width  })}
+          {...(bgImage.width > 0 && { width: bgImage.width })}
           {...(bgImage.height > 0 && { height: bgImage.height })}
         />
       )}
@@ -41,7 +41,7 @@ export default function Hero({
             {description && (
               <p
                 className={styles.hero__description}
-                data-animate-load
+                data-animate-load='fade-up'
                 data-animate-load-delay="0.55"
               >
                 {description}

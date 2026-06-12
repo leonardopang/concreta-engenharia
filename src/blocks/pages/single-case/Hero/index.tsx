@@ -17,9 +17,9 @@ export default function SingleCaseHero({ title, bgImage, empresa, ano, servico, 
       {bgImage && imgProps(bgImage) && (
         <div className={styles.hero__bg} aria-hidden="true">
           <img {...imgProps(bgImage)!} className={styles.hero__bgImg} loading="eager" fetchpriority="high" />
+          <div className={styles.hero__overlay} />
         </div>
       )}
-      <div className={styles.hero__overlay} aria-hidden="true" />
 
       <div className={styles.hero__inner}>
         <h1 className={styles.hero__title}>{title}</h1>

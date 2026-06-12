@@ -2,7 +2,7 @@ import styles from './style.module.scss';
 import { AtuacaoProps } from './types';
 import Eyebrow from '../../../../components/Eyebrow';
 import { IconCaretDoubleRight } from '../../../../icons';
-import { hasItems, htmlContent } from '../../../../utils';
+import { hasItems, htmlContent, htmlTitle } from '../../../../utils';
 
 export default function Atuacao({ eyebrow, title, text, faixa = [] }: AtuacaoProps) {
   const ticker = hasItems(faixa) ? faixa : [];
@@ -12,7 +12,7 @@ export default function Atuacao({ eyebrow, title, text, faixa = [] }: AtuacaoPro
       <div className={styles.atuacao__card}>
         <div className={styles.atuacao__content} data-animate="fade-right">
           {eyebrow && <Eyebrow text={eyebrow} variant="white" />}
-          {title && <h2 className={styles.atuacao__title}>{title}</h2>}
+          {title && <h2 className={styles.atuacao__title} {...htmlTitle(title)} />}
         </div>
 
         <div className={styles.atuacao__text} data-animate="fade-left" data-animate-delay="0.15">
