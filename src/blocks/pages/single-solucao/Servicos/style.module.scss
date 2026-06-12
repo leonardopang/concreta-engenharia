@@ -129,6 +129,15 @@
   flex-direction: column;
   justify-content: flex-end;
   background-color: $color-dark;
+
+  &--noImage {
+    justify-content: center;
+    align-items: center;
+
+    .servicos__cardContent {
+      align-items: center;
+    }
+  }
 }
 
 .servicos__cardBg {

@@ -54,9 +54,6 @@ const blockRegistry: Record<string, () => Promise<BlockModule>> = {
   'single-case-solucao':    () => import(/* webpackMode: "eager" */ './blocks/pages/single-case/Solucao'),
   'single-case-resultados': () => import(/* webpackMode: "eager" */ './blocks/pages/single-case/Resultados'),
   'single-case-galeria':    () => import(/* webpackMode: "eager" */ './blocks/pages/single-case/Galeria'),
-  // Single Solução — Rental blocks
-  'single-solucao-rental-equipamentos': () => import(/* webpackMode: "eager" */ './blocks/pages/single-solucao-rental/Equipamentos'),
-  'single-solucao-rental-diferenciais': () => import(/* webpackMode: "eager" */ './blocks/pages/single-solucao-rental/Diferenciais'),
   // Single Vaga blocks
   'single-vaga-detalhe': () => import(/* webpackMode: "eager" */ './blocks/pages/single-vaga/Detalhe'),
   // Single Solução blocks

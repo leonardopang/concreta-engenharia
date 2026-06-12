@@ -42,7 +42,7 @@ export default function SingleSolucaoServicos({
             )}
           </div>
 
-          <div className={styles.servicos__cardDark} data-animate="fade-left" data-animate-delay="0.15">
+          <div className={clsx(styles.servicos__cardDark, !cardBgImage && styles['servicos__cardDark--noImage'])} data-animate="fade-left" data-animate-delay="0.15">
             {cardBgImage && (
               <div className={styles.servicos__cardBg} aria-hidden="true">
                 <SmartImage image={cardBgImage} className={styles.servicos__cardBgImg} alt="" />
