@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   gap: $space-4;
-  max-width: 720px;
+  max-width: 765px;
   margin: 0 auto;
 }
 
@@ -42,6 +42,7 @@
   line-height: $line-height-relaxed;
   color: $color-neutral-600;
   margin: 0;
+  max-width: 700px;
 }
 
 .diferenciais__grid {
