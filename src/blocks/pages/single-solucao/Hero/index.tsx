@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
 import SmartImage from '../../../../components/SmartImage';
-import { linkProps, htmlContent } from '../../../../utils';
+import { linkProps, htmlContent, htmlTitle } from '../../../../utils';
 import type { SingleSolucaoHeroProps } from './types';
 
 export default function SingleSolucaoHero({
@@ -20,8 +20,8 @@ export default function SingleSolucaoHero({
       )}
       <div className={styles.hero__inner}>
         <div className={styles.hero__left} data-animate="fade-right">
-          {title && <h1 className={styles.hero__title}>{title}</h1>}
-          {subtitle && <p className={styles.hero__subtitle}>{subtitle}</p>}
+          {title && <h1 className={styles.hero__title} {...htmlTitle(title)} />}
+          {subtitle && <p className={styles.hero__subtitle} {...htmlTitle(subtitle)} />}
         </div>
 
         <div className={styles.hero__right} data-animate="fade-left" data-animate-delay="0.15">
