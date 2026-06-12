@@ -6,6 +6,7 @@ import type { ContatoFormProps } from './types';
 
 export default function ContatoForm({
   title,
+  titleForm,
   description,
   phone,
   email,
@@ -74,6 +75,7 @@ export default function ContatoForm({
           </div>
 
           <div className={styles.form__wrap} data-animate="fade-left" data-animate-delay="0.15">
+            {titleForm && <h3 className={styles.form__formTitle}>{titleForm}</h3>}
             {formHtml ? (
               <div
                 className={styles.form__cf7}

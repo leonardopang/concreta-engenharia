@@ -9,6 +9,7 @@ $form_html = $shortcode ? do_shortcode($shortcode) : '';
 
 block_render('contato-form', [
     'title'       => $group['title']       ?? '',
+    'titleForm'   => $group['title_form']  ?? '',
     'description' => $group['description'] ?? '',
     'phone'       => $group['phone']       ?? '',
     'email'       => $group['email']       ?? '',

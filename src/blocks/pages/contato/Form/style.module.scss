@@ -173,6 +173,14 @@
   }
 }
 
+.form__formTitle {
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+  line-height: 150%;
+  color: $color-neutral-600;
+  margin: 0;
+}
+
 .form__cf7 {
   :global {
     .wpcf7-form {

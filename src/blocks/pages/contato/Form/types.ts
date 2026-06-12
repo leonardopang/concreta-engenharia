@@ -2,6 +2,7 @@ import type { AcfImage, AcfLink } from '../../../../utils';
 
 export interface ContatoFormProps {
   title: string;
+  titleForm?: string;
   description: string;
   phone?: string;
   email?: string;
