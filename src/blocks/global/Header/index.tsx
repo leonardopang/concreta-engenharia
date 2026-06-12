@@ -3,7 +3,8 @@ import clsx from 'clsx';
 import styles from './style.module.scss';
 import { HeaderProps } from './types';
 import SmartImage from '../../../components/SmartImage';
-import { linkProps } from '../../../utils';
+import { linkProps, hasItems } from '../../../utils';
+import { IconChevronDown } from '../../../icons';
 
 export default function Header({
   siteUrl = '/',
@@ -14,6 +15,7 @@ export default function Header({
 }: HeaderProps) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [openDrawerItem, setOpenDrawerItem] = useState<string | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -21,7 +23,14 @@ export default function Header({
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const close = () => setOpen(false);
+  const close = () => {
+    setOpen(false);
+    setOpenDrawerItem(null);
+  };
+
+  const toggleDrawerItem = (key: string) => {
+    setOpenDrawerItem((current) => (current === key ? null : key));
+  };
   const ctaProps = linkProps(cta);
 
   return (
@@ -45,13 +54,46 @@ export default function Header({
           <div className={styles.header__right}>
             <nav className={styles.header__nav} aria-label="Menu principal">
               <ul className={styles['header__nav-list']}>
-                {navItems.map((item) => (
-                  <li key={item.url} className={item.current ? styles['header__nav-item--current'] : ''}>
-                    <a href={item.url} className={styles['header__nav-link']}>
-                      {item.label}
-                    </a>
-                  </li>
-                ))}
+                {navItems.map((item) => {
+                  const hasChildren = hasItems(item.children);
+
+                  return (
+                    <li
+                      key={item.url}
+                      className={clsx(
+                        styles['header__nav-item'],
+                        item.current && styles['header__nav-item--current'],
+                        hasChildren && styles['header__nav-item--has-children'],
+                      )}
+                    >
+                      <div className={styles['header__nav-item-head']}>
+                        <a href={item.url} className={styles['header__nav-link']}>
+                          {item.label}
+                        </a>
+
+                        {hasChildren && (
+                          <span className={styles['header__nav-toggle']} aria-hidden="true">
+                            <IconChevronDown />
+                          </span>
+                        )}
+                      </div>
+
+                      {hasChildren && (
+                        <div className={styles['header__nav-dropdown']}>
+                          <ul className={styles['header__nav-submenu']}>
+                            {item.children!.map((child) => (
+                              <li key={child.url}>
+                                <a href={child.url} className={styles['header__nav-sublink']}>
+                                  {child.label}
+                                </a>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </nav>
 
@@ -82,20 +124,62 @@ export default function Header({
         >
           <nav aria-label="Menu mobile">
             <ul className={styles['header__drawer-list']}>
-              {navItems.map((item) => (
-                <li key={item.url}>
-                  <a
-                    href={item.url}
+              {navItems.map((item) => {
+                const hasChildren = hasItems(item.children);
+                const isDrawerOpen = openDrawerItem === item.url;
+
+                return (
+                  <li
+                    key={item.url}
                     className={clsx(
-                      styles['header__drawer-link'],
-                      item.current && styles['header__drawer-link--current'],
+                      styles['header__drawer-item'],
+                      hasChildren && styles['header__drawer-item--has-children'],
+                      isDrawerOpen && styles['header__drawer-item--open'],
                     )}
-                    onClick={close}
                   >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
+                    <div className={styles['header__drawer-item-head']}>
+                      <a
+                        href={item.url}
+                        className={clsx(
+                          styles['header__drawer-link'],
+                          item.current && styles['header__drawer-link--current'],
+                        )}
+                        onClick={close}
+                      >
+                        {item.label}
+                      </a>
+
+                      {hasChildren && (
+                        <button
+                          type="button"
+                          className={styles['header__drawer-toggle']}
+                          aria-label="Submenu"
+                          aria-expanded={isDrawerOpen}
+                          onClick={() => toggleDrawerItem(item.url)}
+                        >
+                          <IconChevronDown />
+                        </button>
+                      )}
+                    </div>
+
+                    {hasChildren && (
+                      <ul className={styles['header__drawer-submenu']}>
+                        {item.children!.map((child) => (
+                          <li key={child.url}>
+                            <a
+                              href={child.url}
+                              className={styles['header__drawer-sublink']}
+                              onClick={close}
+                            >
+                              {child.label}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </nav>
 

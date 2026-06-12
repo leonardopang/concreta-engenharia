@@ -4,6 +4,7 @@ export interface NavItem {
   label: string;
   url: string;
   current?: boolean;
+  children?: NavItem[];
 }
 
 export interface HeaderProps {

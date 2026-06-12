@@ -46,7 +46,7 @@ export default function SingleVagaDetalhe({
       <div className={styles.detalhe__inner}>
 
         <div className={styles.detalhe__left} data-animate="fade-right">
-          <a href="/vagas" className={styles.detalhe__backLink}>
+          <a href="/trabalhe-conosco/#vagas" className={styles.detalhe__backLink}>
             <span className={styles.detalhe__backIcon} aria-hidden="true">
               <IconChevronRight />
             </span>
@@ -54,7 +54,7 @@ export default function SingleVagaDetalhe({
           </a>
 
           <div className={styles.detalhe__card}>
-            {categoria && <Eyebrow text={categoria} />}
+            {categoria && <Eyebrow text={categoria} animate={false} />}
 
             <div className={styles.detalhe__cardBody}>
               <h1 className={styles.detalhe__titulo}>{titulo}</h1>

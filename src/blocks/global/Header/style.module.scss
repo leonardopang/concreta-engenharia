@@ -95,15 +95,24 @@ $drawer-transition: 260ms ease;
 .header__nav-list {
   display: flex;
   align-items: center;
-  gap: $space-1;
+  gap: 2px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.header__nav-item {
+  position: relative;
+}
+
+.header__nav-item-head {
+  display: flex;
+  align-items: center;
+}
+
 .header__nav-link {
   display: block;
-  padding: $space-2 $space-3;
+  padding: $space-2 10px;
   font-size: $font-size-sm;
   font-weight: $font-weight-medium;
   color: $color-neutral-600;
@@ -111,6 +120,7 @@ $drawer-transition: 260ms ease;
   border-radius: 4px;
   transition: color 150ms ease, background-color 150ms ease;
   text-transform: uppercase;
+  white-space: nowrap;
 
   &:hover {
     color: $color-text;
@@ -121,6 +131,83 @@ $drawer-transition: 260ms ease;
 .header__nav-item--current .header__nav-link {
   color: $color-primary;
   font-weight: $font-weight-semibold;
+}
+
+// ─── Dropdown toggle (chevron) ────────────────────────────────────────────────
+
+.header__nav-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  margin-left: -4px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: $color-brand-300;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 200ms ease;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.header__nav-item--has-children:hover .header__nav-toggle,
+.header__nav-item--has-children:focus-within .header__nav-toggle {
+  transform: rotate(180deg);
+}
+
+// ─── Dropdown panel ────────────────────────────────────────────────────────────
+
+.header__nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: $space-2;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
+  z-index: 100;
+}
+
+.header__nav-item--has-children:hover .header__nav-dropdown,
+.header__nav-item--has-children:focus-within .header__nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.header__nav-submenu {
+  min-width: 200px;
+  list-style: none;
+  margin: 0;
+  padding: $space-2 0;
+  background-color: $color-dark;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.header__nav-sublink {
+  display: block;
+  padding: $space-2 $space-4;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  color: $color-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color 150ms ease;
+
+  &:hover {
+    color: $color-accent;
+  }
 }
 
 .header__cta {
@@ -260,6 +347,66 @@ $drawer-transition: 260ms ease;
 .header__drawer-link--current {
   color: $color-primary;
   font-weight: $font-weight-semibold;
+}
+
+// ─── Drawer submenu (accordion) ────────────────────────────────────────────────
+
+.header__drawer-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__drawer-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: $color-brand-300;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 200ms ease;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.header__drawer-item--open .header__drawer-toggle {
+  transform: rotate(180deg);
+}
+
+.header__drawer-submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 250ms ease;
+}
+
+.header__drawer-item--open .header__drawer-submenu {
+  max-height: 400px;
+}
+
+.header__drawer-sublink {
+  display: block;
+  padding: $space-3 10px $space-3 $space-4;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  color: $color-neutral-600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 150ms ease;
+
+  &:hover {
+    color: $color-primary;
+  }
 }
 
 // ─── Drawer CTA ───────────────────────────────────────────────────────────────

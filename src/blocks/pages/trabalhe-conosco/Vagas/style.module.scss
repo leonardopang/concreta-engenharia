@@ -11,14 +11,10 @@
 }
 
 .vagas__inner {
-  padding-inline: $space-4;
+  @include container;
   display: flex;
   flex-direction: column;
   gap: $space-20;
-
-  @include respond-to($bp-lg) {
-    padding-inline: 320px;
-  }
 }
 
 .vagas__title {

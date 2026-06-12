@@ -38,11 +38,26 @@ $current_url = home_url(add_query_arg([], $GLOBALS['wp']->request ?? ''));
 
 if ($menu_id) {
   $items = wp_get_nav_menu_items($menu_id) ?: [];
+  $children_by_parent = [];
+
   foreach ($items as $item) {
-    $nav_items[] = [
+    if ((int) $item->menu_item_parent === 0) continue;
+
+    $children_by_parent[$item->menu_item_parent][] = [
       'label'   => $item->title,
       'url'     => $item->url,
       'current' => trailingslashit($item->url) === trailingslashit($current_url),
+    ];
+  }
+
+  foreach ($items as $item) {
+    if ((int) $item->menu_item_parent !== 0) continue;
+
+    $nav_items[] = [
+      'label'    => $item->title,
+      'url'      => $item->url,
+      'current'  => trailingslashit($item->url) === trailingslashit($current_url),
+      'children' => $children_by_parent[$item->ID] ?? [],
     ];
   }
 }
