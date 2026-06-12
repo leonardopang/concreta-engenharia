@@ -11,24 +11,44 @@ export const IconInstagram = () => (
 );
 
 export const IconPhone = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-    <path d="M10.468 9.60436C10.5545 9.54677 10.6541 9.51168 10.7576 9.50226C10.8612 9.49285 10.9654 9.50942 11.0609 9.55046L14.7453 11.2012C14.8695 11.2543 14.9731 11.3462 15.0407 11.4631C15.1083 11.5799 15.1362 11.7156 15.1203 11.8497C14.9989 12.7567 14.5523 13.5889 13.8633 14.1913C13.1744 14.7937 12.2902 15.1254 11.375 15.1247C8.55708 15.1247 5.85457 14.0053 3.86199 12.0127C1.86942 10.0201 0.750001 7.3176 0.750001 4.49968C0.749301 3.58452 1.081 2.70026 1.68341 2.01134C2.28582 1.32242 3.11793 0.875741 4.025 0.754365C4.15909 0.738435 4.29473 0.76636 4.41162 0.83396C4.52851 0.90156 4.62037 1.0052 4.67344 1.12936L6.32422 4.81686C6.36478 4.91157 6.3813 5.01484 6.3723 5.11748C6.3633 5.22012 6.32907 5.31894 6.27266 5.40515L4.60313 7.3903C4.5439 7.47966 4.50888 7.58286 4.50149 7.68981C4.49409 7.79676 4.51458 7.9038 4.56094 8.00046C5.20703 9.32311 6.57422 10.6739 7.90078 11.3137C7.99795 11.3599 8.10548 11.3799 8.21276 11.3718C8.32003 11.3638 8.42334 11.3278 8.5125 11.2676L10.468 9.60436Z" stroke="#F29506" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <g clip-path="url(#clip0_6080_285)">
+      <path d="M12.843 11.3549C12.9295 11.2973 13.0291 11.2622 13.1326 11.2528C13.2362 11.2433 13.3404 11.2599 13.4359 11.3009L17.1203 12.9517C17.2445 13.0048 17.3481 13.0967 17.4157 13.2135C17.4833 13.3304 17.5112 13.4661 17.4953 13.6002C17.3739 14.5072 16.9273 15.3393 16.2383 15.9418C15.5494 16.5442 14.6652 16.8759 13.75 16.8752C10.9321 16.8752 8.22957 15.7557 6.23699 13.7632C4.24442 11.7706 3.125 9.06809 3.125 6.25017C3.1243 5.33501 3.456 4.45075 4.05841 3.76183C4.66082 3.07291 5.49293 2.62623 6.4 2.50485C6.53409 2.48892 6.66973 2.51685 6.78662 2.58445C6.90351 2.65205 6.99537 2.75569 7.04844 2.87985L8.69922 6.56735C8.73978 6.66206 8.7563 6.76533 8.7473 6.86797C8.7383 6.9706 8.70407 7.06942 8.64766 7.15563L6.97813 9.14079C6.9189 9.23015 6.88388 9.33335 6.87649 9.4403C6.86909 9.54725 6.88958 9.65429 6.93594 9.75095C7.58203 11.0736 8.94922 12.4244 10.2758 13.0642C10.373 13.1104 10.4805 13.1304 10.5878 13.1223C10.695 13.1142 10.7983 13.0783 10.8875 13.0181L12.843 11.3549Z" stroke="#F29506" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <defs>
+      <clipPath id="clip0_6080_285">
+        <rect width="20" height="20" fill="white" />
+      </clipPath>
+    </defs>
   </svg>
 );
 
 export const IconEnvelope = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-    <path d="M2.5 4.375H17.5V15C17.5 15.1658 17.4342 15.3247 17.3169 15.4419C17.1997 15.5592 17.0408 15.625 16.875 15.625H3.125C2.95924 15.625 2.80027 15.5592 2.68306 15.4419C2.56585 15.3247 2.5 15.1658 2.5 15V4.375Z" stroke="#F29506" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M17.5 4.375L10 11.25L2.5 4.375" stroke="#F29506" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <g clip-path="url(#clip0_6080_290)">
+      <path d="M2.5 4.375H17.5V15C17.5 15.1658 17.4342 15.3247 17.3169 15.4419C17.1997 15.5592 17.0408 15.625 16.875 15.625H3.125C2.95924 15.625 2.80027 15.5592 2.68306 15.4419C2.56585 15.3247 2.5 15.1658 2.5 15V4.375Z" stroke="#F29506" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M17.5 4.375L10 11.25L2.5 4.375" stroke="#F29506" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <defs>
+      <clipPath id="clip0_6080_290">
+        <rect width="20" height="20" fill="white" />
+      </clipPath>
+    </defs>
   </svg>
 );
 
 export const IconMapPin = () => (
-  <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M7 9.5C8.38071 9.5 9.5 8.38071 9.5 7C9.5 5.61929 8.38071 4.5 7 4.5C5.61929 4.5 4.5 5.61929 4.5 7C4.5 8.38071 5.61929 9.5 7 9.5Z" stroke="#F29506" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M13.25 7C13.25 12.625 7 17 7 17C7 17 0.75 12.625 0.75 7C0.75 5.3424 1.40848 3.75269 2.58058 2.58058C3.75269 1.40848 5.3424 0.75 7 0.75C8.6576 0.75 10.2473 1.40848 11.4194 2.58058C12.5915 3.75269 13.25 5.3424 13.25 7Z" stroke="#F29506" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <g clip-path="url(#clip0_6080_296)">
+      <path d="M10 10.625C11.3807 10.625 12.5 9.50571 12.5 8.125C12.5 6.74429 11.3807 5.625 10 5.625C8.61929 5.625 7.5 6.74429 7.5 8.125C7.5 9.50571 8.61929 10.625 10 10.625Z" stroke="#F29506" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M16.25 8.125C16.25 13.75 10 18.125 10 18.125C10 18.125 3.75 13.75 3.75 8.125C3.75 6.4674 4.40848 4.87769 5.58058 3.70558C6.75269 2.53348 8.3424 1.875 10 1.875C11.6576 1.875 13.2473 2.53348 14.4194 3.70558C15.5915 4.87769 16.25 6.4674 16.25 8.125Z" stroke="#F29506" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <defs>
+      <clipPath id="clip0_6080_296">
+        <rect width="20" height="20" fill="white" />
+      </clipPath>
+    </defs>
   </svg>
-
 );
 
 export const IconCaretDoubleRight = () => (
@@ -89,8 +109,15 @@ export const IconBookmark = () => (
 );
 
 export const IconClock = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-    <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#F29506" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M10 5.625V10H14.375" stroke="#F29506" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <g clip-path="url(#clip0_6080_303)">
+      <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#F29506" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M10 5.625V10H14.375" stroke="#F29506" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <defs>
+      <clipPath id="clip0_6080_303">
+        <rect width="20" height="20" fill="white" />
+      </clipPath>
+    </defs>
   </svg>
 );

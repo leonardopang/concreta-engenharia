@@ -9,6 +9,7 @@ import {
   IconMapPin,
   IconClock,
 } from '../../../icons';
+import { htmlTitle } from '../../../utils';
 
 const socialIcons: Record<string, React.ReactNode> = {
   facebook:  <IconFacebook />,
@@ -121,7 +122,7 @@ export default function Footer({
             {contact.hours && (
               <li className={styles.footer__contact_item}>
                 <IconClock />
-                <span>{contact.hours}</span>
+                <span {...htmlTitle(contact.hours)} />
               </li>
             )}
           </ul>

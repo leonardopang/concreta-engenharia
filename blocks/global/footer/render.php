@@ -59,7 +59,7 @@ $contact = [
   'email'      => $footer_opts['email']          ?? '',
   'address'    => $footer_opts['endereco']        ?? '',
   'addressUrl' => $footer_opts['link_endereco']   ?? '',
-  'hours'      => $footer_opts['horario']         ?? '',
+  'hours'      => acf_html($footer_opts['horario']) ?? '',
 ];
 
 // Bottom bar
