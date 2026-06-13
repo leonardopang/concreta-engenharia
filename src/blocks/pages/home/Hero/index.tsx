@@ -17,11 +17,11 @@ export default function Hero({
       {bgImage?.url && (
         <img
           src={bgImage.url}
-          alt=""
+          alt={bgImage.alt || ''}
           aria-hidden="true"
+          fetchPriority="high"
           className={styles.hero__bg}
           loading="eager"
-          fetchpriority="high"
           decoding="async"
           {...(bgImage.width > 0 && { width: bgImage.width })}
           {...(bgImage.height > 0 && { height: bgImage.height })}
@@ -61,7 +61,7 @@ export default function Hero({
           )}
         </div>
 
-        <SmartImage image={image} className={styles.hero__image} loading="eager" />
+        <SmartImage image={image} className={styles.hero__image} loading="eager" fetchpriority='high' />
 
       </div>
     </section>

@@ -63,6 +63,19 @@ add_action('wp_enqueue_scripts', function () {
 });
 
 /**
+ * Adia o carregamento dos scripts do Contact Form 7 (render-blocking),
+ * já que o formulário fica abaixo da dobra em todas as páginas.
+ */
+add_filter('wp_enqueue_scripts', function () {
+    if (wp_script_is('contact-form-7', 'registered')) {
+        wp_script_add_data('contact-form-7', 'strategy', 'defer');
+    }
+    if (wp_script_is('swv', 'registered')) {
+        wp_script_add_data('swv', 'strategy', 'defer');
+    }
+}, 20);
+
+/**
  * Enfileira assets no editor de blocos (Gutenberg).
  * Garante que os blocos React também funcionem no contexto do editor.
  */
