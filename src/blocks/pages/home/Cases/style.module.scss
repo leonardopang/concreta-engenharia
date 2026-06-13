@@ -123,7 +123,7 @@
 }
 
 .cases__mobileBtn {
-  display: inline-flex;
+  display: block;
   align-items: center;
   justify-content: center;
   padding: $space-4 $space-8;
@@ -136,8 +136,9 @@
   text-decoration: none;
   box-shadow: 0 16px 10px rgba($color-neutral-300, 0.05);
   transition: border-color 150ms ease, background-color 150ms ease;
-  width: 100%;
+  width: max-content;
   justify-content: center;
+  margin: $space-12 auto 0;
 
   &:hover {
     border-color: rgba($color-brand-300, 0.5);

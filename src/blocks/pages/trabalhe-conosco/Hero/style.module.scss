@@ -2,12 +2,16 @@
 
 .hero {
   position: relative;
-  height: 540px;
+  height: 300px;
   overflow: hidden;
   background-color: $color-dark;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include respond-to($bp-md) {
+    height: 540px;
+  }
 }
 
 .hero__bg {

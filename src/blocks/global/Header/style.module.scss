@@ -248,9 +248,9 @@ $drawer-transition: 260ms ease;
 
 .header__toggle-bar {
   display: block;
-  width: 100%;
+  width: 22px;
   height: 2px;
-  background-color: $color-text;
+  background-color: #293377;
   border-radius: 2px;
   transition: transform $drawer-transition, opacity $drawer-transition;
   transform-origin: center;

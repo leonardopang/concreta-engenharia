@@ -40,6 +40,60 @@
   gap: $space-1;
 }
 
+.vagas__select {
+  width: 100%;
+  background-color: $color-white;
+  border-radius: 6px;
+  font-family: $font-base;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-normal;
+  color: $color-neutral-800;
+
+  :global(.MuiOutlinedInput-notchedOutline) {
+    border-color: $color-brand-300;
+  }
+
+  :global(.MuiSelect-select) {
+    padding: $space-3 $space-4;
+    font-family: $font-base;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-regular;
+    color: $color-neutral-800;
+  }
+
+  :global(.MuiSvgIcon-root) {
+    color: $color-brand-300;
+  }
+
+  &:hover :global(.MuiOutlinedInput-notchedOutline) {
+    border-color: $color-brand-300;
+  }
+
+  :global(.Mui-focused) :global(.MuiOutlinedInput-notchedOutline),
+  &:global(.Mui-focused) :global(.MuiOutlinedInput-notchedOutline) {
+    border-color: $color-brand-300;
+    border-width: 1px;
+  }
+}
+
+.vagas__select--mobile {
+  @include respond-to($bp-lg) {
+    display: none !important;
+  }
+}
+
+.vagas__catBtns--desktop {
+  display: none;
+
+  @include respond-to($bp-lg) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $space-1;
+  }
+}
+
 .vagas__catBtn {
   background: transparent;
   border: none;
@@ -141,10 +195,28 @@
   }
 }
 
+.vagas__link--desktop {
+  display: none;
+
+  @include respond-to($bp-md) {
+    display: inline-flex;
+  }
+}
+
+.vagas__link--mobile {
+  @include respond-to($bp-md) {
+    display: none;
+  }
+}
+
 .vagas__descricao {
-  font-size: $font-size-lg;
+  font-size: $font-size-md;
   line-height: $line-height-relaxed;
   color: $color-text-muted;
+
+  @include respond-to($bp-md) {
+    font-size: $font-size-lg;
+  }
 }
 
 .vagas__info {
@@ -158,7 +230,7 @@
   display: flex;
   align-items: center;
   gap: $space-2;
-  font-size: $font-size-lg;
+  font-size: $font-size-sm;
   line-height: $line-height-normal;
   color: $color-neutral-800;
 
@@ -167,9 +239,19 @@
     height: 24px;
     flex-shrink: 0;
   }
+
+  @include respond-to($bp-md) {
+    font-size: $font-size-lg;
+  }
 }
 
 .vagas__divider {
+  display: none;
+
+  @include respond-to($bp-md) {
+    display: block;
+  }
+
   width: 1px;
   height: 24px;
   background-color: $color-border;

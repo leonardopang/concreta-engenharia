@@ -5,6 +5,24 @@ const isWatch = process.argv.includes( '--watch' );
 
 module.exports = {
 	...defaultConfig,
+	resolve: {
+		...defaultConfig.resolve,
+		extensionAlias: {
+			'.mjs': [ '.mjs', '.js' ],
+		},
+	},
+	module: {
+		...defaultConfig.module,
+		rules: [
+			...defaultConfig.module.rules,
+			{
+				test: /\.m?js$/,
+				resolve: {
+					fullySpecified: false,
+				},
+			},
+		],
+	},
 	output: {
 		...defaultConfig.output,
 		clean: true,

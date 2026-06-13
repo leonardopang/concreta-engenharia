@@ -1,17 +1,33 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
+import clsx from 'clsx';
+import { Select, MenuItem, Skeleton } from '@mui/material';
+import type { SelectChangeEvent } from '@mui/material';
 import styles from './style.module.scss';
 import { hasItems, linkProps } from '../../../../utils';
 import { IconMapPin, IconAddressBook, IconChevronRight } from '../../../../icons';
 import type { TrabalheVagasProps, Vaga } from './types';
 
+const FILTER_DELAY = 300;
+
 export default function TrabalheVagas({ title, categorias, vagas }: TrabalheVagasProps) {
-  const [activeSlug, setActiveSlug] = useState<string | null>(null);
+  const [activeSlug, setActiveSlug] = useState<string>('');
+  const [isFiltering, setIsFiltering] = useState(false);
+
+  const handleChange = (event: SelectChangeEvent) => {
+    setActiveSlug(event.target.value);
+  };
 
   const filtered = useMemo<Vaga[]>(() => {
     if (!hasItems(vagas)) return [];
     if (!activeSlug) return vagas;
     return vagas.filter((v) => v.categoriaSlug === activeSlug);
   }, [vagas, activeSlug]);
+
+  useEffect(() => {
+    setIsFiltering(true);
+    const timeout = setTimeout(() => setIsFiltering(false), FILTER_DELAY);
+    return () => clearTimeout(timeout);
+  }, [activeSlug]);
 
   return (
     <section id="vagas" className={styles.vagas}>
@@ -21,26 +37,62 @@ export default function TrabalheVagas({ title, categorias, vagas }: TrabalheVaga
         <div className={styles.vagas__content}>
           {hasItems(categorias) && (
             <div className={styles.vagas__categories} data-animate="fade-up">
-              <button
-                className={!activeSlug ? styles['vagas__catBtn--active'] : styles.vagas__catBtn}
-                onClick={() => setActiveSlug(null)}
+              <Select
+                value={activeSlug}
+                onChange={handleChange}
+                className={clsx(styles.vagas__select, styles['vagas__select--mobile'])}
+                displayEmpty
+                MenuProps={{ disablePortal: true }}
               >
-                Ver todas
-              </button>
-              {categorias.map((cat) => (
+                <MenuItem value="">Ver todas</MenuItem>
+                {categorias.map((cat) => (
+                  <MenuItem key={cat.slug} value={cat.slug}>
+                    {cat.nome}
+                  </MenuItem>
+                ))}
+              </Select>
+
+              <div className={styles['vagas__catBtns--desktop']}>
                 <button
-                  key={cat.slug}
-                  className={activeSlug === cat.slug ? styles['vagas__catBtn--active'] : styles.vagas__catBtn}
-                  onClick={() => setActiveSlug(cat.slug)}
+                  className={!activeSlug ? styles['vagas__catBtn--active'] : styles.vagas__catBtn}
+                  onClick={() => setActiveSlug('')}
                 >
-                  {cat.nome}
+                  Ver todas
                 </button>
-              ))}
+                {categorias.map((cat) => (
+                  <button
+                    key={cat.slug}
+                    className={activeSlug === cat.slug ? styles['vagas__catBtn--active'] : styles.vagas__catBtn}
+                    onClick={() => setActiveSlug(cat.slug)}
+                  >
+                    {cat.nome}
+                  </button>
+                ))}
+              </div>
             </div>
           )}
 
           <div className={styles.vagas__list}>
-            {hasItems(filtered) ? filtered.map((vaga, i) => (
+            {isFiltering ? (
+              Array.from({ length: 3 }).map((_, i) => (
+                <div key={i} className={styles.vagas__card}>
+                  <div className={styles.vagas__job}>
+                    <div className={styles.vagas__jobHeader}>
+                      <div className={styles.vagas__jobTitle}>
+                        <Skeleton variant="text" width={220} height={32} />
+                        <Skeleton variant="rounded" width={120} height={24} />
+                      </div>
+                    </div>
+                    <Skeleton variant="text" width="100%" height={24} />
+                    <Skeleton variant="text" width="80%" height={24} />
+                  </div>
+                  <div className={styles.vagas__info}>
+                    <Skeleton variant="text" width={140} height={24} />
+                    <Skeleton variant="text" width={200} height={24} />
+                  </div>
+                </div>
+              ))
+            ) : hasItems(filtered) ? filtered.map((vaga, i) => (
               <article
                 key={i}
                 className={styles.vagas__card}
@@ -56,7 +108,7 @@ export default function TrabalheVagas({ title, categorias, vagas }: TrabalheVaga
                       )}
                     </div>
                     {vaga.link && (
-                      <a {...linkProps(vaga.link)!} className={styles.vagas__link}>
+                      <a {...linkProps(vaga.link)!} className={clsx(styles.vagas__link, styles['vagas__link--desktop'])}>
                         Ver vaga
                         <IconChevronRight />
                       </a>
@@ -84,6 +136,13 @@ export default function TrabalheVagas({ title, categorias, vagas }: TrabalheVaga
                     </>
                   )}
                 </div>
+
+                {vaga.link && (
+                  <a {...linkProps(vaga.link)!} className={clsx(styles.vagas__link, styles['vagas__link--mobile'])}>
+                    Ver vaga
+                    <IconChevronRight />
+                  </a>
+                )}
               </article>
             )) : (
               <p className={styles.vagas__empty}>Nenhuma vaga disponível no momento.</p>

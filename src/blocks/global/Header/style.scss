@@ -1,9 +1,9 @@
 @use '../../../styles/tokens' as *;
 
 // ─── Variáveis locais ────────────────────────────────────────────────────────
-$header-h-mobile:   60px;
-$header-h-desktop:  80px;
-$header-max-width:  1672px;
+$header-h-mobile: 60px;
+$header-h-desktop: 80px;
+$header-max-width: 1672px;
 $drawer-transition: 280ms ease;
 
 // ─── Wrapper sticky (full-width, sem visual) ─────────────────────────────────
@@ -99,8 +99,8 @@ $drawer-transition: 280ms ease;
   }
 }
 
-.header__nav-list li.current-menu-item > a,
-.header__nav-list .current-menu-item > a {
+.header__nav-list li.current-menu-item>a,
+.header__nav-list .current-menu-item>a {
   color: $color-primary;
   font-weight: $font-weight-semibold;
 }
@@ -134,8 +134,8 @@ $drawer-transition: 280ms ease;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   background: none;
   border: none;
   cursor: pointer;
@@ -153,9 +153,9 @@ $drawer-transition: 280ms ease;
 
 .header__toggle-bar {
   display: block;
-  width: 100%;
+  width: 22px;
   height: 2px;
-  background-color: $color-text;
+  background-color: #293377;
   border-radius: 2px;
   transition: transform $drawer-transition, opacity $drawer-transition;
   transform-origin: center;
@@ -219,7 +219,7 @@ $drawer-transition: 280ms ease;
   }
 }
 
-.header__drawer-list li.current-menu-item > a {
+.header__drawer-list li.current-menu-item>a {
   color: $color-primary;
   font-weight: $font-weight-semibold;
 }

@@ -95,9 +95,9 @@ export function initAnimations(): void {
       // 1. scaleY: barras crescem quando o eyebrow entra na viewport
       gsap.from(bars, {
         scaleY: 0,
-        duration: 0.5,
+        duration: 1.1,
         ease: 'power2.out',
-        stagger: 0.08,
+        stagger: 0.15,
         scrollTrigger: {
           trigger: el,
           start: 'top 82%',
@@ -106,9 +106,10 @@ export function initAnimations(): void {
         },
       });
 
-      // 2. translateX scrub: barras se afastam para as bordas da section conforme o scroll
-      const getTravelLeft  = () => -(leftBar.getBoundingClientRect().left  - section.getBoundingClientRect().left);
-      const getTravelRight = () =>   section.getBoundingClientRect().right - rightBar.getBoundingClientRect().right;
+      // 2. translateX scrub: barras se afastam para as bordas da section conforme o scroll (limitado)
+      const MAX_TRAVEL = 120;
+      const getTravelLeft  = () => -Math.min(leftBar.getBoundingClientRect().left  - section.getBoundingClientRect().left, MAX_TRAVEL);
+      const getTravelRight = () =>   Math.min(section.getBoundingClientRect().right - rightBar.getBoundingClientRect().right, MAX_TRAVEL);
 
       gsap.to(leftBar,  { x: getTravelLeft,  ease: 'power1.inOut', scrollTrigger: { trigger: section, start: 'top center', end: 'bottom top', scrub: 2, invalidateOnRefresh: true } });
       gsap.to(rightBar, { x: getTravelRight, ease: 'power1.inOut', scrollTrigger: { trigger: section, start: 'top center', end: 'bottom top', scrub: 2, invalidateOnRefresh: true } });
